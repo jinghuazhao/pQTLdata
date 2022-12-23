@@ -11,7 +11,7 @@ A data frame with 5178 rows and 10 variables:
 \item{\code{UniProt}}{UniProt id}
 \item{\code{Target}}{Protein target}
 \item{\code{TargetFullName}}{Protein target full name}
-\item{\code{chr}}{chromosome\link{1-22,X,Y}}
+\item{\code{chr}}{chromosome (1-22,X,Y)}
 \item{\code{start}}{start}
 \item{\code{end}}{end}
 \item{\code{entGene}}{entrez gene}

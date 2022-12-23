@@ -8,7 +8,7 @@
 A data frame with 42198 rows and 11 variables:
 \describe{
 \item{\code{ensembl_gene_id}}{ENSEMBL gene id}
-\item{\code{chromosome_name}}{Chromosome name \link{1-22,X,Y}}
+\item{\code{chromosome_name}}{Chromosome name (1-22,X,Y)}
 \item{\code{start_position}}{start}
 \item{\code{end_position}}{end}
 \item{\code{description}}{Description}

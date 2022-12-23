@@ -12,7 +12,7 @@ A data frame with 92 rows and 9 variables:
 \item{\code{target}}{Protein target name}
 \item{\code{target.short}}{Protein target short name}
 \item{\code{gene}}{HGNC symbol}
-\item{\code{chr}}{chromosome\link{1-13,16-17,19-22}}
+\item{\code{chr}}{chromosome (1-13,16-17,19-22)}
 \item{\code{start}}{start}
 \item{\code{end}}{end}
 \item{\code{ensembl_gene_id}}{ENSEMBL gene}

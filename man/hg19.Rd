@@ -7,7 +7,7 @@
 \format{
 A data frame with 62559 rows and 8 variables:
 \describe{
-\item{\code{chr}}{Chromosome \link{chr1-22,X,Y,...}}
+\item{\code{chr}}{Chromosome (chr1-22,X,Y,...)}
 \item{\code{start}}{start}
 \item{\code{end}}{end}
 \item{\code{width}}{width}

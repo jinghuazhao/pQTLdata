@@ -9,7 +9,7 @@ A data frame with 163 rows and 20 variables:
 \describe{
 \item{\code{Locus.ID}}{Locus id}
 \item{\code{Sentinel.variant*}}{Sentinel variant}
-\item{\code{Chr}}{Chromosome \link{1-12,14-20,22}}
+\item{\code{Chr}}{Chromosome (1-12,14-20,22)}
 \item{\code{Pos}}{Position}
 \item{\code{SOMAmer.ID}}{SOMAmer id}
 \item{\code{Target}}{Protein}
