@@ -5,7 +5,7 @@
 #' @format A data frame with 42198 rows and 11 variables:
 #' \describe{
 #'   \item{\code{ensembl_gene_id}}{ENSEMBL gene id}
-#'   \item{\code{chromosome_name}}{Chromosome name [1-22,X,Y]}
+#'   \item{\code{chromosome_name}}{Chromosome name (1-22,X,Y)}
 #'   \item{\code{start_position}}{start}
 #'   \item{\code{end_position}}{end}
 #'   \item{\code{description}}{Description}
@@ -44,7 +44,7 @@
 #' @keywords datasets internal
 #' @format A data frame with 62559 rows and 8 variables:
 #' \describe{
-#'   \item{\code{chr}}{Chromosome [chr1-22,X,Y,...]}
+#'   \item{\code{chr}}{Chromosome (chr1-22,X,Y,...)}
 #'   \item{\code{start}}{start}
 #'   \item{\code{end}}{end}
 #'   \item{\code{width}}{width}
@@ -91,7 +91,7 @@
 #'   \item{\code{target}}{Protein target name}
 #'   \item{\code{target.short}}{Protein target short name}
 #'   \item{\code{gene}}{HGNC symbol}
-#'   \item{\code{chr}}{chromosome[1-13,16-17,19-22]}
+#'   \item{\code{chr}}{chromosome (1-13,16-17,19-22)}
 #'   \item{\code{start}}{start}
 #'   \item{\code{end}}{end}
 #'   \item{\code{ensembl_gene_id}}{ENSEMBL gene}
@@ -142,7 +142,7 @@
 #'   \item{\code{UniProt}}{UniProt id}
 #'   \item{\code{Target}}{Protein target}
 #'   \item{\code{TargetFullName}}{Protein target full name}
-#'   \item{\code{chr}}{chromosome[1-22,X,Y]}
+#'   \item{\code{chr}}{chromosome (1-22,X,Y)}
 #'   \item{\code{start}}{start}
 #'   \item{\code{end}}{end}
 #'   \item{\code{entGene}}{entrez gene}
@@ -236,7 +236,7 @@
 #' \describe{
 #'   \item{\code{Locus.ID}}{Locus id}
 #'   \item{\code{Sentinel.variant*}}{Sentinel variant}
-#'   \item{\code{Chr}}{Chromosome [1-12,14-20,22]}
+#'   \item{\code{Chr}}{Chromosome (1-12,14-20,22)}
 #'   \item{\code{Pos}}{Position}
 #'   \item{\code{SOMAmer.ID}}{SOMAmer id}
 #'   \item{\code{Target}}{Protein}
