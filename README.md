@@ -1,3 +1,3 @@
-## A collection of pQTL panels and meta-data.
+## A Collection of pQTL Panels and meta-Data.
 
-This package is to keep some protein panel and meta-data for pQTLtools.
+It is a package is to keep some protein panel and meta-data for pQTLtools.
