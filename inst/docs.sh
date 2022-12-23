@@ -27,7 +27,8 @@ function create_github_repository()
   git init
   git branch -M main
   git remote add origin git@github.com:jinghuazhao/pQTLdata.git
-  git push -u origin main}
+  git push --set-upstream origin main
+}
 
 Rscript -e 'devtools::document()'
 
