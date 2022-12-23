@@ -4,7 +4,7 @@
 \name{pQTLdata-package}
 \alias{pQTLdata}
 \alias{pQTLdata-package}
-\title{A summary of datasets and functions}
+\title{A summary of datasets}
 \description{
 \tabular{ll}{
 Objects              \tab   Description\cr
