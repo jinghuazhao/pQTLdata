@@ -1,6 +1,6 @@
 Package: pQTLdata
 Title: A Collection of pQTL Panels and Meta-Data
-Version: 0.0.1
+Version: 0.1
 Date: 2022-12-23
 Authors@R: 
     person("Jing Hua", "Zhao", , "jinghuazhao@hotmail.com", role = c("aut", "cre"),
