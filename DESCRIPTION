@@ -1,0 +1,11 @@
+Package: pQTLdata
+Title: A collection of pQTL panels and meta-data.
+Version: 0.0.0.1
+Authors@R: 
+    person("Jing Hua", "Zhao", , "jinghuazhao@hotmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582"))
+Description: This package is to keep some protein panel and meta-data from pQTLtools.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
