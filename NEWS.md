@@ -1,4 +1,6 @@
-# pQTLdata 0.0.1
+# pQTLdata 0.1
+
+* Adoption of a 1/10 version increment algorithm.
 
 * Add inst/Olink.
 * Add biomaRt.rda, hg19.rda, hg19Tables.rda, inf1.rda, st4.rda, st6.rda, st18.rda, but drop hgTables.
