@@ -1,11 +1,14 @@
 Package: pQTLdata
-Title: A collection of pQTL panels and meta-data.
-Version: 0.0.0.1
+Title: A Collection of pQTL Panels and Meta-Data
+Version: 0.0.1
+Date: 2022-12-23
 Authors@R: 
     person("Jing Hua", "Zhao", , "jinghuazhao@hotmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582"))
-Description: This package is to keep some protein panel and meta-data from pQTLtools.
+Description: It is a package is to keep some protein panel and meta-data for pQTLtools.
 License: MIT + file LICENSE
+Depends:
+    R (>= 3.5.0)
 VignetteBuilder: knitr
 LazyData: Yes
 LazyLoad: Yes
