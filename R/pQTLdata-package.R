@@ -1,4 +1,4 @@
-#' A summary of datasets and functions
+#' A summary of datasets
 #'
 #' \tabular{ll}{
 #' Objects              \tab   Description\cr
