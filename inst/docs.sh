@@ -24,7 +24,10 @@ function create_github_repository()
   git config --global user.email "jinghuazhao@hotmail.com"
   git config --global user.name "jinghuazhao@github.com"
   git config --global url."https://jinghuazhao@github.com".insteadOf "https://github.com"
-}
+  git init
+  git branch -M main
+  git remote add origin git@github.com:jinghuazhao/pQTLdata.git
+  git push -u origin main}
 
 Rscript -e 'devtools::document()'
 
