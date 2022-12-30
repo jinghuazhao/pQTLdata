@@ -39,7 +39,7 @@ The Olink qPCR panel, especially the inflammation panel (`inf1`) as used in the 
 
 ```{r}
 options(width=200)
-pQTLdata::inf1
+knitr::kable(pQTLdata::inf1,caption="Table 1. Olink/inflammation panel")
 ```
 
 This is later extended to include Olinnk NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
