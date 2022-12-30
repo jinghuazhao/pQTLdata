@@ -33,7 +33,7 @@ function create_github_repository()
 Rscript -e 'devtools::document()'
 
 for f in .gitignore .Rbuildignore .Rinstignore \
-         data/ DESCRIPTION INDEX inst/ LICENSE LICENSE.md man/ \
+         data/ DESCRIPTION INDEX inst/ LICENSE LICENSE.md man/ vignettes/ \
          NAMESPACE NEWS.md R/ README.*
 do
   echo adding ${f}
