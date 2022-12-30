@@ -31,6 +31,8 @@
 #'   \item{UniProt}{UniProt ID}
 #' }
 #'
+#' @import knitr
+#'
 #' @examples
 #' \dontrun{
 #' # datasets
