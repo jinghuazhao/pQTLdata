@@ -1,0 +1,63 @@
+---
+title: "An overview of pQTLdata"
+output:
+  rmarkdown::html_vignette:
+    toc: true
+    toc_depth: 2
+    check_title: false
+bibliography: refs.bib
+vignette: >
+  %\VignetteIndexEntry{pQTLdata}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+set.seed(0)
+knitr::opts_chunk$set(
+  out.extra = 'style="display:block; margin: auto"',
+  fig.align = "center",
+  fig.path = "pQTLdata/",
+  collapse = TRUE,
+  comment = "#>",
+  dev = "png")
+```
+
+```{r, message=FALSE, warning=FALSE}
+pkgs <- c("knitr")
+for (p in pkgs) if (length(grep(paste("^package:", p, "$", sep=""), search())) == 0) {
+    if (!requireNamespace(p)) warning(paste0("This vignette needs package `", p, "'; please install"))
+}
+invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
+```
+
+Data contained in this package broadly fulls into several categories.
+
+## Protein panels
+
+The Olink qPCR panel, especially the inflammation panel (`inf1`) as used in the SCALLOP consortium.
+
+```{r}
+options(width=200)
+pQTLdata::inf1
+```
+
+This is later extended to include Olinnk NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
+
+## Published data
+
+This is notably the analysis of INTERVAL data as reported by @sun18, which includes the panel `SomaLogic160410`, supplementary tables 4, 6, 18.
+
+## Reference data
+
+These include `biomaRt`, `hg19` and `hg19Tables` from BioMART and UCSC.
+
+## Scripts
+
+This is with `inst/scripts/` in the source package or `scripts/` in the installed package, showing how data are generated and can be extended.
+
+Directory `inst/Olink` in the source package or `Olink` in the installed package contains an analysis involving COVID-19 data.
+
+## References
+
+The collection includes references in @sun18 and @suhre20.
