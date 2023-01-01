@@ -31,18 +31,18 @@ for (p in pkgs) if (length(grep(paste("^package:", p, "$", sep=""), search())) =
 invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
 ```
 
-Data contained in this package broadly fulls into several categories.
+Data contained in this package broadly fulls into several categories, either in data/ or inst/[^inst] (csd3.sh, docs.sh, EndNote/, Olink/, scripts/) directories.
 
 ## Protein panels
 
-The Olink qPCR panel, especially the inflammation panel (`inf1`) as used in the SCALLOP consortium.
+The Olink qPCR inflammation panel (`inf1`) is used in the SCALLOP consortium.
 
 ```{r inf1, echo=FALSE}
 options(width=200)
 knitr::kable(pQTLdata::inf1,caption="Table 1. Olink/inflammation panel")
 ```
 
-This is later extended to include Olinnk NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
+This is later extended to include Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
 
 ## Published data
 
@@ -54,10 +54,16 @@ These include `biomaRt`, `hg19` and `hg19Tables` from BioMART and UCSC.
 
 ## Scripts
 
-This is with `inst/scripts/` in the source package or `scripts/` in the installed package, showing how data are generated and can be extended.
+Files `csd3.sh` and `docs.sh` contain statement for package handling under Cambridge University's CSD3 system and GitHub, separately.
 
-Directory `inst/Olink` in the source package or `Olink` in the installed package contains an analysis involving COVID-19 data.
+This is with the `scripts/` directory, showing how data are generated and can be extended.
+
+Directory `Olink/` contains an analysis involving COVID-19 data.
 
 ## References
 
-The collection includes references in @sun18 and @suhre20.
+The collection with EndNote/ includes references in @sun18 and @suhre20 are EndNote libraries.
+
+[^inst]:
+
+    As usual, entries in this directory will be installed separately.
