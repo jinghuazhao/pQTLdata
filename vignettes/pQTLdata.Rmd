@@ -35,8 +35,8 @@ invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
 
 Collections in in this package are in two subdirectories
 
-1. data/, which contains R objects.
-2. inst/, which contains `csd3.sh`, `docs.sh`, EndNote/, Olink/, scripts/ that will spread into the package's root directory after installation.
+1. **data**/, which contains R objects.
+2. **inst**/, which contains `csd3.sh`, `docs.sh`, EndNote/, Olink/, scripts/ that will spread into the package's root directory after installation.
 
 ## Protein panels
 
@@ -61,7 +61,7 @@ These include `biomaRt`, `hg19` and `hg19Tables` from BioMART and UCSC.
 
 Files `csd3.sh` and `docs.sh` handle package under Cambridge University's CSD3 system and GitHub, respectively.
 
-This is with the `scripts/` directory, showing how data are generated and can be extended.
+The `scripts/` directory records data generation which potentially can be extended.
 
 Directory `Olink/` contains an analysis involving COVID-19 data.
 
