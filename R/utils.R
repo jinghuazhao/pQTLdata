@@ -220,7 +220,7 @@
 #'   \item{\code{beta}}{b}
 #'   \item{\code{SE}}{SE}
 #'   \item{\code{p}}{p value}
-#'   \item{\code{Uncorrelated.with.PAV.(r2≥0.1)}}{Uncorrelated with PAV}
+#'   \item{\code{Uncorrelated.with.PAV.(r2>=0.1)}}{Uncorrelated with PAV}
 #'   \item{\code{Significant.after.adjusting.for.PAVs}}{Significant after adjustment for PAVs}
 #'   \item{\code{Is.a.cis.eQTL.for.same.gene?}}{Is a cis eQTL for the same gene?}
 #' }
