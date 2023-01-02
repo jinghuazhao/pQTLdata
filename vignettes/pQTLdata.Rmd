@@ -33,10 +33,12 @@ invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
 
 ## An overview
 
-Collections in in this package are in two subdirectories
+The collections are in two locations:
 
-1. **data**/, which contains R objects.
-2. **inst**/, which contains `csd3.sh`, `docs.sh`, EndNote/, Olink/, scripts/ that will spread into the package's root directory after installation.
+1. **`data/`**. R datasets.
+2. **`inst/`**. `csd3.sh`, `docs.sh`, `EndNote/`, `Olink/`, `scripts/` which spread into the package's root directory after installation.
+
+as a result of several years of proteomic analysis to faciliate basic queries and future extensions.
 
 ## Protein panels
 
@@ -47,24 +49,27 @@ options(width=200)
 knitr::kable(pQTLdata::inf1,caption="Table 1. Olink/inflammation panel")
 ```
 
-This is later extended to include all 12 Olink qPCR panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
+followed by inclusion of all 12 Olink qPCR panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
 
 ## Published data
 
-This is notably the analysis of INTERVAL data as reported by @sun18, which includes the panel `SomaLogic160410`, supplementary tables 4, 6, 18.
+This associates with the analysis of INTERVAL[^interval] data as reported by @sun18, which includes the panel `SomaLogic160410`, supplementary tables 4, 6, 18.
 
 ## Reference data
 
-These include `biomaRt`, `hg19` and `hg19Tables` from BioMART and UCSC.
+Extractions `biomaRt`, `hg19` and `hg19Tables` are based on ENSEMBL BioMart, [https://www.ensembl.org/index.html](https://www.ensembl.org/index.html) and UCSC, [https://genome.ucsc.edu/](https://genome.ucsc.edu/).
 
 ## Scripts
 
-Files `csd3.sh` and `docs.sh` handle package under Cambridge University's CSD3 system and GitHub, respectively.
+An analysis involving COVID-19 data is in `Olink/` directory , while the `scripts/` directory records data generation which potentially can be extended.
 
-The `scripts/` directory records data generation which potentially can be extended.
-
-Directory `Olink/` contains an analysis involving COVID-19 data.
+Specifically, `csd3.sh` handles package under Cambridge Service for Data Driven Discovery (CSD3) system, and `docs.sh` operates with GitHub, [https://github.com/](https://github.com/).
 
 ## References
 
-The collection with EndNote/ includes references in @sun18 and @suhre20 are EndNote libraries.
+The `EndNote/` directory includes references in @sun18 and @suhre20 in format of EndNote, [https://endnote.com/](https://endnote.com/).
+
+:[^interval]:
+
+    The INTERVAL study
+    See [http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/](http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/), 
