@@ -30,8 +30,6 @@ function create_github_repository()
   git push --set-upstream origin main
 }
 
-Rscript -e 'devtools::document()'
-
 for f in .gitignore .Rbuildignore .Rinstignore \
          data/ DESCRIPTION INDEX inst/ LICENSE LICENSE.md man/ vignettes/ \
          NAMESPACE NEWS.md R/ README.*
