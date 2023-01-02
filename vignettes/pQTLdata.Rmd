@@ -33,12 +33,12 @@ invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
 
 ## An overview
 
-The collections are in two locations:
+As used in several years of proteomic analysis, the collections are in two locations:
 
 1. **`data/`**. R datasets.
 2. **`inst/`**. `csd3.sh`, `docs.sh`, `EndNote/`, `Olink/`, `scripts/` which spread into the package's root directory after installation.
 
-as a result of several years of proteomic analysis to faciliate basic queries and future extensions.
+for future extensions.
 
 ## Protein panels
 
@@ -69,7 +69,7 @@ Specifically, `csd3.sh` handles package under Cambridge Service for Data Driven 
 
 The `EndNote/` directory includes references in @sun18 and @suhre20 in format of EndNote, [https://endnote.com/](https://endnote.com/).
 
-:[^interval]:
+[^interval]:
 
     The INTERVAL study
     See [http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/](http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/), 
