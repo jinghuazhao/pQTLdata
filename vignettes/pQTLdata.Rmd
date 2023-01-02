@@ -71,5 +71,6 @@ The `EndNote/` directory includes references in @sun18 and @suhre20 in format of
 
 [^interval]:
 
-    The INTERVAL study
-    See [http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/](http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/), 
+    ## The INTERVAL study
+
+    See [http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/](http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/).
