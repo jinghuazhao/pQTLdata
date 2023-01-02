@@ -42,14 +42,14 @@ for future extensions.
 
 ## Protein panels
 
-The Olink qPCR inflammation panel (`inf1`) used in the SCALLOP consortium seeds the collection.
+The Olink ([https://olink.com/](https://olink.com/)) qPCR inflammation panel (`inf1`) used in the SCALLOP consortium ([http://www.scallop-consortium.com/](http://www.scallop-consortium.com/)) seeds the collection.
 
 ```{r inf1, echo=FALSE}
 options(width=200)
 knitr::kable(pQTLdata::inf1,caption="Table 1. Olink/inflammation panel")
 ```
 
-followed by inclusion of all 12 Olink qPCR panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
+followed by inclusion of all 12 Olink qPCR panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic, [https://somalogic.com/](https://somalogic.com/).
 
 ## Published data
 
