@@ -33,44 +33,49 @@ invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
 
 ## An overview
 
-As used in several years of proteomic analysis, the collections are in two locations:
+As used in several years of proteomic analysis and for future extensions, the collections are in two locations:
 
 1. **`data/`**. R datasets.
-2. **`inst/`**. `csd3.sh`, `docs.sh`, `EndNote/`, `Olink/`, `scripts/` which spread into the package's root directory after installation.
-
-for future extensions.
+2. **`inst/`**. `EndNote/`, `Olink/`, `scripts/`, `csd3.sh`, `docs.sh` which spread into the package's root directory after installation.
 
 ## Protein panels
 
-The Olink ([https://olink.com/](https://olink.com/)) qPCR inflammation panel (`inf1`) used in the SCALLOP consortium ([http://www.scallop-consortium.com/](http://www.scallop-consortium.com/)) seeds the collection.
+The Olink qPCR inflammation panel (`inf1`) used in the SCALLOP consortium seeds the collection.
 
 ```{r inf1, echo=FALSE}
 options(width=200)
 knitr::kable(pQTLdata::inf1,caption="Table 1. Olink/inflammation panel")
 ```
 
-followed by inclusion of all 12 Olink qPCR panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic, [https://somalogic.com/](https://somalogic.com/).
+followed by inclusion of all 12 Olink qPCR panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
 
 ## Published data
 
-This associates with the analysis of INTERVAL[^interval] data as reported by @sun18, which includes the panel `SomaLogic160410`, supplementary tables 4, 6, 18.
+This associates with the analysis of INTERVAL data as reported by @sun18, which includes the panel `SomaLogic160410`, supplementary tables 4, 6, 18.
 
 ## Reference data
 
-Extractions `biomaRt`, `hg19` and `hg19Tables` are based on ENSEMBL BioMart, [https://www.ensembl.org/index.html](https://www.ensembl.org/index.html) and UCSC, [https://genome.ucsc.edu/](https://genome.ucsc.edu/).
+Extractions `biomaRt`, `hg19` and `hg19Tables` are based on ENSEMBL BioMart and UCSC.
 
 ## Scripts
 
 An analysis involving COVID-19 data is in `Olink/` directory , while the `scripts/` directory records data generation which potentially can be extended.
 
-Specifically, `csd3.sh` handles package under Cambridge Service for Data Driven Discovery (CSD3) system, and `docs.sh` operates with GitHub, [https://github.com/](https://github.com/).
+Specifically, `csd3.sh` handles package under Cambridge Service for Data Driven Discovery (CSD3) system, and `docs.sh` operates with GitHub.
+
+## URLs
+
+- Cell Carta, [https://cellcarta.com/](https://cellcarta.com/)
+- EndNote, [https://endnote.com/](https://endnote.com/)
+- ENSEMBL BioMart, [https://www.ensembl.org/index.html](https://www.ensembl.org/index.html)
+- GitHub, [https://github.com/](https://github.com/)
+- INTERVAL study, [http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/](http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/)
+- Olink, [https://olink.com/](https://olink.com/)
+- SCALLOP consortium, [http://www.scallop-consortium.com/](http://www.scallop-consortium.com/)
+- SomaLogic, [https://somalogic.com/](https://somalogic.com/)
+- SWATH-MS, [https://www.creative-proteomics.com/ngpro/swath-ms.html](https://www.creative-proteomics.com/ngpro/swath-ms.html)
+- UCSC, [https://genome.ucsc.edu/](https://genome.ucsc.edu/)
 
 ## References
 
-The `EndNote/` directory includes references in @sun18 and @suhre20 in format of EndNote, [https://endnote.com/](https://endnote.com/).
-
-[^interval]:
-
-    ## The INTERVAL study
-
-    See [http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/](http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/).
+The `EndNote/` directory includes references in @sun18 and @suhre20 formatted in EndNote.
