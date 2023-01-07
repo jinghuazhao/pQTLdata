@@ -36,7 +36,7 @@ for (p in pkgs) if (length(grep(paste("^package:", p, "$", sep=""), search())) =
 invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
 ```
 
-# An overview
+# Collections
 
 As used in several years of proteomic analysis and for future extensions, the collections are in two locations:
 
