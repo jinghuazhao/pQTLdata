@@ -95,6 +95,7 @@
 #'   \item{\code{start}}{start}
 #'   \item{\code{end}}{end}
 #'   \item{\code{ensembl_gene_id}}{ENSEMBL gene}
+#'   \item{\code{alt_name}}{recent name from www.uniprot.org}
 #' }
 #' @details Assembled for SCALLOP-INF
 
