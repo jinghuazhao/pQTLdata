@@ -16,6 +16,7 @@ A data frame with 92 rows and 9 variables:
 \item{\code{start}}{start}
 \item{\code{end}}{end}
 \item{\code{ensembl_gene_id}}{ENSEMBL gene}
+\item{\code{alt_name}}{recent name from www.uniprot.org}
 }
 }
 \usage{
