@@ -5,7 +5,7 @@ module load gcc/6 texlive
 Rscript -e 'setwd("~/pQTLdata");devtools::document()'
 
 export name=pQTLdata
-export version=0.1
+export version=$(awk '/Version/{print $2}' ~/pQTLdata/DESCRIPTION)
 R CMD build --resave-data --compact-vignettes=both ${name}
 R CMD INSTALL ${name}_${version}.tar.gz
 
