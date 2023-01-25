@@ -36,6 +36,8 @@ for (p in pkgs) if (length(grep(paste("^package:", p, "$", sep=""), search())) =
 invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
 ```
 
+This package intends to gather information on meta-data and relevant scripts in proteogenomic analysis.
+
 # Collections
 
 As used in several years of proteomic analysis and for future extensions, the collections are in two locations:
