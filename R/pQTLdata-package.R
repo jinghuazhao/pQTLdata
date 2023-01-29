@@ -22,14 +22,15 @@
 #' }
 #'
 #' Some generic description for the datasets are as follows.
+#' -  chr chromosome.
+#' -  start Start position.
+#' -  end nd position.
+#' -  gene Gene name.
+#' -  UniProt UniProt ID.
 #'
-#' \describe{
-#'   \item{chr}{chromosome}
-#'   \item{start}{Start position}
-#'   \item{end}{End position}
-#'   \item{gene}{Gene name}
-#'   \item{UniProt}{UniProt ID}
-#' }
+#' @docType package
+#' @name pQTLdata
+#' @aliases pQTLdata-package
 #'
 #' @import knitr
 #'
