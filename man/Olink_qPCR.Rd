@@ -3,7 +3,7 @@
 \docType{data}
 \name{Olink_qPCR}
 \alias{Olink_qPCR}
-\title{Olink/qPCR panels}
+\title{Olink/NGS panels}
 \format{
 A data frame with 1112 rows and 7 variables:
 \describe{

@@ -17,7 +17,8 @@ caprion              \tab   Caprion panel\cr
 hg19                 \tab   Curated data from Bioconductor\cr
 hg19Tables           \tab   Curated data from UCSC genome browser\cr
 inf1                 \tab   Olink/INF panel\cr
-Olink_NGS            \tab   Olink/NGS panels\cr
+Olink_Explore_3072   \tab   Olink/Explore 3072 panels\cr
+Olink_NGS_1274       \tab   Olink/NGS 1274 panels\cr
 Olink_qPCR           \tab   Olink/qPCR panels\cr
 SomaLogic160410      \tab   SomaLogic panel\cr
 SomaScanV4.1         \tab   SomaScan v4.1 panel\cr

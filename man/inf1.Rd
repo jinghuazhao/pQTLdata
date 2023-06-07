@@ -15,6 +15,10 @@ A data frame with 92 rows and 9 variables:
 \item{\code{chr}}{chromosome (1-13,16-17,19-22)}
 \item{\code{start}}{start}
 \item{\code{end}}{end}
+\item{\code{chromosome}}{updated chromosomes}
+\item{\code{start38}}{start position under build 38}
+\item{\code{end38}}{end position under build 38}
+\item{\code{ensGene}}{Ensembl gene name}
 \item{\code{ensembl_gene_id}}{ENSEMBL gene}
 \item{\code{alt_name}}{recent name from www.uniprot.org}
 }
