@@ -21,6 +21,8 @@ function create_github_repository()
 
 # 3. delete the repository
 # curl -X DELETE -u $user:$token -H "$header" $API/repos/$user/$name
+
+# 4. customise settings and commit
   git config --global user.email "jinghuazhao@hotmail.com"
   git config --global user.name "jinghuazhao@github.com"
   git config --global url."https://jinghuazhao@github.com".insteadOf "https://github.com"
@@ -29,6 +31,8 @@ function create_github_repository()
   git remote add origin git@github.com:jinghuazhao/pQTLdata.git
   git push --set-upstream origin main
 }
+
+# 5. automate commitments
 
 for f in .gitignore .Rbuildignore .Rinstignore \
          data/ DESCRIPTION INDEX inst/ LICENSE LICENSE.md man/ vignettes/ \
