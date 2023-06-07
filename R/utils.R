@@ -94,6 +94,10 @@
 #'   \item{\code{chr}}{chromosome (1-13,16-17,19-22)}
 #'   \item{\code{start}}{start}
 #'   \item{\code{end}}{end}
+#'   \item{\code{chromosome}}{updated chromosomes}
+#'   \item{\code{start38}}{start position under build 38}
+#'   \item{\code{end38}}{end position under build 38}
+#'   \item{\code{ensGene}}{Ensembl gene name}
 #'   \item{\code{ensembl_gene_id}}{ENSEMBL gene}
 #'   \item{\code{alt_name}}{recent name from www.uniprot.org}
 #' }
@@ -101,7 +105,22 @@
 
 "inf1"
 
-#' @title Olink/NGS panel
+#' @title Olink/Explore 3072 panels
+#' @description Information on all qPCR panels
+#' @docType data
+#' @keywords datasets internal
+#' @format A data frame with 2945 rows and 4 variables:
+#' \describe{
+#'   \item{\code{UniProt.ID}}{UniProt id}
+#'   \item{\code{Protein.name}}{Protein name}
+#'   \item{\code{Gene.name}}{Gene name}
+#'   \item{\code{Explore.384.panel}}{Explore 384 panel}
+#' }
+#' @details Curated from Excel.
+
+"Olink_Explore_3072"
+
+#' @title Olink/qPCR panel
 #' @description Information based on pilot studies
 #' @docType data
 #' @keywords datasets internal
@@ -113,9 +132,9 @@
 #' }
 #' @details Curated from R.
 
-"Olink_NGS"
+"Olink_NGS_1274"
 
-#' @title Olink/qPCR panels
+#' @title Olink/NGS panels
 #' @description Information on all qPCR panels
 #' @docType data
 #' @keywords datasets internal
