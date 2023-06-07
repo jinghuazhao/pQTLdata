@@ -132,7 +132,7 @@
 #' }
 #' @details Curated from R.
 
-"Olink_NGS_1274"
+"Olink_NGS_1472"
 
 #' @title Olink/NGS panels
 #' @description Information on all qPCR panels
