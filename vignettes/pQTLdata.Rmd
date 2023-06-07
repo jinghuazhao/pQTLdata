@@ -43,7 +43,7 @@ This package intends to gather information on meta-data and relevant scripts in 
 As used in several years of proteomic analysis and for future extensions, the collections are in two locations:
 
 1. **`data/`**. R datasets.
-2. **`inst/`**. `EndNote/`, `Olink/`, `scripts/`, `csd3.sh`, `docs.sh` which spread into the package's root directory after installation.
+2. **`inst/`**. `EndNote/`, `Olink/`, `scripts/`, `pQTLdata.sh`, `docs.sh` which spread into the package's root directory after installation.
 
 # Protein panels
 
@@ -68,7 +68,7 @@ Extractions `biomaRt`, `hg19` and `hg19Tables` are based on ENSEMBL BioMart and 
 
 An analysis involving COVID-19 data is in `Olink/` directory , while the `scripts/` directory records data generation which potentially can be extended.
 
-Specifically, `csd3.sh` handles package under Cambridge Service for Data Driven Discovery (CSD3) system, and `docs.sh` operates with GitHub.
+Specifically, `pQTLdata.sh` handles package under Cambridge Service for Data Driven Discovery (CSD3) system, and `docs.sh` operates with GitHub.
 
 # URLs
 
