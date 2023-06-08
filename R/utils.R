@@ -105,6 +105,20 @@
 
 "inf1"
 
+#' @title Olink/qPCR panel
+#' @description Information based on pilot studies
+#' @docType data
+#' @keywords datasets internal
+#' @format A data frame with 1472 rows and 3 variables:
+#' \describe{
+#'   \item{\code{UniProt}}{UniProt id}
+#'   \item{\code{Assay}}{Experimental assay}
+#'   \item{\code{Panel}}{Olink panel}
+#' }
+#' @details Curated from R.
+
+"Olink_Explore_1536"
+
 #' @title Olink/Explore 3072 panels
 #' @description Information on all qPCR panels
 #' @docType data
@@ -119,20 +133,6 @@
 #' @details Curated from Excel.
 
 "Olink_Explore_3072"
-
-#' @title Olink/qPCR panel
-#' @description Information based on pilot studies
-#' @docType data
-#' @keywords datasets internal
-#' @format A data frame with 1472 rows and 3 variables:
-#' \describe{
-#'   \item{\code{UniProt}}{UniProt id}
-#'   \item{\code{Assay}}{Experimental assay}
-#'   \item{\code{Panel}}{Olink panel}
-#' }
-#' @details Curated from R.
-
-"Olink_NGS_1472"
 
 #' @title Olink/NGS panels
 #' @description Information on all qPCR panels
