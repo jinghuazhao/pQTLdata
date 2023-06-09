@@ -28,9 +28,9 @@
 #' }
 #'
 #' Some generic description for the datasets are as follows.
-#' -  chr chromosome.
+#' -  chr Chromosome.
 #' -  start Start position.
-#' -  end nd position.
+#' -  end End position.
 #' -  gene Gene name.
 #' -  UniProt UniProt ID.
 #'
