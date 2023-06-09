@@ -10,7 +10,7 @@
 \tabular{ll}{
 Objects              \tab   Description\cr
 \cr
-\strong{Datasets}    \tab   \cr
+\strong{Datasets}\cr
 \cr
 biomaRt              \tab   Curated data from biomaRt\cr
 caprion              \tab   Caprion panel\cr
@@ -26,6 +26,11 @@ st4                  \tab   ST4 of the INTERVAL SomaLogic paper\cr
 st6                  \tab   ST6 of the INTERVAL SomaLogic paper\cr
 st18                 \tab   ST18 of the INTERVAL SomaLogic paper\cr
 swath_ms             \tab   SWATH-MS panel\cr
+\cr
+\strong{Installations}\cr
+\cr
+EndNote              \tab   Proteogenomics references\cr
+Olink                \tab   Olink-COVID analysis by MGH\cr
 \cr
 }
 }
