@@ -37,9 +37,9 @@ Olink                \tab   Olink-COVID analysis by MGH\cr
 \details{
 Some generic description for the datasets are as follows.
 \itemize{
-\item chr chromosome.
+\item chr Chromosome.
 \item start Start position.
-\item end nd position.
+\item end End position.
 \item gene Gene name.
 \item UniProt UniProt ID.
 }
