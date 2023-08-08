@@ -10,7 +10,7 @@ export npx=${HOME}/COVID-19/Olink-NGS/tmp_raw_data/20200292_Danesh_NPX_2020-06-0
 
 R --no-save -q <<END
   Olink_Explore_1536 <- read.csv("NPX.csv",sep=';')
-  save(Olink_Explore_1536,file='Olink_Explore_1536.rda',compress='xz')
+  save(Olink_Explore_1536,file='../../data/Olink_Explore_1536.rda',compress='xz')
 END
 
 rm NPX.csv
