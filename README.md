@@ -29,4 +29,5 @@ unzip main
 
 ```r
 library(help=pQTLdata)
+help(pQTLdata)
 ```
