@@ -72,16 +72,17 @@ Specifically, `pQTLdata.sh` handles package under Cambridge Service for Data Dri
 
 # URLs
 
-- Cell Carta, [https://cellcarta.com/](https://cellcarta.com/)
-- EndNote, [https://endnote.com/](https://endnote.com/)
-- ENSEMBL BioMart, [https://www.ensembl.org/index.html](https://www.ensembl.org/index.html)
-- GitHub, [https://github.com/](https://github.com/)
-- INTERVAL study, [http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/](http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/)
-- Olink, [https://olink.com/](https://olink.com/)
-- SCALLOP consortium, [http://www.scallop-consortium.com/](http://www.scallop-consortium.com/)
-- SomaLogic, [https://somalogic.com/](https://somalogic.com/)
-- SWATH-MS, [https://www.creative-proteomics.com/ngpro/swath-ms.html](https://www.creative-proteomics.com/ngpro/swath-ms.html)
-- UCSC, [https://genome.ucsc.edu/](https://genome.ucsc.edu/)
+- Cell Carta, <https://cellcarta.com/>
+- EndNote, <https://endnote.com/>
+- ENSEMBL BioMart, <https://www.ensembl.org/index.html>
+- GitHub, <https://github.com/>
+- INTERVAL study, <http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/>
+- NULISA, <https://alamarbio.com/technology/nulisa-platform/>
+- Olink, <https://olink.com/>
+- SCALLOP consortium, <http://www.scallop-consortium.com/>
+- SomaLogic, <https://somalogic.com/>
+- SWATH-MS, <https://www.creative-proteomics.com/ngpro/swath-ms.html>
+- UCSC, <https://genome.ucsc.edu/>
 
 # References {-}
 
