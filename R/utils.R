@@ -134,6 +134,20 @@
 
 "Olink_Explore_3072"
 
+#' @title Olink/Explore HT panels
+#' @description Information on all qPCR panels
+#' @docType data
+#' @keywords datasets internal
+#' @format A data frame with 5343 rows and 3 variables:
+#' \describe{
+#'   \item{\code{UniProt.ID}}{UniProt id}
+#'   \item{\code{Protein.name}}{Protein name}
+#'   \item{\code{Gene.name}}{Gene name}
+#' }
+#' @details Curated from Excel.
+
+"Olink_Explore_HT"
+
 #' @title Olink/NGS panels
 #' @description Information on all qPCR panels
 #' @docType data
