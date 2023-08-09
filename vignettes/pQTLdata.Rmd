@@ -56,6 +56,20 @@ knitr::kable(pQTLdata::inf1,caption="Table 1. Olink/inflammation panel")
 
 followed by inclusion of Olink_qPCR for all 12 panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
 
+```{r, echo=FALSE, caption="Figure 1. Overlap of Olink Explore HT, SomaLogic V4.1 and Caprion", fig.height=9, fig.width=9}
+suppressMessages(library(dplyr))
+suppressMessages(library(VennDiagram))
+uniprot <- list(Olink=pull(pQTLdata::Olink_Explore_HT,UniProt.ID),
+                Somalogic=pull(pQTLdata::SomaScanV4.1,UniProt.ID),
+                Caprion=pull(pQTLdata::caprion,Accession))
+lapply(uniprot,head)
+olink_somalogic_caprion <- VennDiagram::venn.diagram(uniprot,filename=NULL,
+                                                     cex = 2.5, cat.cex = 2.5, cat.pos = c(0,0,180),
+                                                     disable.logging=TRUE,height=8,width=8,units="in")
+grid.newpage()
+grid.draw(olink_somalogic_caprion)
+```
+
 # Published data
 
 This associates with the analysis of INTERVAL data as reported by @sun18, which includes the panel `SomaLogic160410`, supplementary tables 4, 6, 18.
