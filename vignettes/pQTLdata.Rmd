@@ -56,7 +56,13 @@ knitr::kable(pQTLdata::inf1,caption="Table 1. Olink/inflammation panel")
 
 followed by inclusion of Olink_qPCR for all 12 panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
 
-```{r, echo=FALSE, fig.cap="Overlap of Olink Explore HT, SomaLogic V4.1 and Caprion", fig.height=9, fig.width=9, messages=FALSE, results="hide"}
+It is of interest to compare some of these, see @fog_osc,
+
+```{r, echo=FALSE, fig.height=9, fig.width=9, messages=FALSE, results="hide"}
+#| label: fig_osc
+#| fig-cap: "Overlap of Olink Explore HT, SomaLogic V4.1 and Caprion."
+#| warning: false
+
 suppressMessages(library(dplyr))
 suppressMessages(library(VennDiagram))
 uniprot <- list(Olink=pull(pQTLdata::Olink_Explore_HT,UniProt.ID),
