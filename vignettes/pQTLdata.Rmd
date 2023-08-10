@@ -51,14 +51,14 @@ The Olink qPCR inflammation panel (`inf1`) used in the SCALLOP consortium seeds 
 
 ```{r inf1, echo=FALSE}
 options(width=200)
-knitr::kable(pQTLdata::inf1,caption="Table 1. Olink/inflammation panel")
+knitr::kable(pQTLdata::inf1,caption="Olink/inflammation panel")
 ```
 
 followed by inclusion of Olink_qPCR for all 12 panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
 
 It is of interest to compare some of these,
 
-```{r, echo=FALSE, fig.cap="\\label{fig:fig_osc}Overlap of Olink Explore HT, SomaLogic V4.1 and Caprion.", fig.height=9, fig.width=9, messages=FALSE, results="hide"}
+```{r, echo=FALSE, fig.cap="Overlap of Olink Explore HT, SomaLogic V4.1 and Caprion", fig.height=9, fig.width=9, messages=FALSE, results="hide"}
 suppressMessages(library(dplyr))
 suppressMessages(library(VennDiagram))
 uniprot <- list(Olink=pull(pQTLdata::Olink_Explore_HT,UniProt.ID),
@@ -71,8 +71,6 @@ olink_somalogic_caprion <- VennDiagram::venn.diagram(uniprot,filename = NULL,dis
 grid.newpage()
 grid.draw(olink_somalogic_caprion)
 ```
-
-See Figure \ref{#fig:fig_osc}.
 
 # Published data
 
