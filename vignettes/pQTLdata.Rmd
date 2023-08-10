@@ -72,7 +72,7 @@ grid.newpage()
 grid.draw(olink_somalogic_caprion)
 ```
 
-See Figure \ref{fig:fig_osc}.
+See Figure \ref{#fig:fig_osc}.
 
 # Published data
 
