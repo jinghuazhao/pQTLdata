@@ -220,6 +220,35 @@
 
 "swath_ms"
 
+#' @title Supplementary table 3
+#' @description Supplementary information for Zhao et al. (2023) Nature Immunnology
+#' @docType data
+#' @keywords datasets internal
+#' @format A data frame with 180 rows and 19 variables:
+#'   \describe{
+#'   \item{UniProt}{UnitProt ID}
+#'   \item{Protein}{Protein name}
+#'   \item{Protein_gene_symbol}{Gene symbol}
+#'   \item{Chromosome}{Chromosome}
+#'   \item{Position}{Position}
+#'   \item{cistrans}{cis/trans}
+#'   \item{rsid}{reference sequence ID}
+#'   \item{Effect_allele}{Effect allele}
+#'   \item{Other_allele}{Eeference allele}
+#'   \item{EAF}{Effect allele frequency}
+#'   \item{b}{b}
+#'   \item{SE}{SE}
+#'   \item{log10P}{log10(P)}
+#'   \item{Direction}{Direction field in METAL output}
+#'   \item{HetISq}{I^2}
+#'   \item{HetChiSq}{Heterogeneity chi-square}
+#'   \item{HetDf}{I^2}
+#'   \item{logHetP}{Heterogeneity log10(P)}
+#'   \item{N}{N}
+#' }
+
+"scallop_inf1"
+
 #' @title Supplementary table 4
 #' @description Supplementary information for Sun et al. (2018) Nature
 #' @docType data
