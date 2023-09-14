@@ -45,6 +45,8 @@ As used in several years of proteomic analysis and for future extensions, the co
 1. **`data/`**. R datasets.
 2. **`inst/`**. `EndNote/`, `Olink/`, `scripts/`, `pQTLdata.sh`, `docs.sh` which spread into the package's root directory after installation.
 
+While `library(help=pQTLdata)` display the general information, `? pQTLtools` can give a list of data object in the package.
+
 # Protein panels
 
 The Olink qPCR inflammation panel (`inf1`) used in the SCALLOP consortium seeds the collection.
