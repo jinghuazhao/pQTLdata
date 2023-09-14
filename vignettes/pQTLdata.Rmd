@@ -45,7 +45,7 @@ As used in several years of proteomic analysis and for future extensions, the co
 1. **`data/`**. R datasets.
 2. **`inst/`**. `EndNote/`, `Olink/`, `scripts/`, `pQTLdata.sh`, `docs.sh` which spread into the package's root directory after installation.
 
-While `library(help=pQTLdata)` display the general information, `? pQTLtools` can give a list of data object in the package.
+While `library(help=pQTLdata)` displays the general information, `? pQTLdata` can give a list of data object in the package.
 
 # Protein panels
 
