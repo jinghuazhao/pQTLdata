@@ -23,7 +23,7 @@ caprion
 Information based on Caprion pilot studies
 }
 \details{
-See the Caprion repository involving its use.
+See the Caprion repository involving its use. Efforts have been put to check against hg19Tables in this package though a modified version is not generated except the scripts (namely, scripts/caprion.R).
 }
 \keyword{datasets}
 \keyword{internal}
