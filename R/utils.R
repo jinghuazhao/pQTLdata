@@ -34,7 +34,7 @@
 #'   \item{\code{GO.Function}}{GO function}
 #'   \item{\code{GO.Process}}{GO process}
 #' }
-#' @details See the Caprion repository involving its use.
+#' @details See the Caprion repository involving its use. Efforts have been put to check against hg19Tables in this package though a modified version is not generated except the scripts (namely, scripts/caprion.R).
 
 "caprion"
 
