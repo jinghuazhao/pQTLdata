@@ -1,13 +1,48 @@
 HOME <- Sys.getenv("HOME")
-load(paste(HOME,"Caprion","pilot",,"caprion.rda",sep="/"))
+load(paste(HOME,"Caprion","pilot","caprion.rda",sep="/"))
 caprion <- protein_list
 save(caprion,file='caprion.rda',compress='xz')
 
 library(pQTLdata)
 library(dplyr)
-library(valr)
 
-modify <- function()
+ucsc <- hg19Tables %>%
+        group_by(acc) %>%
+        summarize(
+             prot=paste(uniprotName,collapse=";"),
+             chrom=paste(X.chrom,collapse=";"),
+             start=min(chromStart),
+             end=max(chromEnd),
+             gene=paste(geneName,collapse=";")
+        )
+# uniprot IDs are the same if proteins are the same
+p <- select(caprion,Accession,Protein,Gene) %>%
+     left_join(ucsc,by=c("Protein"="prot")) %>%
+     select(Accession,Protein,Gene,gene,acc,chrom,start,end)
+# however even with same uniprotID their protein names may be different
+u <- select(caprion,Accession,Protein,Gene) %>%
+     left_join(ucsc,by=c("Accession"="acc")) %>%
+     filter(!is.na(Protein)) %>%
+     select(Accession,Protein,gene,Gene,prot,chrom,start,end)
+# The following check shows merge by uniprot is more sensible
+filter(p,Accession!=acc)
+filter(p,Gene!=gene)
+filter(p,is.na(start))
+filter(u,Protein!=prot)
+umiss <- with(u,is.na(start))
+filter(u,umiss) %>% pull(Accession)
+# "P04745" "P02655" "P55056" "P0C0L5" "P62805" "P69905"
+# confirmed form UniProt.org that Gene is more up-to-date
+# (obsolute), (APOC2), (APOC4), (C4B; C4B_2), (H4C1; H4C2; H4C3; H4C4; H4C5; H4C6; H4C8; H4C9; H4C11; H4C12; H4C13; H4C14; H4C15; H4C16), (HBA1; HBA2)
+# They are amended here
+u[umiss,"Protein"] <- paste0(c("AMY1","APOC2","APOC4","CO4B","H4","HBA"),"_HUMAN")
+u[umiss,"Gene"] <- c("AMY1","APOC2","APOC4","CO4B","H4C","HBA")
+u[umiss,"chrom"] <- c("chr1","chr19","chr19","chr6","chr6","chr16")
+u[umiss,"start"] <- c(104198140,45449238,45445494,31949833,26021906,222845)
+u[umiss,"end"] <- c(104301311,45452822,45452822,32003195,27841289,227520)
+capion_modified <- u
+
+misc_lookup <- function()
 {
 # glist-hg19
   INF <- Sys.getenv("INF")
@@ -32,7 +67,7 @@ modify <- function()
   HIST <- quadruple(subset(glist_hg19,grepl("^HIST1H4|^HIST2H4[A-B]|HIST4H4",gene)),label="HIST")
   HBA <- quadruple(subset(glist_hg19,grepl("^HBA",gene)),label="HBA")
   caprion_modified <- caprion
-  caprion_modified[55,"Gene"] <- "AMY"
+  caprion_modified[55,"Gene"] <- "AMY1"
   caprion_modified[237,"Gene"] <- "C4B"
   caprion_modified[278,"Gene"] <- "C1orf123"
   caprion_modified[385,"Gene"] <- "FYB"
@@ -47,9 +82,6 @@ modify <- function()
   a <- filter(caprion_modified,caprion_modified[[3]]%in%ucsc_modified[["Gene"]])
   b <- filter(ucsc_modified,ucsc_modified[["Gene"]]%in%caprion_modified[["Gene"]])
   subset(b,Gene%in%subset(b,duplicated(Gene))$Gene)
-}
-
-misc <- function()
 ## alternatives
 {
   hg19 <- select(hg19Tables,X.chrom,chromStart,chromEnd,acc,uniprotName,geneName,hgncSym) %>%
