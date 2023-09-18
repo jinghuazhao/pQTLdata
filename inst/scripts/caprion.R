@@ -6,6 +6,8 @@ save(caprion,file='caprion.rda',compress='xz')
 library(pQTLdata)
 library(dplyr)
 
+nodup <- function(x) sapply(x, function(s) unique(unlist(strsplit(s,";"))))
+
 ucsc <- hg19Tables %>%
         group_by(acc) %>%
         summarize(
@@ -22,7 +24,7 @@ p <- select(caprion,Accession,Protein,Gene) %>%
 # however even with same uniprotID their protein names may be different
 u <- select(caprion,Accession,Protein,Gene) %>%
      left_join(ucsc,by=c("Accession"="acc")) %>%
-     mutate(chrom=sapply(chrom, function(x) unique(unlist(strsplit(x,";"))))) %>%
+     mutate(chrom=nodup(chrom)) %>%
      filter(!is.na(Protein)) %>%
      select(Accession,Protein,gene,Gene,prot,chrom,start,end)
 # The following check shows merge by uniprot is more sensible
@@ -48,11 +50,14 @@ quadruple <- function(d,label)
 
 glist_refgene <- function()
 {
-# glist-hg19
+# ucsc
+  ucsc2 <- mutate(ucsc,chrom=nodup(chrom),prot=nodup(prot),gene=nodup(gene))
+# glist-hg19 lookup
   INF <- Sys.getenv("INF")
   glist_hg19 <- read.table(file.path(INF,"csd3","glist-hg19"),col.names=c("chr","start","end","gene")) %>%
                 filter(! chr %in% c("XY","Y"))
   X <- with(glist_hg19,chr=="X")
+  glist_hg19 <- mutate(glist_hg19,chrom=paste0("chr",chr))
   glist_hg19[X,"chr"] <- "23"
   subset(glist_hg19,grepl("^AMY1",gene))
   subset(glist_hg19,grepl("^C4B",gene)&chr=="6")
@@ -62,12 +67,14 @@ glist_refgene <- function()
   C4B <- quadruple(subset(glist_hg19,grepl("^C4B",gene)&chr=="6"),label="C4B")
   HIST <- quadruple(subset(glist_hg19,grepl("^HIST1H4[A-L]",gene)),label="HIST")
   HBA <- quadruple(subset(glist_hg19,grepl("^HBA",gene)),label="HBA")
+  glist_hg19 <- glist_hg19 %>%
+                group_by(gene) %>%
+                summarize(chrom=paste(chrom,collapse=";"),start=min(start),end=max(end)) %>%
+                mutate(chrom=nodup(chrom))
 # refgenes
   load("~/cambridge-ceu/turboman/turboman_hg19_reference_data.rda")
   refgenes <- refgene_gene_coordinates_h19 %>%
               mutate(chromosome=paste0("chr",chromosome)) %>%
               setNames(c("chrom","start","end","gene","mid")) %>%
-              bed_intersect(glist)
-  library(valr)
-  bed_intersect(ucsc,glist_hg19)
+              bed_intersect(glist_hg19)
 }
