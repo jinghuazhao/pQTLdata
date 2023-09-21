@@ -6,7 +6,7 @@ save(caprion,file='caprion.rda',compress='xz')
 library(pQTLdata)
 library(dplyr)
 
-nodup <- function(x) sapply(x, function(s) unique(unlist(strsplit(s,";"))))
+nodup <- function(x) sapply(x, function(s) unique(unlist(strsplit(s,";")))[1])
 
 ucsc <- hg19Tables %>%
         group_by(acc) %>%
@@ -43,15 +43,18 @@ u[umiss,"Gene"] <- c("AMY1","APOC2","APOC4","CO4B","H4C","HBA")
 u[umiss,"chrom"] <- c("chr1","chr19","chr19","chr6","chr6","chr16")
 u[umiss,"start"] <- c(104198140,45449238,45445494,31949833,26021906,222845)
 u[umiss,"end"] <- c(104301311,45452822,45452822,32003195,27841289,227520)
-capion_modified <- u
+caprion_modified <- u
+a <- filter(u,umiss) %>%
+     transmute(acc=Accession,prot=Protein,gene=Gene,chrom,start,end)
+ucsc2 <- ucsc %>%
+         mutate(prot=nodup(prot),chrom=nodup(chrom),gene=nodup(gene)) %>%
+         bind_rows(a)
 
 quadruple <- function(d,label)
              with(d,data.frame(Gene=label,chrom=paste0("chr",min(chr)),start=min(start),end=max(end)))
 
 glist_refgene <- function()
 {
-# ucsc
-  ucsc2 <- mutate(ucsc,chrom=nodup(chrom),prot=nodup(prot),gene=nodup(gene))
 # glist-hg19 lookup
   INF <- Sys.getenv("INF")
   glist_hg19 <- read.table(file.path(INF,"csd3","glist-hg19"),col.names=c("chr","start","end","gene")) %>%
