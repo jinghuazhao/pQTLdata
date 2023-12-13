@@ -19,7 +19,7 @@ A data frame with 7288 rows and 6 variables:
 SomaScanV4.1
 }
 \description{
-This is also the latest panel
+This is the 7k panel
 }
 \details{
 obtained directly from SomaLogic.
