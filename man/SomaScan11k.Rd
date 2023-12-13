@@ -14,6 +14,9 @@ A data frame with 7288 rows and 6 variables:
 \item{\code{Entrez.Gene.Name}}{Entrez gene name}
 }
 }
+\source{
+https://somalogic.com/somascan-11k-assay/
+}
 \usage{
 SomaScan11k
 }
