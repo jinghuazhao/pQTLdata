@@ -74,6 +74,22 @@ grid.newpage()
 grid.draw(olink_somalogic_caprion)
 ```
 
+and the latest SomaScan 11K
+
+```{r, echo=FALSE, fig.cap="Overlap of Olink Explore HT, SomaLogic 11K and Caprion", fig.height=9, fig.width=9, messages=FALSE, results="hide"}
+suppressMessages(library(dplyr))
+suppressMessages(library(VennDiagram))
+uniprot <- list(Olink=pull(pQTLdata::Olink_Explore_HT,UniProt.ID),
+                Somalogic=pull(pQTLdata::SomaScan11k,UniProt.ID),
+                Caprion=pull(pQTLdata::caprion,Accession))
+lapply(uniprot,head)
+olink_somalogic_caprion <- VennDiagram::venn.diagram(uniprot,filename = NULL,disable.logging = TRUE,
+                                                     cex = 2.5, cat.cex = 2.5, cat.pos = c(0,0,180),
+                                                     height=8,width=8,units="in")
+grid.newpage()
+grid.draw(olink_somalogic_caprion)
+```
+
 # Published data
 
 This associates with the analysis of INTERVAL data as reported by @sun18, which includes the panel `SomaLogic160410`, supplementary tables 4, 6, 18.
