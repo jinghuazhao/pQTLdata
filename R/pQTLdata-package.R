@@ -16,6 +16,7 @@
 #' Olink_qPCR           \tab   Olink/qPCR panels\cr
 #' SomaLogic160410      \tab   SomaLogic panel\cr
 #' SomaScanV4.1         \tab   SomaScan v4.1 panel\cr
+#' SomaScan11k          \tab   SomaScan 11k panel\cr
 #' scallop_inf1         \tab   SCALLOP/INF meta-analysis results\cr
 #' st4                  \tab   ST4 of the INTERVAL SomaLogic paper\cr
 #' st6                  \tab   ST6 of the INTERVAL SomaLogic paper\cr

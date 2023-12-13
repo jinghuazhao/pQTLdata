@@ -188,7 +188,7 @@
 "SomaLogic160410"
 
 #' @title SomaScan v4.1
-#' @description This is also the latest panel
+#' @description This is the 7k panel
 #' @docType data
 #' @keywords datasets internal
 #' @format A data frame with 7288 rows and 6 variables:
@@ -203,6 +203,22 @@
 #' @details obtained directly from SomaLogic.
 
 "SomaScanV4.1"
+
+#' @title SomaScan 11k
+#' @description This is also the latest panel
+#' @docType data
+#' @keywords datasets internal
+#' @format A data frame with 7288 rows and 6 variables:
+#' \describe{
+#'   \item{\code{Sequence.ID}}{Sequence ID}
+#'   \item{\code{Full.Name}}{Full name}
+#'   \item{\code{Target.Name}}{Target name}
+#'   \item{\code{UniProt.ID}}{UniProt ID}
+#'   \item{\code{Entrez.Gene.Name}}{Entrez gene name}
+#' }
+#' @details obtained directly from SomaLogic.
+
+"SomaScan11k"
 
 #' @title SWATH-MS panel
 #' @description Curated during INTERVAL pilot study.
