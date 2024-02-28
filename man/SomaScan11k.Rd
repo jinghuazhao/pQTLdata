@@ -5,7 +5,7 @@
 \alias{SomaScan11k}
 \title{SomaScan 11k}
 \format{
-A data frame with 7288 rows and 6 variables:
+A data frame with 10,776 rows and 5 variables:
 \describe{
 \item{\code{Sequence.ID}}{Sequence ID}
 \item{\code{Full.Name}}{Full name}
@@ -24,7 +24,7 @@ SomaScan11k
 This is also the latest panel
 }
 \details{
-obtained directly from SomaLogic.
+curated from SomaLogic website.
 }
 \keyword{datasets}
 \keyword{internal}
