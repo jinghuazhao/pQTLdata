@@ -208,7 +208,7 @@
 #' @description This is also the latest panel
 #' @docType data
 #' @keywords datasets internal
-#' @format A data frame with 7288 rows and 6 variables:
+#' @format A data frame with 10,776 rows and 5 variables:
 #' \describe{
 #'   \item{\code{Sequence.ID}}{Sequence ID}
 #'   \item{\code{Full.Name}}{Full name}
@@ -217,7 +217,7 @@
 #'   \item{\code{Entrez.Gene.Name}}{Entrez gene name}
 #' }
 #' @source https://somalogic.com/somascan-11k-assay/
-#' @details obtained directly from SomaLogic.
+#' @details curated from SomaLogic website.
 
 "SomaScan11k"
 
