@@ -3,7 +3,6 @@
 \docType{package}
 \name{pQTLdata}
 \alias{pQTLdata}
-\alias{_PACKAGE}
 \alias{pQTLdata-package}
 \title{A summary of datasets}
 \description{
