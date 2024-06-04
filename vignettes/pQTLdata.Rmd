@@ -114,6 +114,7 @@ Specifically, `pQTLdata.sh` handles package under Cambridge Service for Data Dri
 - NULISA, <https://alamarbio.com/technology/nulisa-platform/>
 - Olink, <https://olink.com/> (<https://olink.com/resources-support/publications-2/>)
 - SCALLOP consortium, <http://www.scallop-consortium.com/>
+- Seer, <https://seer.bio/>
 - SomaLogic, <https://somalogic.com/>
 - SWATH-MS, <https://www.creative-proteomics.com/ngpro/swath-ms.html>
 - UCSC, <https://genome.ucsc.edu/>
