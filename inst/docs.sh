@@ -43,6 +43,7 @@ function pkgdown()
       build_home()
       build_article("pQTLdata")
       build_news()
+      devtools::document()
       build_reference()
   '
 }
