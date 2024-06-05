@@ -86,6 +86,27 @@ reference:
   - title: A summary
     contents:
     - pQTLdata
+  - title: Data
+    contents:
+    - biomaRt
+    - caprion
+    - hg19
+    - hg19Tables
+    - inf1
+    - Olink_Explore_1536
+    - Olink_Explore_3072
+    - Olink_Explore_HT
+    - Olink_qPCR
+    - pQTLdata
+    - scallop_inf1
+    - seer1980
+    - SomaScan11k
+    - SomaScan160410
+    - SomaScanV4.1
+    - st18
+    - st4
+    - st6
+    - swath_ms
 
 footer:
   structure:
