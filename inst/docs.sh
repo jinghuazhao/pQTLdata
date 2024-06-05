@@ -32,9 +32,15 @@ function create_github_repository()
   git push --set-upstream origin main
 }
 
-# 5. automate commitments
+# 5. pkgdown site
 
-for f in .gitignore .Rbuildignore .Rinstignore \
+# 6. automate commitments
+function pkgdown()
+{
+  Rscript -e 'pkgdown::init_site();build_article("pQTLdata")'
+}
+
+for f in .gitignore .Rbuildignore .Rinstignore docs \
          data/ DESCRIPTION INDEX inst/ LICENSE LICENSE.md man/ vignettes/ \
          NAMESPACE NEWS.md R/ README.*
 do
