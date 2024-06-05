@@ -47,6 +47,14 @@ function pkgdown()
   '
 }
 
+for d in pQTLdata
+do
+    if [ -d vignettes/${d} ]; then
+       rm -rf docs/articles/${d}
+       mv vignettes/${d} docs/articles/
+    fi
+done
+
 for f in .gitignore .Rbuildignore .Rinstignore docs/ pkgdown/ \
          data/ DESCRIPTION INDEX inst/ LICENSE LICENSE.md man/ vignettes/ \
          NAMESPACE NEWS.md R/ README.*
