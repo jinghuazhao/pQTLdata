@@ -2,12 +2,12 @@
 
 (2024/06/05)
 
-* Adopt pkgdown.
-* Adopt a 1/10 version increment algorithm.
-* Add bookdown-driven vignette.
 * Imports knitr, Rdpack
 * Suggests dplyr, grid, VennDiagram.
 * Remove \uFEFF characters with iconv.
+* Adopt pkgdown.
+* Adopt a 1/10 version increment algorithm.
+* Add bookdown-driven vignette.
 * Add inst/Olink.
 * Add caprion.rda and inst/scripts/caprion.R.
 * Add seer1980.rda and inst/scripts/seer1980.R.
