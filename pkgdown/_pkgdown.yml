@@ -1,0 +1,99 @@
+home:
+  title: Protein Quantitative Trait Locus meta-data
+  description: A Collection of pQTL Panels and Meta-Data.
+  links:
+  - text: pQTLtools
+    href: https://github.com/jinghuazhao/pQTLtools
+  sidebar:
+    structure: [links, support, license, community, authors, dev]
+    components:
+      support:
+        title: Support
+        text: "[<img src='https://jinghuazhao.github.io/pQTLtools/reference/figures/ceu.svg' width='80'>](https://www.phpc.cam.ac.uk/ceu/)"
+
+authors:
+  Jing Hua Zhao:
+    title: Jing Hua Zhao
+    html: "[Jing Hua Zhao](https://jinghuazhao.github.io)"
+  footer:
+    roles: [cre, fnd]
+    text: "Crafted by"
+  sidebar:
+    roles: [aut, ctb]
+    before: ""
+    after: "Welcome!"
+
+url: https://jinghuazhao.github.io/pQTLdata/
+template:
+  bootstrap: 5
+  params:
+    bootswatch: litera
+
+navbar:
+  structure:
+    left: [home, articles, reference, changelog]
+    right: [github, cran, alphafold, urls, uniprot]
+  components:
+    home:
+        icon: fa-home
+        href: index.html
+    articles:
+        text: Articles
+        menu:
+        - text: "Vignettes:"
+        - text: An overview of pQTLdata
+          href: articles/pQTLdata.html
+    reference:
+          text: Reference
+          href: reference/pQTLdata.html
+    changelog:
+          text: Changelog
+          href: news/index.html
+    cran:
+        icon: fab fa-r-project
+        href: https://jinghuazhao.github.io/R/
+    cellcarta:
+      icon: fas fa-fast-backward
+      href: https://cellcarta.com/
+    urls:
+      text: URLs
+      menu:
+      - text: Cell Carta
+        href: https://cellcarta.com/
+      - text: BiomaRt
+        href: https://www.ensembl.org/index.html
+      - text: CRAN
+        href: https://cran.r-project.org/
+      - text: NULLISA
+        href: https://alamarbio.com/technology/nulisa-platform/
+      - text: Olink
+        href: https://olink.com/
+      - text: Seer
+        href: https://seer.bio/
+      - text: SomaLogic
+        href: https://somalogic.com/
+      - text: SWATH-MS
+        href: https://www.creative-proteomics.com/ngpro/swath-ms.html
+      - text: UCSC
+        href: https://genome.ucsc.edu/
+      - text: UniProt
+        href: https://www.uniprot.org/
+    uniprot:
+      icon: fas fa-fast-forward
+      href: https://www.uniprot.org/
+
+reference:
+  - title: A summary
+    contents:
+    - pQTLdata
+
+footer:
+  structure:
+    left: [developed_by, built_with]
+    right: [legal]
+  components:
+    legal: Provided without **any warranty**.
+
+env:
+ global:
+   - _R_CHECK_FORCE_SUGGESTS_: false
