@@ -4,11 +4,6 @@ output:
   bookdown::html_document2:
     toc: true
     toc_float: true
-author:
-  - Department of Public Health and Primary Care
-  - University of Cambridge
-  - Cambridge, UK
-  - https://jinghuazhao.github.io/
 date: '`r Sys.Date()`'
 bibliography: refs.bib
 vignette: >
@@ -60,7 +55,7 @@ followed by inclusion of Olink_qPCR for all 12 panels, Olink NGS, Caprion and SW
 
 It is of interest to compare some of these,
 
-```{r, echo=FALSE, fig.cap="Overlap of Olink Explore HT, SomaLogic V4.1 and Caprion", fig.height=9, fig.width=9, messages=FALSE, results="hide"}
+```{r overlap1, echo=FALSE, fig.cap="Overlap of Olink Explore HT, SomaLogic V4.1 and Caprion", fig.height=9, fig.width=9, messages=FALSE, results="hide"}
 suppressMessages(library(dplyr))
 suppressMessages(library(VennDiagram))
 uniprot <- list(Olink=pull(pQTLdata::Olink_Explore_HT,UniProt.ID),
@@ -76,7 +71,7 @@ grid.draw(olink_somalogic_caprion)
 
 and the latest SomaScan 11K
 
-```{r, echo=FALSE, fig.cap="Overlap of Olink Explore HT, SomaLogic 11K and Caprion", fig.height=9, fig.width=9, messages=FALSE, results="hide"}
+```{r overlap2, echo=FALSE, fig.cap="Overlap of Olink Explore HT, SomaLogic 11K and Caprion", fig.height=9, fig.width=9, messages=FALSE, results="hide"}
 suppressMessages(library(dplyr))
 suppressMessages(library(VennDiagram))
 uniprot <- list(Olink=pull(pQTLdata::Olink_Explore_HT,UniProt.ID),
