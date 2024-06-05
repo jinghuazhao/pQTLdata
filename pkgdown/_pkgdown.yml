@@ -32,7 +32,7 @@ template:
 navbar:
   structure:
     left: [home, articles, reference, changelog]
-    right: [github, cran, alphafold, urls, uniprot]
+    right: [github, cran, cellcarta, urls, uniprot]
   components:
     home:
         icon: fa-home
@@ -45,7 +45,7 @@ navbar:
           href: articles/pQTLdata.html
     reference:
           text: Reference
-          href: reference/pQTLdata.html
+          href: reference/pQTLtools.html
     changelog:
           text: Changelog
           href: news/index.html
