@@ -1,5 +1,12 @@
 #' A summary of datasets
 #'
+#' @docType package
+#' @name pQTLdata
+#' @aliases pQTLdata-package
+#'
+#' @details
+#' Available data are listed in the following table.
+#'
 #' Objects                   |  Description
 #' --------------------------|------------------------------------
 #' **Datasets**              |   &nbsp;
@@ -32,13 +39,16 @@
 #' -  gene Gene name.
 #' -  UniProt UniProt ID.
 #'
-#' @docType package
-#' @name pQTLdata
-#' @aliases pQTLdata-package
+#' @section Usage:
+#' Vignettes on package usage:
+#' - An Overview of pQTLdata. `vignette("pQTLdata")`.
+#' @md
 #'
 #' @import knitr
 #' @importFrom Rdpack reprompt
 #'
+#' @author Jing Hua Zhao in collaboration with other colleagues
+#' @keywords internal
 #' @examples
 #' \dontrun{
 #' # datasets
@@ -88,7 +98,5 @@
 #' unique_uniprot_list <- setdiff(intersect(st4$UniProt,inf1$uniprot),"P23560")
 #' subset(INF1_merge,uniprot %in% unique_uniprot_list)
 #' }
-#' @author Jing Hua Zhao in collaboration with other colleagues
-#' @keywords internal
 
 "_PACKAGE"
