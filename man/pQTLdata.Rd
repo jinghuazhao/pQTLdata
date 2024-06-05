@@ -7,34 +7,29 @@
 \title{A summary of datasets}
 \description{
 \tabular{ll}{
-Objects              \tab   Description\cr
-\cr
-\strong{Datasets}\cr
-\cr
-biomaRt              \tab   Curated data from biomaRt\cr
-caprion              \tab   Caprion panel\cr
-hg19                 \tab   Curated data from Bioconductor\cr
-hg19Tables           \tab   Curated data from UCSC genome browser\cr
-inf1                 \tab   Olink/INF panel\cr
-Olink_Explore_1536   \tab   Olink/NGS 1472 panels\cr
-Olink_Explore_3072   \tab   Olink/Explore 3072 panels\cr
-Olink_Explore_HT     \tab   Olink/Explore HT panels\cr
-Olink_qPCR           \tab   Olink/qPCR panels\cr
-SomaScan160410       \tab   SomaScan panel\cr
-SomaScanV4.1         \tab   SomaScan v4.1 panel\cr
-SomaScan11k          \tab   SomaScan 11k panel\cr
-scallop_inf1         \tab   SCALLOP/INF meta-analysis results\cr
-seer1980             \tab   ST1 from Suhre et al. (2024) bioRxiv\cr
-st4                  \tab   ST4 of the INTERVAL SomaLogic paper\cr
-st6                  \tab   ST6 of the INTERVAL SomaLogic paper\cr
-st18                 \tab   ST18 of the INTERVAL SomaLogic paper\cr
-swath_ms             \tab   SWATH-MS panel\cr
-\cr
-\strong{Installations}\cr
-\cr
-EndNote              \tab   Proteogenomics references\cr
-Olink                \tab   Olink-COVID analysis by MGH\cr
-\cr
+   Objects \tab Description \cr
+   \strong{Datasets} \tab   \cr
+   \code{\link{biomaRt}} \tab Curated data from biomaRt \cr
+   \code{\link{caprion}} \tab Caprion panel \cr
+   \code{\link{hg19}} \tab Curated data from Bioconductor \cr
+   \code{\link{hg19Tables}} \tab Curated data from UCSC genome browser \cr
+   \code{\link{inf1}} \tab Olink/INF panel \cr
+   \code{\link{Olink_Explore_1536}} \tab Olink/NGS 1472 panels \cr
+   \code{\link{Olink_Explore_3072}} \tab Olink/Explore 3072 panels \cr
+   \code{\link{Olink_Explore_HT}} \tab Olink/Explore HT panels \cr
+   \code{\link{Olink_qPCR}} \tab Olink/qPCR panels \cr
+   \code{\link{SomaScan160410}} \tab SomaScan panel \cr
+   \code{\link{SomaScanV4.1}} \tab SomaScan v4.1 panel \cr
+   \code{\link{SomaScan11k}} \tab SomaScan 11k panel \cr
+   \code{\link{scallop_inf1}} \tab SCALLOP/INF meta-analysis results \cr
+   \code{\link{seer1980}} \tab ST1 from Suhre et al. (2024) bioRxiv \cr
+   \code{\link{st4}} \tab ST4 of the INTERVAL SomaLogic paper \cr
+   \code{\link{st6}} \tab ST6 of the INTERVAL SomaLogic paper \cr
+   \code{\link{st18}} \tab ST18 of the INTERVAL SomaLogic paper \cr
+   \code{\link{swath_ms}} \tab SWATH-MS panel \cr
+   \strong{Installations} \tab   \cr
+   EndNote \tab Proteogenomics references \cr
+   Olink \tab Olink-COVID analysis by MGH \cr
 }
 }
 \details{
