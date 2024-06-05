@@ -9,7 +9,7 @@ Description: It is a package to keep some protein panel and meta-data for pQTLto
 License: MIT + file LICENSE
 Depends:
     R (>= 3.5.0)
-Imports: knitr
+Imports: knitr, Rdpack
 Suggests: dplyr, grid, VennDiagram
 VignetteBuilder: knitr
 LazyData: Yes
