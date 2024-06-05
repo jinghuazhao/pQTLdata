@@ -37,6 +37,7 @@
 #' @aliases pQTLdata-package
 #'
 #' @import knitr
+#' @importFrom Rdpack reprompt
 #'
 #' @examples
 #' \dontrun{
@@ -47,7 +48,7 @@
 #' p <- list(setdiff(inf1$uniprot,"P23560"),
 #'           setdiff(SomaScan160410$UniProt[!is.na(SomaScan160410$UniProt)],"P23560"))
 #' cnames <- c("INF1","SomaScan")
-#' VennDiagram::venn.diagram(x = p, category.names=cnames, filename='os.png',
+#' VennDiagram::venn.diagram(x = p, category.names=cnames, filename=NULL,
 #'                           disable.logging = TRUE, imagetype="png", output=TRUE)
 #' m <- merge(inf1,SomaScan160410,by.x="uniprot",by.y="UniProt")
 #' u <- setdiff(with(m,unique(uniprot)),"P23560")
