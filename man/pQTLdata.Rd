@@ -20,7 +20,7 @@ Olink_Explore_1536   \tab   Olink/NGS 1472 panels\cr
 Olink_Explore_3072   \tab   Olink/Explore 3072 panels\cr
 Olink_Explore_HT     \tab   Olink/Explore HT panels\cr
 Olink_qPCR           \tab   Olink/qPCR panels\cr
-SomaLogic160410      \tab   SomaLogic panel\cr
+SomaScan160410       \tab   SomaScan panel\cr
 SomaScanV4.1         \tab   SomaScan v4.1 panel\cr
 SomaScan11k          \tab   SomaScan 11k panel\cr
 scallop_inf1         \tab   SCALLOP/INF meta-analysis results\cr
