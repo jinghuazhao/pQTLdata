@@ -28,8 +28,8 @@
    \code{\link{st18}} \tab ST18 of the INTERVAL SomaLogic paper \cr
    \code{\link{swath_ms}} \tab SWATH-MS panel \cr
    \strong{Installations} \tab   \cr
-   EndNote \tab Proteogenomics references \cr
-   Olink \tab Olink-COVID analysis by MGH \cr
+   EndNote/ \tab Proteogenomics references \cr
+   Olink/ \tab Olink-COVID analysis by MGH \cr
 }
 }
 \details{
@@ -49,18 +49,18 @@ head(biomaRt)
 
 # Olink-SomaLogic panel overlap
 p <- list(setdiff(inf1$uniprot,"P23560"),
-          setdiff(SomaLogic160410$UniProt[!is.na(SomaLogic160410$UniProt)],"P23560"))
+          setdiff(SomaScan160410$UniProt[!is.na(SomaScan160410$UniProt)],"P23560"))
 cnames <- c("INF1","SomaLogic")
 VennDiagram::venn.diagram(x = p, category.names=cnames,
                           filename='os.png', imagetype="png", output=TRUE)
-m <- merge(inf1,SomaLogic160410,by.x="uniprot",by.y="UniProt")
+m <- merge(inf1,SomaScan160410,by.x="uniprot",by.y="UniProt")
 u <- setdiff(with(m,unique(uniprot)),"P23560")
 options(width=220)
 o <- subset(inf1,uniprot \%in\% u)
 dim(o)
 o
 vars <- c("UniProt","chr","start","end","extGene","Target","TargetFullName")
-s <- subset(SomaLogic160410[vars], UniProt \%in\% u)
+s <- subset(SomaScan160410[vars], UniProt \%in\% u)
 dim(s)
 us <- s[!duplicated(s),]
 dim(us)
@@ -73,7 +73,7 @@ INF1_merge <- merge(inf1,
                     by="prot")
 INF1_uniprot <- unique(with(INF1_merge,uniprot))
 
-# INTERVAL SomaLogic at box
+# INTERVAL SomaScan data at box
 HOME <- Sys.getenv("HOME")
 box <- read.delim(file.path(HOME,"SomaLogic","doc","INTERVAL-box.tsv"),as.is=TRUE)
 box_INF1 <- subset(box,UniProt \%in\% INF1_uniprot)
