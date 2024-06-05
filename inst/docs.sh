@@ -40,7 +40,7 @@ function pkgdown()
   Rscript -e 'pkgdown::init_site();build_article("pQTLdata")'
 }
 
-for f in .gitignore .Rbuildignore .Rinstignore docs \
+for f in .gitignore .Rbuildignore .Rinstignore docs/ pkgdown/ \
          data/ DESCRIPTION INDEX inst/ LICENSE LICENSE.md man/ vignettes/ \
          NAMESPACE NEWS.md R/ README.*
 do
