@@ -110,7 +110,7 @@ Specifically, `pQTLdata.sh` handles package under Cambridge Service for Data Dri
 - EndNote, <https://endnote.com/>
 - ENSEMBL BioMart, <https://www.ensembl.org/index.html>
 - GitHub, <https://github.com/>
-- INTERVAL study, <http://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/>
+- INTERVAL study, <https://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/>
 - NULISA, <https://alamarbio.com/technology/nulisa-platform/>
 - Olink, <https://olink.com/> (<https://olink.com/resources-support/publications-2/>)
 - SCALLOP consortium, <http://www.scallop-consortium.com/>
