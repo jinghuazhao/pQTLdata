@@ -5,6 +5,7 @@
 * Adopt pkgdown.
 * Adopt a 1/10 version increment algorithm.
 * Add bookdown-driven vignette.
+* Imports knitr, Rdpack
 * Suggests dplyr, grid, VennDiagram.
 * Remove \uFEFF characters with iconv.
 * Add inst/Olink.
