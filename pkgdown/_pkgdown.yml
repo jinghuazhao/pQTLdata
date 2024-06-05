@@ -3,6 +3,7 @@ home:
   description: A Collection of pQTL Panels and Meta-Data.
   links:
   - icon: fab fa-github
+    text: GitHub
     href: https://github.com/jinghuazhao/pQTLdata
   - text: pQTLtools
     href: https://github.com/jinghuazhao/pQTLtools
