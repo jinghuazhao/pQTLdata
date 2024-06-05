@@ -34,7 +34,6 @@ function create_github_repository()
 
 # 5. pkgdown site
 
-# 6. automate commitments
 function pkgdown()
 {
   Rscript -e '
@@ -47,6 +46,8 @@ function pkgdown()
       build_reference()
   '
 }
+
+# 6. automate commitments
 
 for d in pQTLdata
 do
