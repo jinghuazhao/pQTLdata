@@ -24,6 +24,7 @@ SomaScan160410       \tab   SomaScan panel\cr
 SomaScanV4.1         \tab   SomaScan v4.1 panel\cr
 SomaScan11k          \tab   SomaScan 11k panel\cr
 scallop_inf1         \tab   SCALLOP/INF meta-analysis results\cr
+seer1980             \tab   ST1 from Suhre et al. (2024) bioRxiv\cr
 st4                  \tab   ST4 of the INTERVAL SomaLogic paper\cr
 st6                  \tab   ST6 of the INTERVAL SomaLogic paper\cr
 st18                 \tab   ST18 of the INTERVAL SomaLogic paper\cr
