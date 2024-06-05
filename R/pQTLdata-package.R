@@ -1,35 +1,29 @@
 #' A summary of datasets
 #'
-#' \tabular{ll}{
-#' Objects              \tab   Description\cr
-#' \cr
-#' \strong{Datasets}\cr
-#' \cr
-#' biomaRt              \tab   Curated data from biomaRt\cr
-#' caprion              \tab   Caprion panel\cr
-#' hg19                 \tab   Curated data from Bioconductor\cr
-#' hg19Tables           \tab   Curated data from UCSC genome browser\cr
-#' inf1                 \tab   Olink/INF panel\cr
-#' Olink_Explore_1536   \tab   Olink/NGS 1472 panels\cr
-#' Olink_Explore_3072   \tab   Olink/Explore 3072 panels\cr
-#' Olink_Explore_HT     \tab   Olink/Explore HT panels\cr
-#' Olink_qPCR           \tab   Olink/qPCR panels\cr
-#' SomaScan160410       \tab   SomaScan panel\cr
-#' SomaScanV4.1         \tab   SomaScan v4.1 panel\cr
-#' SomaScan11k          \tab   SomaScan 11k panel\cr
-#' scallop_inf1         \tab   SCALLOP/INF meta-analysis results\cr
-#' seer1980             \tab   ST1 from Suhre et al. (2024) bioRxiv\cr
-#' st4                  \tab   ST4 of the INTERVAL SomaLogic paper\cr
-#' st6                  \tab   ST6 of the INTERVAL SomaLogic paper\cr
-#' st18                 \tab   ST18 of the INTERVAL SomaLogic paper\cr
-#' swath_ms             \tab   SWATH-MS panel\cr
-#' \cr
-#' \strong{Installations}\cr
-#' \cr
-#' EndNote              \tab   Proteogenomics references\cr
-#' Olink                \tab   Olink-COVID analysis by MGH\cr
-#' \cr
-#' }
+#' Objects                   |  Description
+#' --------------------------|------------------------------------
+#' **Datasets**              |   &nbsp;
+#' [`biomaRt`]               |   Curated data from biomaRt
+#' [`caprion`]               |   Caprion panel
+#' [`hg19`]                  |   Curated data from Bioconductor
+#' [`hg19Tables`]            |   Curated data from UCSC genome browser
+#' [`inf1`]                  |   Olink/INF panel
+#' [`Olink_Explore_1536`]    |   Olink/NGS 1472 panels
+#' [`Olink_Explore_3072`]    |   Olink/Explore 3072 panels
+#' [`Olink_Explore_HT`]      |   Olink/Explore HT panels
+#' [`Olink_qPCR`]            |   Olink/qPCR panels
+#' [`SomaScan160410`]        |   SomaScan panel
+#' [`SomaScanV4.1`]          |   SomaScan v4.1 panel
+#' [`SomaScan11k`]           |   SomaScan 11k panel
+#' [`scallop_inf1`]          |   SCALLOP/INF meta-analysis results
+#' [`seer1980`]              |   ST1 from Suhre et al. (2024) bioRxiv
+#' [`st4`]                   |   ST4 of the INTERVAL SomaLogic paper
+#' [`st6`]                   |   ST6 of the INTERVAL SomaLogic paper
+#' [`st18`]                  |   ST18 of the INTERVAL SomaLogic paper
+#' [`swath_ms`]              |   SWATH-MS panel
+#' **Installations**         |   &nbsp;
+#' EndNote                   |   Proteogenomics references
+#' Olink                     |   Olink-COVID analysis by MGH
 #'
 #' Some generic description for the datasets are as follows.
 #' -  chr Chromosome.
