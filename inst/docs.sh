@@ -37,7 +37,13 @@ function create_github_repository()
 # 6. automate commitments
 function pkgdown()
 {
-  Rscript -e 'pkgdown::init_site();build_article("pQTLdata")'
+  Rscript -e '
+      library(pkgdown)
+      init_site()
+      build_home()
+      build_article("pQTLdata")
+      build_news()
+  '
 }
 
 for f in .gitignore .Rbuildignore .Rinstignore docs/ pkgdown/ \
