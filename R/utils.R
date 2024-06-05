@@ -166,6 +166,30 @@
 
 "Olink_qPCR"
 
+
+"seer1980"
+
+#' @title Seer 1980 panel
+#' @description ST1 from Suhre et al. (2024) bioRxiv
+#' @docType data
+#' @keywords datasets internal
+#' @format A data frame with 1980 rows:
+#' \describe{
+#'   \item{\code{PID.NP}}{PID.NP}
+#'   \item{\code{protein_ids}}{protein_ids}
+#'   \item{\code{protein_names}}{protein_names}
+#'   \item{\code{mapped.UniProtID}}{mapped.UniProtID}
+#'   \item{\code{mapped_gene_id}}{mapped_gene_id}
+#'   \item{\code{gene_name}}{gene_name}
+#'   \item{\code{description}}{description}
+#'   \item{\code{chr}}{chr}
+#'   \item{\code{start}}{start}
+#'   \item{\code{end}}{end}
+#' }
+#' @details As above.
+
+"seer1980"
+
 #' @title Somascan panel
 #' @description This is based on panel used in Sun et al. (2018) Nature.
 #' @docType data
@@ -185,7 +209,7 @@
 #' }
 #' @details from the INTERVAL study.
 
-"SomaLogic160410"
+"SomaScan160410"
 
 #' @title SomaScan v4.1
 #' @description This is the 7k panel
