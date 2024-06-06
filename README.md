@@ -1,6 +1,6 @@
-## A Collection of pQTL Panels and Meta-Data
+## A Collection of Proteome Panels and Meta-Data
 
-It is a package is to keep some protein panel and meta-data for [pQTLtools](https://github.com/jinghuazhao/pQTLtools).
+It gathers protein panel information and meta-data for [pQTLtools](https://github.com/jinghuazhao/pQTLtools).
 
 ### Installation
 
