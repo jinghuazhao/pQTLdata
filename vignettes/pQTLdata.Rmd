@@ -4,6 +4,7 @@ output:
   bookdown::html_document2:
     toc: true
     toc_float: true
+    number_sections: true
 date: '`r Sys.Date()`'
 bibliography: '`r system.file("REFERENCES.bib", package="pQTLdata")`'
 vignette: >
