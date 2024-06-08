@@ -5,8 +5,12 @@ output:
     toc: true
     toc_float: true
     number_sections: true
-date: '`r Sys.Date()`'
+    self_contained: true
+fontsize: 11pt
 bibliography: '`r system.file("REFERENCES.bib", package="pQTLdata")`'
+csl: nature-genetics.csl
+pkgdown:
+  as_is: true
 vignette: >
   %\VignetteIndexEntry{pQTLdata}
   %\VignetteEngine{knitr::rmarkdown}
