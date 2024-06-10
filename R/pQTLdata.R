@@ -47,10 +47,11 @@
 #' @import knitr
 #' @importFrom Rdpack reprompt
 #'
-#' @author Jing Hua Zhao in collaboration with other colleagues
+#' @author Jing Hua Zhao in collaboration with other colleagues.
 #' @keywords internal
 #' @examples
 #' \dontrun{
+#' # See more on SCALLOP-INF at https://jinghuazhao.github.io/INF/
 #' # datasets
 #' head(biomaRt)
 #'
