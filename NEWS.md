@@ -2,7 +2,7 @@
 
 (2024/06/10)
 
-Minor changes.
+Add inst/README.md.
 
 ## pQTLdata 0.1
 
