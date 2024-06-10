@@ -55,6 +55,7 @@ Vignettes on package usage:
 
 \examples{
 \dontrun{
+# See more on SCALLOP-INF at https://jinghuazhao.github.io/INF/
 # datasets
 head(biomaRt)
 
@@ -104,6 +105,6 @@ subset(INF1_merge,uniprot \%in\% unique_uniprot_list)
 }
 }
 \author{
-Jing Hua Zhao in collaboration with other colleagues
+Jing Hua Zhao in collaboration with other colleagues.
 }
 \keyword{internal}
