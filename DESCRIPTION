@@ -1,6 +1,6 @@
 Package: pQTLdata
 Title: A Collection of Proteome Panels and Meta-Data
-Version: 0.1
+Version: 0.2
 Date: 2024-6-10
 Authors@R:
     person("Jing Hua", "Zhao", , "jinghuazhao@hotmail.com", role = c("aut", "cre"),
