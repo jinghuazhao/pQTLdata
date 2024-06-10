@@ -1,6 +1,6 @@
 ## pQTLdata 0.1
 
-(2024/06/06)
+(2024/06/10)
 
 * Add
     - Olink/, EndNote/, scripts/ to inst/.
