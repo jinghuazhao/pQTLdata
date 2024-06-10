@@ -1,3 +1,9 @@
+## pQTLdata 0.2
+
+(2024/06/10)
+
+Minor changes.
+
 ## pQTLdata 0.1
 
 (2024/06/10)
