@@ -48,7 +48,7 @@ While `library(help=pQTLdata)` displays the general information, `? pQTLdata` ca
 
 # Protein panels
 
-The Olink qPCR inflammation panel (`inf1`) used in the SCALLOP consortium seeds the collection.
+The Olink qPCR inflammation panel (`inf1`)[^inf1] used in the SCALLOP consortium seeds the collection.
 
 ```{r inf1, echo=FALSE}
 options(width=200)
@@ -121,3 +121,9 @@ Specifically, `pQTLdata.sh` handles package under Cambridge Service for Data Dri
 # References {-}
 
 The `EndNote/` directory includes references in @sun18 and @suhre20 formatted in EndNote.
+
+[^inf1]: **inf1**
+
+    Olink® Target 96 Inflammation Panels, <https://olink.com/products-services/target/inflammation/>
+    - Validation Data, <https://olink.com/content/uploads/2021/09/olink-inflammation-validation-data-v3.0.pdf>
+    - Protein assay list, <https://olink.com/content/uploads/2021/09/1029-v1.3-inflammation-panel-content.pdf>
