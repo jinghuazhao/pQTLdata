@@ -1,8 +1,9 @@
 ## pQTLdata 0.2
 
-(2024/06/10)
+(2024/06/17)
 
-Add inst/README.md.
+* Add information for Olink® Target 96 Inflammation Panels
+* Add inst/README.md.
 
 ## pQTLdata 0.1
 
