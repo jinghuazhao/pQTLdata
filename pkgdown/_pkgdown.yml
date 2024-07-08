@@ -6,7 +6,7 @@ home:
     icon: fab fa-github
     href: https://github.com/jinghuazhao/pQTLdata
   - text: pQTLtools
-    href: https://github.com/jinghuazhao/pQTLtools
+    href: https://jinghuazhao.github.io/pQTLtools/
   sidebar:
     structure: [links, support, license, community, authors, dev]
     components:
