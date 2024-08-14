@@ -1,7 +1,8 @@
 ## pQTLdata 0.2
 
-(2024/07/08)
+(2024/08/14)
 
+* Add Information on Thermo Fisher Scientific - LSMS / NCI Proteomic Data Commons
 * Add information for Olink® Target 96 Inflammation Panels
 * Add inst/README.md, SomaLogic/ given SomaScan.db is developed
 
