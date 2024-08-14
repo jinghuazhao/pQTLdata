@@ -111,11 +111,13 @@ Specifically, `pQTLdata.sh` handles package under Cambridge Service for Data Dri
 - GitHub, <https://github.com/>
 - INTERVAL study, <https://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/>
 - NULISA, <https://alamarbio.com/technology/nulisa-platform/>
+- NCI Proteomic Data Commons, <https://pdc.cancer.gov/pdc/browse>
 - Olink, <https://olink.com/> (<https://olink.com/resources-support/publications-2/>)
 - SCALLOP consortium, <http://www.scallop-consortium.com/>
 - Seer, <https://seer.bio/>
 - SomaLogic, <https://somalogic.com/>
 - SWATH-MS, <https://www.creative-proteomics.com/ngpro/swath-ms.html>
+- Thermo Fisher Scientific - LSMS, <https://github.com/thermofisherlsms>
 - UCSC, <https://genome.ucsc.edu/>
 
 # References {-}
