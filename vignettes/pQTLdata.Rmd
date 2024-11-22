@@ -91,7 +91,7 @@ grid.draw(olink_somascan_caprion)
 
 # Published data
 
-This associates with the analysis of INTERVAL data as reported by @sun18, which includes the panel `SomaScan160410`, supplementary tables 4, 6, 18.
+This associates with the analysis of INTERVAL data as reported @sun18, which includes the panel `SomaScan160410`, supplementary tables 4, 6, 18.
 
 # Reference data
 
