@@ -1,10 +1,24 @@
 HOME <- Sys.getenv("HOME")
 load(paste(HOME,"Caprion","pilot","caprion.rda",sep="/"))
 caprion <- protein_list
+library(biomaRt)
+library(dplyr)
+ensembl <- useMart("ensembl", dataset = "hsapiens_gene_ensembl")
+gene_ensembl <- getBM(
+  attributes = c("hgnc_symbol", "ensembl_gene_id", "chromosome_name", "start_position", "end_position"),
+  filters = "hgnc_symbol",
+  values = pQTLdata::caprion$Gene,
+  mart = ensembl
+)
+caprion <- left_join(pQTLdata::caprion, gene_ensembl, by = c("Gene" = "hgnc_symbol")) %>%
+           group_by(Gene,Protein,Accession,Protein.Description,GO.Cellular.Component,GO.Function,GO.Process) %>%
+           summarize(ensGenes=paste(ensembl_gene_id,collapse=";"),
+                     starts=paste(start_position,collapse=";"),
+                     ends=paste(end_position,collapse=";"),
+                     start=min(start_position),end=max(end_position))
 save(caprion,file='caprion.rda',compress='xz')
 
 library(pQTLdata)
-library(dplyr)
 
 nodup <- function(x) sapply(x, function(s) unique(unlist(strsplit(s,";")))[1])
 

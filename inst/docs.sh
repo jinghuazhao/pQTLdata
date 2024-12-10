@@ -39,11 +39,8 @@ function pkgdown()
   Rscript -e '
       library(pkgdown)
       init_site()
-      build_home()
-      build_article("pQTLdata")
-      build_news()
       devtools::document()
-      build_reference()
+      build_site()
   '
 }
 
