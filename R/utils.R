@@ -24,7 +24,7 @@
 #' @description Information based on Caprion pilot studies
 #' @docType data
 #' @keywords datasets internal
-#' @format A data frame with 987 rows and 7 variables:
+#' @format A data frame with 987 rows and 12 variables:
 #' \describe{
 #'   \item{\code{Gene}}{HGNC symbol}
 #'   \item{\code{Protein}}{Protein name as in UniProt}
