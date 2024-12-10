@@ -46,6 +46,7 @@ function pkgdown()
 
 # 6. automate commitments
 
+pkgdown
 for d in pQTLdata
 do
     if [ -d vignettes/${d} ]; then
