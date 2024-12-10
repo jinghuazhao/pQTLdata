@@ -104,6 +104,13 @@ unique_uniprot_list <- setdiff(intersect(st4$UniProt,inf1$uniprot),"P23560")
 subset(INF1_merge,uniprot \%in\% unique_uniprot_list)
 }
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://jinghuazhao.github.io/pQTLdata}
+}
+
+}
 \author{
 Jing Hua Zhao in collaboration with other colleagues.
 }

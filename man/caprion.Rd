@@ -7,13 +7,18 @@
 \format{
 A data frame with 987 rows and 7 variables:
 \describe{
+\item{\code{Gene}}{HGNC symbol}
 \item{\code{Protein}}{Protein name as in UniProt}
 \item{\code{Accession}}{UniProt id}
-\item{\code{Gene}}{HGNC symbol}
 \item{\code{Protein.Description}}{Detailed information on protein}
 \item{\code{GO.Cellular.Component}}{GO Ceullular component}
 \item{\code{GO.Function}}{GO function}
 \item{\code{GO.Process}}{GO process}
+\item{\code{ensGenes}}{Ensembl genes}
+\item{\code{starts}}{start positions}
+\item{\code{ends}}{end positions}
+\item{\code{start}}{minimum start}
+\item{\code{end}}{maximum end}
 }
 }
 \usage{
