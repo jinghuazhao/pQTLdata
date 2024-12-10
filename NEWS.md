@@ -1,8 +1,9 @@
 ## pQTLdata 0.2
 
-(2024/11/22)
+(2024/12/10)
 
 * Minor changes to vignette
+* Add Ensembl gene ID to caprion & URL to DESCRIPTION
 * Add Information on Thermo Fisher Scientific - LSMS / NCI Proteomic Data Commons
 * Add information for Olink® Target 96 Inflammation Panels
 * Add inst/README.md, SomaLogic/ given SomaScan.db is developed
