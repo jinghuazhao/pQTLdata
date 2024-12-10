@@ -5,7 +5,7 @@
 \alias{caprion}
 \title{Caprion panel}
 \format{
-A data frame with 987 rows and 7 variables:
+A data frame with 987 rows and 12 variables:
 \describe{
 \item{\code{Gene}}{HGNC symbol}
 \item{\code{Protein}}{Protein name as in UniProt}
