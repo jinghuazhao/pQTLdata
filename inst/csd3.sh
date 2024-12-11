@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-module load gcc/6 texlive
+module load texlive
 
 Rscript -e 'setwd("~/pQTLdata");devtools::document()'
 
