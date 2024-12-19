@@ -58,6 +58,9 @@ u[umiss,"chrom"] <- c("chr1","chr19","chr19","chr6","chr6","chr16")
 u[umiss,"start"] <- c(104198140,45449238,45445494,31949833,26021906,222845)
 u[umiss,"end"] <- c(104301311,45452822,45452822,32003195,27841289,227520)
 caprion_modified <- u
+caprion_ucsc_modified <- select(u,-c(chrom,start,end)) %>%
+                         left_join(ucsc) %>%
+                         select(-c(acc,prot,gene))
 a <- filter(u,umiss) %>%
      transmute(acc=Accession,prot=Protein,gene=Gene,chrom,start,end)
 ucsc2 <- ucsc %>%
