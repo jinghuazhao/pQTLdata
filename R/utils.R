@@ -26,7 +26,8 @@
 #' @keywords datasets internal
 #' @format A data frame with 987 rows and 12 variables:
 #' \describe{
-#'   \item{\code{Gene}}{HGNC symbol}
+#'   \item{\code{Gene}}{HGNC symbols simplified in four instances}
+#'   \item{\code{Gene.orig}}{HGNC symbol}
 #'   \item{\code{Protein}}{Protein name as in UniProt}
 #'   \item{\code{Accession}}{UniProt id}
 #'   \item{\code{Protein.Description}}{Detailed information on protein}
