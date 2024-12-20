@@ -151,23 +151,23 @@ for (uniprot_id in accession_list) {
     all_gene_positions[[uniprot_id]] <- "No data found"
   }
 }
-all_gene_positions$P04745 <- get_gene_positions(P04745)
+all_gene_positions$P04745 <- get_gene_positions(uniprot_list$P04745)
 print(all_gene_positions)
 do.call("rbind",all_gene_positions)
 all_gene_positions[[1]]$ uniprotswissprot <- "P04745"
-collapsed_data <- lapply(all_gene_positions,function(df) {
-                    df %>%
-                    mutate(chromosome_name=if_else(grepl("HS",chromosome_name),"6",paste(chromosome_name))) %>%
-                    group_by(uniprotswissprot) %>%
-                    summarise(
-                      ensembl_gene_id = paste(ensembl_gene_id, collapse = ", "),
-                      hgnc_symbol = paste(hgnc_symbol, collapse = ", "),
-                      chrs = paste(unique(chromosome_name), collapse = ", "),
-                      starts = paste(start_position, collapse = ", "),
-                      ends = paste(end_position, collapse = ", "),
-                      start = min(start_position),
-                      end = max(end_position)
-                   )
+collapsed_data <- lapply(all_gene_positions, function(df) {
+                         df %>%
+                         mutate(chromosome_name = if_else(grepl("HS", chromosome_name), "6", as.character(chromosome_name))) %>%
+                         group_by(uniprotswissprot) %>%
+                         summarise(
+                            ensembl_gene_id = paste(ensembl_gene_id, collapse = ";"),
+                            hgnc_symbol = paste(hgnc_symbol, collapse = ";"),
+                            chrs = paste(unique(chromosome_name), collapse = ";"),
+                            starts = paste(start_position, collapse = ";"),
+                            ends = paste(end_position, collapse = ";"),
+                            start = min(as.numeric(start_position), na.rm = TRUE),
+                            end = max(as.numeric(end_position), na.rm = TRUE)
+                         )
                   })
 print(collapsed_data)
 caprion_modified <- left_join(caprion_ensembl, do.call("rbind", collapsed_data), by = c("Accession" = "uniprotswissprot")) %>%
@@ -176,11 +176,15 @@ caprion_modified <- left_join(caprion_ensembl, do.call("rbind", collapsed_data),
                            ends = coalesce(ends.x, ends.y),
                            ensGenes = coalesce(ensGenes, ensembl_gene_id),
                            Gene = coalesce(Gene, hgnc_symbol),
+                           Gene.orig = coalesce(Gene, hgnc_symbol),
                            chr = coalesce(chrom, chrs),
                            start = coalesce(start.x, start.y),
                            end = coalesce(end.x, end.y)) %>%
                     select(-c(chrs, starts.x, ends.x, starts.y, ends.y, start.x, start.y, end.x, end.y, hgnc_symbol, ensembl_gene_id))
 caprion <- caprion_modified
+lines <- c(46,137,441,452)
+caprion[lines,"Gene"]
+caprion[lines,"Gene"] <- c("AMY1","C4B","HBA","HIST")
 save(caprion,file='caprion.rda',compress='xz')
 
 legacy <- function()
