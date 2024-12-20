@@ -68,7 +68,7 @@ accession_list <- c("P04745", "Q9GZN8", "P0C0L5", "Q96N11", "P48960",
                     "Q9NUQ9", "P04062", "P69905", "P62805", "O14745",
                     "P23381", "P54577")
 updated_list <- dplyr::filter(pQTLdata::caprion,Accession %in% accession_list)
-knitr::kable(dplyr::select(Gene,Protein,Accession,ensGenes,chr,start,end),caption="Updated information on Caprion")
+knitr::kable(dplyr::select(updated_list,Gene,Protein,Accession,ensGenes,chr,start,end),caption="Updated information on Caprion")
 ```
 
 which again is useful for extracting data from GTEx v8.
