@@ -69,7 +69,7 @@ accession_list <- c("P04745", "Q9GZN8", "P0C0L5", "Q96N11", "P48960",
                     "P23381", "P54577")
 updated_list <- dplyr::filter(pQTLdata::caprion,Accession %in% accession_list) |>
                 dplyr::ungroup() |>
-                dplyr::select(Gene,Protein,Accession,ensGenes,chr,start,end)
+                dplyr::select(Gene,Gene.orig,Protein,Accession,ensGenes,chr,start,end)
 knitr::kable(updated_list,caption="Updated information on Caprion")
 ```
 
