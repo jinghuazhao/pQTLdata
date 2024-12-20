@@ -1,6 +1,6 @@
 ## pQTLdata 0.2
 
-(2024/12/19)
+(2024/12/20)
 
 * Minor changes to vignette
 * Add Ensembl gene ID to caprion & URL to DESCRIPTION but simplify inst/docs.sh
