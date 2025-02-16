@@ -16,6 +16,8 @@ A data frame with 987 rows and 12 variables:
 \item{\code{GO.Function}}{GO function}
 \item{\code{GO.Process}}{GO process}
 \item{\code{ensGenes}}{Ensembl genes}
+\item{\code{chrom}}{chromosome}
+\item{\code{chr}}{chromosome}
 \item{\code{starts}}{start positions}
 \item{\code{ends}}{end positions}
 \item{\code{start}}{minimum start}
