@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 module load texlive
+module load ceuadmin/R
 
 Rscript -e 'setwd("~/pQTLdata");devtools::document()'
 
