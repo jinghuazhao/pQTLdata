@@ -30,12 +30,8 @@ function create_github_repository()
   git branch -M main
   git remote add origin git@github.com:jinghuazhao/pQTLdata.git
   git push --set-upstream origin main
-}
 
 # 5. pkgdown site
-
-function pkgdown()
-{
   Rscript -e '
       library(pkgdown)
       init_site()
@@ -46,7 +42,6 @@ function pkgdown()
 
 # 6. automate commitments
 
-pkgdown
 for d in pQTLdata
 do
     if [ -d vignettes/${d} ]; then
