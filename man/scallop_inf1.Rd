@@ -32,7 +32,10 @@ A data frame with 180 rows and 19 variables:
 scallop_inf1
 }
 \description{
-Supplementary information for Zhao et al. (2023) Nature Immunnology
+Supplementary information for \insertCite{zhao23;textual}{pQTLdata}.
+}
+\references{
+\insertAllCited{}
 }
 \keyword{datasets}
 \keyword{internal}
