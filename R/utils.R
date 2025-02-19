@@ -228,7 +228,7 @@
 #'   \item{SE}{SE}
 #'   \item{log10P}{log10(P)}
 #'   \item{Direction}{Direction field in METAL output}
-#'   \item{HetISq}{$I^2$}
+#'   \item{HetISq}{\eqn{I^2}}
 #'   \item{HetChiSq}{Heterogeneity chi-square}
 #'   \item{HetDf}{degrees of freedom}
 #'   \item{logHetP}{Heterogeneity log10(P)}
