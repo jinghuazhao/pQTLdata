@@ -23,10 +23,13 @@ A data frame with 1980 rows:
 seer1980
 }
 \description{
-ST1 from Suhre et al. (2024) bioRxiv
+ST1 from \insertCite{suhre24;textual}{pQTLdata}.
 }
 \details{
 As above.
+}
+\references{
+\insertAllCited{}
 }
 \keyword{datasets}
 \keyword{internal}
