@@ -119,7 +119,6 @@ This associates with the analysis of INTERVAL data as reported @sun18, which inc
 Initial curations including `biomaRt`, `hg19` and `hg19Tables` based on ENSEMBL BioMart and UCSC are now depcrecated. Insted, we resort to `EnsDb.Hsapiens.v75` from Bioconductor.
 
 ```{r refdata, warnings=FALSE}
-options(width=200)
 ensembldb::metadata(EnsDb.Hsapiens.v75)
 ensembldb::keytypes(EnsDb.Hsapiens.v75)
 exon_info <- ensembldb::exons(EnsDb.Hsapiens.v75)
@@ -144,7 +143,7 @@ info <- ensembldb::select(EnsDb.Hsapiens.v75, keys = gene_symbols,
                           columns = cols, keytype = "SYMBOL") |>
         subset(!is.na(UNIPROTID)) |>
         dplyr::left_join(head(gene_data,15),by=c('TXID'='transcript_id'))
-knitr::kable(info,caption="Annotation for BRCA1 and TP53")
+knitr::kable(head(info,15),caption="Annotation for BRCA1 and TP53")
 keytypes(org.Hs.eg.db)
 uniprot_ids <- ensembldb::select(org.Hs.eg.db, keys = gene_symbols, columns = "UNIPROT", keytype = "SYMBOL")
 ```
