@@ -12,10 +12,7 @@ It gathers protein panel information and meta-data for pQTLtools, \url{https://j
 Available data are listed in the following table.\tabular{ll}{
    Objects \tab Description \cr
    \strong{Datasets} \tab   \cr
-   \code{\link{biomaRt}} \tab Curated data from biomaRt \cr
    \code{\link{caprion}} \tab Caprion panel \cr
-   \code{\link{hg19}} \tab Curated data from Bioconductor \cr
-   \code{\link{hg19Tables}} \tab Curated data from UCSC genome browser \cr
    \code{\link{inf1}} \tab Olink/INF panel \cr
    \code{\link{Olink_Explore_1536}} \tab Olink/NGS 1472 panels \cr
    \code{\link{Olink_Explore_3072}} \tab Olink/Explore 3072 panels \cr
