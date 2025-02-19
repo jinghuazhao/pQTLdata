@@ -25,7 +25,7 @@
 "caprion"
 
 #' @title Olink/INF1 panel
-#' @description The panel is based on SCALLOP-INF
+#' @description The panel is based on SCALLOP-INF \insertCite{zhao23;textual}{pQTLdata}
 #' @docType data
 #' @keywords datasets internal
 #' @format A data frame with 92 rows and 9 variables:
@@ -46,6 +46,8 @@
 #'   \item{\code{alt_name}}{recent name from www.uniprot.org}
 #' }
 #' @details Assembled for SCALLOP-INF
+#' @references
+#' \insertAllCited{}
 
 "inf1"
 
@@ -134,7 +136,7 @@
 "seer1980"
 
 #' @title Somascan panel
-#' @description This is based on panel used in Sun et al. (2018) Nature.
+#' @description This is based on panel used in \insertCite{@sun18;textual}{pQTLdata}.
 #' @docType data
 #' @keywords datasets internal
 #' @format A data frame with 5178 rows and 10 variables:
@@ -151,6 +153,8 @@
 #'   \item{\code{extGene}}{external gene}
 #' }
 #' @details from the INTERVAL study.
+#' @references
+#' \insertAllCited{}
 
 "SomaScan160410"
 
@@ -205,7 +209,7 @@
 "swath_ms"
 
 #' @title Supplementary table 3
-#' @description Supplementary information for Zhao et al. (2023) Nature Immunnology
+#' @description Supplementary information for \insertCite{zhao23;textual}{pQTLdata}.
 #' @docType data
 #' @keywords datasets internal
 #' @format A data frame with 180 rows and 19 variables:
@@ -230,5 +234,7 @@
 #'   \item{logHetP}{Heterogeneity log10(P)}
 #'   \item{N}{N}
 #' }
+#' @references
+#' \insertAllCited{}
 
 "scallop_inf1"
