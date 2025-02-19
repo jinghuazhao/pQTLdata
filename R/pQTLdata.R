@@ -21,9 +21,6 @@
 #' [`SomaScan11k`]           |   SomaScan 11k panel
 #' [`scallop_inf1`]          |   SCALLOP/INF meta-analysis results
 #' [`seer1980`]              |   ST1 from Suhre et al. (2024) bioRxiv
-#' [`st4`]                   |   ST4 of the INTERVAL SomaLogic paper
-#' [`st6`]                   |   ST6 of the INTERVAL SomaLogic paper
-#' [`st18`]                  |   ST18 of the INTERVAL SomaLogic paper
 #' [`swath_ms`]              |   SWATH-MS panel
 #' **Installations**         |   &nbsp;
 #' EndNote/                  |   Proteogenomics references
@@ -49,8 +46,6 @@
 #' @examples
 #' \dontrun{
 #' # See more on SCALLOP-INF at https://jinghuazhao.github.io/INF/
-#' # datasets
-#' head(biomaRt)
 #'
 #' # Olink-SomaScan panel overlap
 #' p <- list(setdiff(inf1$uniprot,"P23560"),
@@ -90,11 +85,6 @@
 #'             pmid==29875488),
 #'             box,by.x="trait",by.y="TargetFullName")
 #' z <- subset(ps,UniProtgwas %in% INF1_uniprot & p<=1.5e-11)
-#'
-#' # ST4 on Nature
-#' st4regions <- subset(st4, UniProt %in% INF1_uniprot)
-#' unique_uniprot_list <- setdiff(intersect(st4$UniProt,inf1$uniprot),"P23560")
-#' subset(INF1_merge,uniprot %in% unique_uniprot_list)
 #' }
 
 "_PACKAGE"

@@ -110,9 +110,6 @@
 
 "Olink_qPCR"
 
-
-"seer1980"
-
 #' @title Seer 1980 panel
 #' @description ST1 from Suhre et al. (2024) bioRxiv
 #' @docType data
@@ -233,90 +230,3 @@
 #' }
 
 "scallop_inf1"
-
-#' @title Supplementary table 4
-#' @description Supplementary information for Sun et al. (2018) Nature
-#' @docType data
-#' @keywords datasets internal
-#' @format A data frame with 1980 rows and 31 variables:
-#' \describe{
-#'   \item{\code{Locus.ID}}{Locus id}
-#'   \item{\code{SOMAmer.ID}}{SOMAmer id}
-#'   \item{\code{Target}}{Protein}
-#'   \item{\code{Target.fullname}}{Protein full name}
-#'   \item{\code{UniProt}}{UniProt id}
-#'   \item{\code{Sentinel.variant*}}{Sentinel variant}
-#'   \item{\code{Chr}}{Chromosome}
-#'   \item{\code{Pos}}{Position}
-#'   \item{\code{Region.start}}{Region start}
-#'   \item{\code{Region.end}}{Region end}
-#'   \item{\code{Effect.Allele.(EA)}}{Effect allele}
-#'   \item{\code{Other.Allele.(OA)}}{Other allele}
-#'   \item{\code{EAF}}{Effect allele frequency}
-#'   \item{\code{INFO}}{Information score}
-#'   \item{\code{cis/.trans}}{"cis"/"trans"}
-#'   \item{\code{Mapped.gene}}{Mapped gene}
-#'   \item{\code{No..conditionally.significant.variants}}{Number of conditionally significant variants}
-#'   \item{\code{Previously.reported}}{Previously reported}
-#'   \item{\code{Replicates?}}{Yes/No}
-#'   \item{\code{beta}}{b}
-#'   \item{\code{SE}}{SE}
-#'   \item{\code{p}}{p value}
-#'   \item{\code{beta}}{b}
-#'   \item{\code{SE}}{SE}
-#'   \item{\code{p}}{p value}
-#'   \item{\code{beta}}{b}
-#'   \item{\code{SE}}{SE}
-#'   \item{\code{p}}{p value}
-#'   \item{\code{Uncorrelated.with.PAV.(r2>=0.1)}}{Uncorrelated with PAV}
-#'   \item{\code{Significant.after.adjusting.for.PAVs}}{Significant after adjustment for PAVs}
-#'   \item{\code{Is.a.cis.eQTL.for.same.gene?}}{Is a cis eQTL for the same gene?}
-#' }
-#' @details As above.
-
-"st4"
-
-#' @title Supplementary table 6
-#' @description Supplementary information for Sun et al. (2018) Nature
-#' @docType data
-#' @keywords datasets internal
-#' @format A data frame with 163 rows and 20 variables:
-#' \describe{
-#'   \item{\code{Locus.ID}}{Locus id}
-#'   \item{\code{Sentinel.variant*}}{Sentinel variant}
-#'   \item{\code{Chr}}{Chromosome (1-12,14-20,22)}
-#'   \item{\code{Pos}}{Position}
-#'   \item{\code{SOMAmer.ID}}{SOMAmer id}
-#'   \item{\code{Target}}{Protein}
-#'   \item{\code{Target.fullname}}{Protein full name}
-#'   \item{\code{UniProt}}{UniProt id}
-#'   \item{\code{cis/.trans}}{"cis"/"trans"}
-#'   \item{\code{Mapped.gene}}{Mapped gene}
-#'   \item{\code{Effect.Allele.(EA)}}{Effect allele}
-#'   \item{\code{Other.Allele.(OA)}}{Other allele}
-#'   \item{\code{Previously.reported}}{Previously reported (0/1)}
-#'   \item{\code{beta}}{b}
-#'   \item{\code{SE}}{SE}
-#'   \item{\code{p}}{p value}
-#'   \item{\code{beta}}{b}
-#'   \item{\code{SE}}{SE}
-#'   \item{\code{p}}{p value}
-#'   \item{\code{Replicates?}}{Yes/No}
-#' }
-#' @details As above.
-
-"st6"
-
-#' @title Supplementary table 18
-#' @description Supplementary information for Sun et al. (2018) Nature
-#' @docType data
-#' @keywords datasets internal
-#' @format A data frame with 3622 rows and 3 variables:
-#' \describe{
-#'   \item{\code{Number}}{A serial number}
-#'   \item{\code{Analyte}}{Name}
-#'   \item{\code{UniProt.ID(s)}}{UniProt id}
-#' }
-#' @details As above.
-
-"st18"
