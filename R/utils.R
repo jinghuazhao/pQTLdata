@@ -111,7 +111,7 @@
 "Olink_qPCR"
 
 #' @title Seer 1980 panel
-#' @description ST1 from Suhre et al. (2024) bioRxiv
+#' @description ST1 from \insertCite{suhre24;textual}{pQTLdata}.
 #' @docType data
 #' @keywords datasets internal
 #' @format A data frame with 1980 rows:
@@ -128,6 +128,8 @@
 #'   \item{\code{end}}{end}
 #' }
 #' @details As above.
+#' @references
+#' \insertAllCited{}
 
 "seer1980"
 
