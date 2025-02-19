@@ -1,25 +1,3 @@
-#' @title biomaRt
-#' @description Curation of biomaRt
-#' @docType data
-#' @keywords datasets internal
-#' @format A data frame with 42198 rows and 11 variables:
-#' \describe{
-#'   \item{\code{ensembl_gene_id}}{ENSEMBL gene id}
-#'   \item{\code{chromosome_name}}{Chromosome name (1-22,X,Y)}
-#'   \item{\code{start_position}}{start}
-#'   \item{\code{end_position}}{end}
-#'   \item{\code{description}}{Description}
-#'   \item{\code{hgnc_symbol}}{HGNC symbol}
-#'   \item{\code{ensembl_transcript_id}}{ENSEMBL transcript id}
-#'   \item{\code{transcription_start_site}}{TSS}
-#'   \item{\code{transcript_start}}{Transcript start}
-#'   \item{\code{transcript_end}}{Transcript end}
-#'   \item{\code{uniprotswissprot}}{UnitProt id}
-#' }
-#' @details extraction using R.
-
-"biomaRt"
-
 #' @title Caprion panel
 #' @description Information based on Caprion pilot studies
 #' @docType data
@@ -45,48 +23,6 @@
 #' @details See the Caprion repository involving its use. Efforts have been put to check against hg19Tables in this package though a modified version is not generated except the scripts (namely, scripts/caprion.R).
 
 "caprion"
-
-#' @title hg19 information
-#' @description protein information
-#' @docType data
-#' @keywords datasets internal
-#' @format A data frame with 62559 rows and 8 variables:
-#' \describe{
-#'   \item{\code{chr}}{Chromosome (chr1-22,X,Y,...)}
-#'   \item{\code{start}}{start}
-#'   \item{\code{end}}{end}
-#'   \item{\code{width}}{width}
-#'   \item{\code{strand}}{strand}
-#'   \item{\code{ENSEMBL}}{ENSMEBL gene}
-#'   \item{\code{SYMBOL}}{HGNC symbol}
-#'   \item{\code{UNIPROT}}{UniProt id}
-#' }
-#' @details Curation from R
-
-"hg19"
-
-#' @title hg19 Table
-#' @description Gene information
-#' @docType data
-#' @keywords datasets internal
-#' @format A data frame with 19872 rows and 12 variables:
-#' \describe{
-#'   \item{\code{X.chrom}}{Chromosome}
-#'   \item{\code{chromStart}}{chromStart}
-#'   \item{\code{chromEnd}}{chromEnd}
-#'   \item{\code{strand}}{Strand}
-#'   \item{\code{acc}}{UniProt id}
-#'   \item{\code{uniprotName}}{Protein}
-#'   \item{\code{accList}}{List of UniProt ids}
-#'   \item{\code{isoIds}}{isoIds}
-#'   \item{\code{geneName}}{geneName}
-#'   \item{\code{geneSynonyms}}{geneSynonyms}
-#'   \item{\code{hgncSym}}{HGNC symbol}
-#'   \item{\code{ensGene}}{ENSEMBL gene}
-#' }
-#' @details Curation from UCSC.
-
-"hg19Tables"
 
 #' @title Olink/INF1 panel
 #' @description The panel is based on SCALLOP-INF

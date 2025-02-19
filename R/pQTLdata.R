@@ -10,10 +10,7 @@
 #' Objects                   |  Description
 #' --------------------------|------------------------------------
 #' **Datasets**              |   &nbsp;
-#' [`biomaRt`]               |   Curated data from biomaRt
 #' [`caprion`]               |   Caprion panel
-#' [`hg19`]                  |   Curated data from Bioconductor
-#' [`hg19Tables`]            |   Curated data from UCSC genome browser
 #' [`inf1`]                  |   Olink/INF panel
 #' [`Olink_Explore_1536`]    |   Olink/NGS 1472 panels
 #' [`Olink_Explore_3072`]    |   Olink/Explore 3072 panels
