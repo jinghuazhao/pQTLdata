@@ -23,7 +23,7 @@ A data frame with 5178 rows and 10 variables:
 SomaScan160410
 }
 \description{
-This is based on panel used in \insertCite{@sun18;textual}{pQTLdata}.
+This is based on panel used in \insertCite{sun18;textual}{pQTLdata}.
 }
 \details{
 from the INTERVAL study.
