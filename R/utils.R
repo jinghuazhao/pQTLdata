@@ -86,6 +86,7 @@
 #' @keywords datasets internal
 #' @format A data frame with 5343 rows and 3 variables:
 #' \describe{
+#'   \item{\code{Olink.ID}}{Olink id}
 #'   \item{\code{UniProt.ID}}{UniProt id}
 #'   \item{\code{Protein.name}}{Protein name}
 #'   \item{\code{Gene.name}}{Gene name}
