@@ -25,7 +25,7 @@
 "caprion"
 
 #' @title Olink/INF1 panel
-#' @description The panel is based on SCALLOP-INF \insertCite{zhao23;textual}{pQTLdata}
+#' @description The panel is based on SCALLOP-INF \insertCite{zhao23;textual}{pQTLdata}.
 #' @docType data
 #' @keywords datasets internal
 #' @format A data frame with 92 rows and 9 variables:
@@ -136,7 +136,7 @@
 "seer1980"
 
 #' @title Somascan panel
-#' @description This is based on panel used in \insertCite{@sun18;textual}{pQTLdata}.
+#' @description This is based on panel used in \insertCite{sun18;textual}{pQTLdata}.
 #' @docType data
 #' @keywords datasets internal
 #' @format A data frame with 5178 rows and 10 variables:
