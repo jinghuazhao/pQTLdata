@@ -7,12 +7,12 @@ Authors@R:
            comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582"))
 Description: It gathers protein panel information and meta-data for pQTLtools, <https://jinghuazhao.github.io/pQTLtools/>.
 License: MIT + file LICENSE
-URL: https://jinghuazhao.github.io/pQTLdata/, https://jinghuazhao.github.io/pQTLdata
+URL: https://jinghuazhao.github.io/pQTLdata/, https://jinghuazhao.github.io/pQTLdata/
 Depends:
     R (>= 3.5.0)
 Imports: knitr, Rdpack
 RdMacros: Rdpack
-Suggests: dplyr, grid, EnsDb.Hsapiens.v75, ensembldb, org.Hs.eg.db, S4Vectors, VennDiagram
+Suggests: dplyr, grid, EnsDb.Hsapiens.v75, ensembldb, IRanges, org.Hs.eg.db, S4Vectors, VennDiagram
 VignetteBuilder: knitr
 LazyData: Yes
 LazyLoad: Yes
