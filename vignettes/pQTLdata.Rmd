@@ -147,8 +147,8 @@ gene_data <- subset(overlap_data,gene_name%in%gene_symbols,select=-c(gene_id,gen
 cols <- c("UNIPROTID","PROTEINID","GENEID","GENENAME","SEQNAME","TXID")
 info <- ensembldb::select(EnsDb.Hsapiens.v75, keys = gene_symbols, 
                           columns = cols, keytype = "SYMBOL") |>
-        subset(!is.na(UNIPROTID)) |>
-        dplyr::left_join(head(gene_data,15),by=c('TXID'='transcript_id'))
+        dplyr::left_join(head(gene_data,15),by=c('TXID'='transcript_id')) |>
+        subset(!is.na(UNIPROTID)&!is.na(start)&!is.na(end))
 knitr::kable(head(info,15),caption="Annotation for BRCA1 and TP53")
 keytypes(org.Hs.eg.db)
 uniprot_ids <- ensembldb::select(org.Hs.eg.db, keys = gene_symbols, columns = "UNIPROT", keytype = "SYMBOL")
