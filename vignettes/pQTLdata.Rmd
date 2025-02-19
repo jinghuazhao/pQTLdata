@@ -49,17 +49,6 @@ While `library(help=pQTLdata)` displays the general information, `? pQTLdata` ca
 
 # Protein panels
 
-## Olink/Inflammation
-
-The Olink qPCR inflammation panel (`inf1`)[^inf1] used in the SCALLOP consortium seeds the collection.
-
-```{r inf1, echo=FALSE}
-options(width=200)
-knitr::kable(pQTLdata::inf1,caption="Olink/inflammation panel")
-```
-
-followed by inclusion of Olink_qPCR for all 12 panels, Olink NGS, Caprion and SWATH-MS panels. `SomaScanV4.1` is directly from SomaLogic.
-
 ## Caprion
 
 As has been the norm, no snapshot upon data release was provided which consequently requires substantial effort and the notable ones are highlighted here.
@@ -75,6 +64,18 @@ knitr::kable(updated_list,caption="Updated information on Caprion")
 ```
 
 which again is useful for extracting data from GTEx v8.
+
+## Olink
+
+This includes Olink_qPCR for all 12 panels, Olink NGS, Caprion.
+
+## SomaScan
+
+Both `SomaScanV4.1` and the latest `SomaScan11k` are directly from SomaLogic.
+
+## SWATH-MS
+
+This panel has been used in an experimental data acquisition and analysis.
 
 ## Overlap of proteins
 
@@ -94,8 +95,6 @@ grid.newpage()
 grid.draw(olink_somascan_caprion)
 ```
 
-and the latest SomaScan 11K
-
 ```{r overlap2, echo=FALSE, fig.cap="Overlap of Olink Explore HT, SomaScan 11K and Caprion", fig.height=9, fig.width=9, messages=FALSE, results="hide"}
 suppressMessages(library(dplyr))
 suppressMessages(library(VennDiagram))
@@ -112,11 +111,19 @@ grid.draw(olink_somascan_caprion)
 
 # Published data
 
-This associates with the analysis of INTERVAL data as reported @sun18, which includes the panel `SomaScan160410`, supplementary tables 4, 6, 18.
+This associates with the analysis @sun18, which includes the panel `SomaScan160410`, as with 
+the Olink qPCR inflammation panel (`inf1`)[^inf1] used in the SCALLOP consortium @zhao23.
+
+```{r inf1, echo=FALSE}
+options(width=200)
+knitr::kable(pQTLdata::inf1,caption="Olink/inflammation panel")
+```
+
+Panel `seer1980` is reported in @suhre24.
 
 # Reference data
 
-Initial curations including `biomaRt`, `hg19` and `hg19Tables` based on ENSEMBL BioMart and UCSC are now depcrecated. Insted, we resort to `EnsDb.Hsapiens.v75` from Bioconductor.
+We showcase `EnsDb.Hsapiens.v75` from Bioconductor.
 
 ```{r refdata, warnings=FALSE}
 ensembldb::metadata(EnsDb.Hsapiens.v75)
