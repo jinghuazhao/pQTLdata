@@ -2,7 +2,7 @@
 
 (2025/2/19)
 
-* Remove biomaRt, hg19, hg19Tables except their R scripts and revise vignette
+* Remove biomaRt, hg19, hg19Tables, st[4|6|18] except their R scripts and revise vignette
 * Add Ensembl gene ID to caprion & URL to DESCRIPTION but simplify inst/docs.sh
 * Add Information on Thermo Fisher Scientific - LSMS / NCI Proteomic Data Commons
 * Add information for Olink® Target 96 Inflammation Panels
