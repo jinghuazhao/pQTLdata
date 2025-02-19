@@ -1,3 +1,9 @@
+## pQTLdata 0.3
+
+(2025/2/19)
+
+* Obtain the latest olink-explore-ht-assay-list.xlsx (5,400+).
+
 ## pQTLdata 0.2
 
 (2025/2/19)
