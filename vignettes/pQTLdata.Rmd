@@ -111,15 +111,13 @@ grid.draw(olink_somascan_caprion)
 
 # Published data
 
-This associates with the analysis @sun18, which includes the panel `SomaScan160410`, as with 
-the Olink qPCR inflammation panel (`inf1`)[^inf1] used in the SCALLOP consortium @zhao23.
+This associates with several panels, including SomaScan (`SomaScan160410`), Olink qPCR inflammation
+(`inf1`) and Seer (`seer1980`) @sun18 @zhao23 @suhre24. In particular, we have
 
 ```{r inf1, echo=FALSE}
-options(width=200)
+options(width=150)
 knitr::kable(pQTLdata::inf1,caption="Olink/inflammation panel")
 ```
-
-Panel `seer1980` is reported in @suhre24.
 
 # Reference data
 
@@ -181,9 +179,3 @@ Specifically, `docs.sh` operates with GitHub while `cran.sh` builds, installs, a
 # References {-}
 
 The `EndNote/` directory includes references in @sun18 and @suhre20 formatted in EndNote.
-
-[^inf1]: **inf1**
-
-    Olink® Target 96 Inflammation Panels, `https://olink.com/products-services/target/inflammation/`
-    - Validation Data, `https://olink.com/content/uploads/2021/09/olink-inflammation-validation-data-v3.0.pdf`
-    - Protein assay list, `https://olink.com/content/uploads/2021/09/1029-v1.3-inflammation-panel-content.pdf`
