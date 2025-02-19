@@ -29,7 +29,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-pkgs <- c("dplyr", "grid", "EnsDb.Hsapiens.v75", "ensembldb", "knitr", "org.Hs.eg.db", "S4Vectors", "VennDiagram")
+pkgs <- c("dplyr", "grid", "EnsDb.Hsapiens.v75", "ensembldb", "IRanges", "knitr", "org.Hs.eg.db", "S4Vectors", "VennDiagram")
 for (p in pkgs) if (length(grep(paste("^package:", p, "$", sep=""), search())) == 0) {
     if (!requireNamespace(p)) warning(paste0("This vignette needs package `", p, "'; please install"))
 }
