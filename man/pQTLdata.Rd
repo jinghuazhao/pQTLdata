@@ -94,7 +94,8 @@ z <- subset(ps,UniProtgwas \%in\% INF1_uniprot & p<=1.5e-11)
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://jinghuazhao.github.io/pQTLdata}
+  \item \url{https://jinghuazhao.github.io/pQTLdata/}
+  \item \url{https://jinghuazhao.github.io/pQTLdata/}
 }
 
 }
