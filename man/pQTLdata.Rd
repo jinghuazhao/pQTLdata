@@ -23,9 +23,6 @@ Available data are listed in the following table.\tabular{ll}{
    \code{\link{SomaScan11k}} \tab SomaScan 11k panel \cr
    \code{\link{scallop_inf1}} \tab SCALLOP/INF meta-analysis results \cr
    \code{\link{seer1980}} \tab ST1 from Suhre et al. (2024) bioRxiv \cr
-   \code{\link{st4}} \tab ST4 of the INTERVAL SomaLogic paper \cr
-   \code{\link{st6}} \tab ST6 of the INTERVAL SomaLogic paper \cr
-   \code{\link{st18}} \tab ST18 of the INTERVAL SomaLogic paper \cr
    \code{\link{swath_ms}} \tab SWATH-MS panel \cr
    \strong{Installations} \tab   \cr
    EndNote/ \tab Proteogenomics references \cr
@@ -53,8 +50,6 @@ Vignettes on package usage:
 \examples{
 \dontrun{
 # See more on SCALLOP-INF at https://jinghuazhao.github.io/INF/
-# datasets
-head(biomaRt)
 
 # Olink-SomaScan panel overlap
 p <- list(setdiff(inf1$uniprot,"P23560"),
@@ -94,11 +89,6 @@ ps <- merge(subset(read.delim(file.path(INF,"work","pQTL_2018.txt.gz"),as.is=TRU
             pmid==29875488),
             box,by.x="trait",by.y="TargetFullName")
 z <- subset(ps,UniProtgwas \%in\% INF1_uniprot & p<=1.5e-11)
-
-# ST4 on Nature
-st4regions <- subset(st4, UniProt \%in\% INF1_uniprot)
-unique_uniprot_list <- setdiff(intersect(st4$UniProt,inf1$uniprot),"P23560")
-subset(INF1_merge,uniprot \%in\% unique_uniprot_list)
 }
 }
 \seealso{
