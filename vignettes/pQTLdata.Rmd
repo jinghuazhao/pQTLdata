@@ -162,10 +162,9 @@ Specifically, `pQTLdata.sh` handles package under Cambridge Service for Data Dri
 - EndNote, <https://endnote.com/>
 - ENSEMBL BioMart, <https://www.ensembl.org/index.html>
 - GitHub, <https://github.com/>
-- INTERVAL study, <https://www.donorhealth-btru.nihr.ac.uk/studies/interval-study/>
 - NULISA, <https://alamarbio.com/technology/nulisa-platform/>
 - NCI Proteomic Data Commons, <https://pdc.cancer.gov/pdc/browse>
-- Olink, <https://olink.com/> (<https://olink.com/resources-support/publications-2/>)
+- Olink, <https://olink.com/> (<https://olink.com/publications>)
 - SCALLOP consortium, <http://www.scallop-consortium.com/>
 - Seer, <https://seer.bio/>
 - SomaLogic, <https://somalogic.com/>
@@ -179,6 +178,6 @@ The `EndNote/` directory includes references in @sun18 and @suhre20 formatted in
 
 [^inf1]: **inf1**
 
-    Olink® Target 96 Inflammation Panels, <https://olink.com/products-services/target/inflammation/>
-    - Validation Data, <https://olink.com/content/uploads/2021/09/olink-inflammation-validation-data-v3.0.pdf>
-    - Protein assay list, <https://olink.com/content/uploads/2021/09/1029-v1.3-inflammation-panel-content.pdf>
+    Olink® Target 96 Inflammation Panels, `https://olink.com/products-services/target/inflammation/`
+    - Validation Data, `https://olink.com/content/uploads/2021/09/olink-inflammation-validation-data-v3.0.pdf`
+    - Protein assay list, `https://olink.com/content/uploads/2021/09/1029-v1.3-inflammation-panel-content.pdf`
