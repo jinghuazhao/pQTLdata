@@ -292,11 +292,8 @@ Figure 2.2: Overlap of Olink Explore HT, SomaScan 11K and Caprion
 <h2 id="published-data">
 <span class="header-section-number">3</span> Published data<a class="anchor" aria-label="anchor" href="#published-data"></a>
 </h2>
-<p>This associates with the analysis<span class="citation"><sup>1</sup></span>, which includes the panel <code>SomaScan160410</code>, as with
-the Olink qPCR inflammation panel (<code>inf1</code>)<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content="&lt;p&gt;&lt;strong&gt;inf1&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Olink® Target 96 Inflammation Panels, &lt;code&gt;https://olink.com/products-services/target/inflammation/&lt;/code&gt;
-- Validation Data, &lt;code&gt;https://olink.com/content/uploads/2021/09/olink-inflammation-validation-data-v3.0.pdf&lt;/code&gt;
-- Protein assay list, &lt;code&gt;https://olink.com/content/uploads/2021/09/1029-v1.3-inflammation-panel-content.pdf&lt;/code&gt;&lt;/p&gt;"><sup>1</sup></a> used in the SCALLOP consortium<span class="citation"><sup>2</sup></span>.</p>
+<p>This associates with several panels, including SomaScan (<code>SomaScan160410</code>), Olink qPCR inflammation
+(<code>inf1</code>) and Seer (<code>seer1980</code>)<span class="citation"><sup>1</sup></span> <span class="citation"><sup>2</sup></span><span class="citation"><sup>3</sup></span>. In particular, we have</p>
 <table class="table">
 <caption>
 <span id="tab:inf1">Table 3.1: </span>Olink/inflammation panel</caption>
@@ -1807,7 +1804,6 @@ the Olink qPCR inflammation panel (<code>inf1</code>)<a class="footnote-ref" tab
 </tr>
 </tbody>
 </table>
-<p>Panel <code>seer1980</code> is reported in<span class="citation"><sup>3</sup></span>.</p>
 </div>
 <div class="section level2" number="4">
 <h2 id="reference-data">
@@ -1830,8 +1826,9 @@ the Olink qPCR inflammation panel (<code>inf1</code>)<a class="footnote-ref" tab
 <span><span class="co">#&gt; 11       genome_build                              GRCh37</span></span>
 <span><span class="co">#&gt; 12    DBSCHEMAVERSION                                 2.0</span></span>
 <span><span class="fu">ensembldb</span><span class="fu">::</span><span class="fu">keytypes</span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v75</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "ENTREZID"            "EXONID"              "GENEBIOTYPE"         "GENEID"              "GENENAME"            "PROTDOMID"           "PROTEINDOMAINID"     "PROTEINDOMAINSOURCE"</span></span>
-<span><span class="co">#&gt;  [9] "PROTEINID"           "SEQNAME"             "SEQSTRAND"           "SYMBOL"              "TXBIOTYPE"           "TXID"                "TXNAME"              "UNIPROTID"</span></span>
+<span><span class="co">#&gt;  [1] "ENTREZID"            "EXONID"              "GENEBIOTYPE"         "GENEID"              "GENENAME"            "PROTDOMID"          </span></span>
+<span><span class="co">#&gt;  [7] "PROTEINDOMAINID"     "PROTEINDOMAINSOURCE" "PROTEINID"           "SEQNAME"             "SEQSTRAND"           "SYMBOL"             </span></span>
+<span><span class="co">#&gt; [13] "TXBIOTYPE"           "TXID"                "TXNAME"              "UNIPROTID"</span></span>
 <span><span class="va">exon_info</span> <span class="op">&lt;-</span> <span class="fu">ensembldb</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/transcripts.html" class="external-link">exons</a></span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v75</span><span class="op">)</span></span>
 <span><span class="va">gene_info</span> <span class="op">&lt;-</span> <span class="fu">ensembldb</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/transcripts.html" class="external-link">genes</a></span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v75</span><span class="op">)</span></span>
 <span><span class="va">transcript_info</span> <span class="op">&lt;-</span> <span class="fu">ensembldb</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/transcripts.html" class="external-link">transcripts</a></span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v75</span><span class="op">)</span></span>
@@ -2052,8 +2049,9 @@ the Olink qPCR inflammation panel (<code>inf1</code>)<a class="footnote-ref" tab
 </table>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">keytypes</span><span class="op">(</span><span class="va">org.Hs.eg.db</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "ACCNUM"       "ALIAS"        "ENSEMBL"      "ENSEMBLPROT"  "ENSEMBLTRANS" "ENTREZID"     "ENZYME"       "EVIDENCE"     "EVIDENCEALL"  "GENENAME"     "GENETYPE"     "GO"           "GOALL"       </span></span>
-<span><span class="co">#&gt; [14] "IPI"          "MAP"          "OMIM"         "ONTOLOGY"     "ONTOLOGYALL"  "PATH"         "PFAM"         "PMID"         "PROSITE"      "REFSEQ"       "SYMBOL"       "UCSCKG"       "UNIPROT"</span></span>
+<span><span class="co">#&gt;  [1] "ACCNUM"       "ALIAS"        "ENSEMBL"      "ENSEMBLPROT"  "ENSEMBLTRANS" "ENTREZID"     "ENZYME"       "EVIDENCE"     "EVIDENCEALL" </span></span>
+<span><span class="co">#&gt; [10] "GENENAME"     "GENETYPE"     "GO"           "GOALL"        "IPI"          "MAP"          "OMIM"         "ONTOLOGY"     "ONTOLOGYALL" </span></span>
+<span><span class="co">#&gt; [19] "PATH"         "PFAM"         "PMID"         "PROSITE"      "REFSEQ"       "SYMBOL"       "UCSCKG"       "UNIPROT"</span></span>
 <span><span class="va">uniprot_ids</span> <span class="op">&lt;-</span> <span class="fu">ensembldb</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">org.Hs.eg.db</span>, keys <span class="op">=</span> <span class="va">gene_symbols</span>, columns <span class="op">=</span> <span class="st">"UNIPROT"</span>, keytype <span class="op">=</span> <span class="st">"SYMBOL"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; 'select()' returned 1:many mapping between keys and columns</span></span></code></pre></div>
 <p>where <code>org.Hs.eg.db</code> is more focused on genes.</p>
@@ -2120,7 +2118,6 @@ Specifically, <code>docs.sh</code> operates with GitHub while <code>cran.sh</cod
 </div>
 </div>
 </div>
-
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>
 </div>
