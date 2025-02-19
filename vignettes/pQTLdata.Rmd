@@ -158,7 +158,7 @@ where `org.Hs.eg.db` is more focused on genes.
 
 # Scripts
 
-An analysis involving COVID-19 data is in `Olink/` directory , while the `scripts/` directory records data generation which potentially can be extended.
+An analysis involving COVID-19 data is in `Olink/` directory, while the `scripts/` directory records data generation which potentially can be extended.
 Specifically, `docs.sh` operates with GitHub while `cran.sh` builds, installs, and checks for compliance with the Comprehensive R Archive Network (CRAN).
 
 # URLs
