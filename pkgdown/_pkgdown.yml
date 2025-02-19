@@ -111,9 +111,6 @@ reference:
     - SomaScan11k
     - SomaScan160410
     - SomaScanV4.1
-    - st18
-    - st4
-    - st6
     - swath_ms
 
 footer:
