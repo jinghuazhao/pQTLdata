@@ -84,7 +84,7 @@
 #' @description Information on all qPCR panels
 #' @docType data
 #' @keywords datasets internal
-#' @format A data frame with 5343 rows and 3 variables:
+#' @format A data frame with 5,416 rows and 4 variables:
 #' \describe{
 #'   \item{\code{Olink.ID}}{Olink id}
 #'   \item{\code{UniProt.ID}}{UniProt id}
