@@ -1,8 +1,8 @@
 ## pQTLdata 0.2
 
-(2025/2/16)
+(2025/2/19)
 
-* Minor changes to vignette
+* Remove biomaRt, hg19, hg19Tables except their R scripts and revise vignette
 * Add Ensembl gene ID to caprion & URL to DESCRIPTION but simplify inst/docs.sh
 * Add Information on Thermo Fisher Scientific - LSMS / NCI Proteomic Data Commons
 * Add information for Olink® Target 96 Inflammation Panels
