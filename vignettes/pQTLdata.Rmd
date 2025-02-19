@@ -67,7 +67,7 @@ which again is useful for extracting data from GTEx v8.
 
 ## Olink
 
-This includes Olink_qPCR for all 12 panels, Olink NGS, Caprion.
+This includes Olink_qPCR for all 12 panels and Olink Explore panels.
 
 ## SomaScan
 
