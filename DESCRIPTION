@@ -1,11 +1,13 @@
 Package: pQTLdata
 Title: A Collection of Proteome Panels and Meta-Data
-Version: 0.2
-Date: 2025-2-19
-Authors@R:
+Version: 0.3
+Date: 2025-2-20
+Authors@R: c(
     person("Jing Hua", "Zhao", , "jinghuazhao@hotmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582"))
-Description: It gathers protein panel information and meta-data for pQTLtools, <https://jinghuazhao.github.io/pQTLtools/>.
+           comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582")),
+    person("Uwe", "Ligges", role = "ctb")
+    )
+Description: It gathers protein panel information and meta-data for 'pQTLtools', <https://jinghuazhao.github.io/pQTLtools/>.
 License: MIT + file LICENSE
 URL: https://jinghuazhao.github.io/pQTLdata/, https://jinghuazhao.github.io/pQTLdata/
 Depends:
