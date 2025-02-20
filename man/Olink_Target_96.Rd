@@ -8,7 +8,7 @@
 A data frame with 1,116 rows and 3 variables:
 \describe{
 \item{\code{UniProt}}{UniProt id}
-\item{\code{Target}}{Protein}
+\item{\code{Protein}}{Protein}
 \item{\code{Panel}}{Panel}
 }
 }

@@ -17,6 +17,7 @@ Available data are listed in the following table.\tabular{ll}{
    \code{\link{Olink_Explore_1536}} \tab Olink/NGS 1472 panels \cr
    \code{\link{Olink_Explore_3072}} \tab Olink/Explore 3072 panels \cr
    \code{\link{Olink_Explore_HT}} \tab Olink/Explore HT panels \cr
+   \code{\link{Olink_Target_96}} \tab Olink/Target 96 panels \cr
    \code{\link{Olink_qPCR}} \tab Olink/qPCR panels \cr
    \code{\link{SomaScan160410}} \tab SomaScan panel \cr
    \code{\link{SomaScanV4.1}} \tab SomaScan v4.1 panel \cr
