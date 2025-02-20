@@ -6,7 +6,7 @@
 \alias{pQTLdata-package}
 \title{A summary of datasets}
 \description{
-It gathers protein panel information and meta-data for pQTLtools, \url{https://jinghuazhao.github.io/pQTLtools/}.
+It gathers protein panel information and meta-data for 'pQTLtools', \url{https://jinghuazhao.github.io/pQTLtools/}.
 }
 \details{
 Available data are listed in the following table.\tabular{ll}{
