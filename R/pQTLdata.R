@@ -15,6 +15,7 @@
 #' [`Olink_Explore_1536`]    |   Olink/NGS 1472 panels
 #' [`Olink_Explore_3072`]    |   Olink/Explore 3072 panels
 #' [`Olink_Explore_HT`]      |   Olink/Explore HT panels
+#' [`Olink_Target_96`]       |   Olink/Target 96 panels
 #' [`Olink_qPCR`]            |   Olink/qPCR panels
 #' [`SomaScan160410`]        |   SomaScan panel
 #' [`SomaScanV4.1`]          |   SomaScan v4.1 panel
