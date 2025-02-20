@@ -1,8 +1,11 @@
 ## pQTLdata 0.3
 
-(2025/2/19)
+(2025/2/20)
 
-* Obtain the latest olink-explore-ht-assay-list.xlsx (5,416=5,400+ > 5,343).
+* Add Olink-Target-96-Assay-List.xlsx (15 panels).
+* Drop olink-explore-ht-assay-list-2023-07-12.xlsx (5,343) for olink-explore-ht-assay-list.xlsx (5,416=5,400+).
+* Add single quotes to software names in Title/Description inside DESCRIPTION (suggested by Uwe Ligges).
+* Minor changes including splitting utils.R and vignette.
 
 ## pQTLdata 0.2
 
