@@ -107,6 +107,7 @@ reference:
     - Olink_Explore_1536
     - Olink_Explore_3072
     - Olink_Explore_HT
+    - Olink_Target_96
     - Olink_qPCR
     - pQTLdata
     - scallop_inf1
