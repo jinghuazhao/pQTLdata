@@ -1,7 +1,14 @@
+## pQTLdata 0.5
+
+(2025/3/2)
+
+* Revise README.md/pQTLdata.Rmd
+
 ## pQTLdata 0.4
 
 (2025/3/2)
 
+* CRAN submission
 * Extend Description and add seer1980 to data/datalist.
 
 ## pQTLdata 0.3
