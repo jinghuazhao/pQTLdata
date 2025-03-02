@@ -1,3 +1,9 @@
+## pQTLdata 0.4
+
+(2025/3/2)
+
+* Extend Description and add seer1980 to data/datalist.
+
 ## pQTLdata 0.3
 
 (2025/2/20)
