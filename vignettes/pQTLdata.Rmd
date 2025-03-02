@@ -162,7 +162,7 @@ Specifically, `docs.sh` operates with GitHub while `cran.sh` builds, installs, a
 
 # URLs
 
-- Cell Carta, <https://cellcarta.com/>
+- CellCarta, <https://cellcarta.com/>
 - EndNote, <https://endnote.com/>
 - ENSEMBL BioMart, <https://www.ensembl.org/index.html>
 - GitHub, <https://github.com/>
