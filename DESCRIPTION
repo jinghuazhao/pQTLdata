@@ -7,10 +7,11 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582")),
     person("Uwe", "Ligges", role = "ctb")
     )
-Description: It collects protein panel data and metadata for 'pQTLtools',
- <https://jinghuazhao.github.io/pQTLtools/>. Currently, data include panels
- which are affinity-based such as Olink and Somascan as well as the mass
- spectrometry-based counterparts from Cell Carta and Seer.
+Description: It aggregates protein panel data and metadata for protein quantitative
+ trait locus (pQTL) toos, 'pQTLtools', <https://jinghuazhao.github.io/pQTLtools/>.
+ The data encompass affinity-based panels such as Olink and Somascan, along with
+ their mass spectrometry-based counterparts from Cell Carta and Seer. The metadata
+ include updated annotations and publication details.
 License: MIT + file LICENSE
 URL: https://jinghuazhao.github.io/pQTLdata/, https://jinghuazhao.github.io/pQTLdata/
 Depends:
