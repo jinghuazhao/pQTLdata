@@ -1,6 +1,10 @@
 ## A Collection of Proteome Panels and Meta-Data
 
-It gathers protein panel information and meta-data for [pQTLtools](https://github.com/jinghuazhao/pQTLtools).
+It aggregates protein panel data and metadata for protein quantitative
+trait locus (pQTL) tools, 'pQTLtools', <https://jinghuazhao.github.io/pQTLtools/>.
+The data encompass affinity-based panels such as Olink and Somascan, along with
+their mass spectrometry-based counterparts from CellCarta and Seer. The metadata
+include updated annotations and publication details.
 
 ### Installation
 
