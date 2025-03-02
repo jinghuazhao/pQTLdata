@@ -2,7 +2,7 @@
 
 (2025/3/2)
 
-* Revise README.md/pQTLdata.Rmd
+* Revise README.md/pQTLdata.Rmd/_pkgdown.yml
 
 ## pQTLdata 0.4
 
