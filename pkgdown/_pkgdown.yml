@@ -67,7 +67,7 @@ navbar:
     cellcarta:
       icon: fas fa-fast-backward
       href: https://cellcarta.com/
-      aria-label: Cell Carta
+      aria-label: CellCarta
     urls:
       text: URLs
       menu:
