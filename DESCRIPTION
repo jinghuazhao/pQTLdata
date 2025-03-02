@@ -1,13 +1,16 @@
 Package: pQTLdata
 Title: A Collection of Proteome Panels and Meta-Data
-Version: 0.3
-Date: 2025-2-20
+Version: 0.4
+Date: 2025-3-2
 Authors@R: c(
     person("Jing Hua", "Zhao", , "jinghuazhao@hotmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582")),
     person("Uwe", "Ligges", role = "ctb")
     )
-Description: It gathers protein panel information and meta-data for 'pQTLtools', <https://jinghuazhao.github.io/pQTLtools/>.
+Description: It collects protein panel data and metadata for 'pQTLtools',
+ <https://jinghuazhao.github.io/pQTLtools/>. Currently, data include panels
+ which are affinity-based such as Olink and Somascan as well as the mass
+ spectrometry-based counterparts from Cell Carta and Seer.
 License: MIT + file LICENSE
 URL: https://jinghuazhao.github.io/pQTLdata/, https://jinghuazhao.github.io/pQTLdata/
 Depends:
