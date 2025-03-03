@@ -71,7 +71,7 @@ navbar:
     urls:
       text: URLs
       menu:
-      - text: Cell Carta
+      - text: CellCarta
         href: https://cellcarta.com/
       - text: BiomaRt
         href: https://www.ensembl.org/index.html
