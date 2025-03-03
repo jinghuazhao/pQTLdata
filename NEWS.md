@@ -1,7 +1,8 @@
 ## pQTLdata 0.5
 
-(2025/3/2)
+(2025/3/3)
 
+* Automate devtools::document() and pkgdown::build_site()
 * Revise README.md/pQTLdata.Rmd/_pkgdown.yml
 
 ## pQTLdata 0.4
