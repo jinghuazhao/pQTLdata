@@ -42,6 +42,9 @@ function create_github_repository()
 
 # 6. automate commitments
 
+module load ceuadmin/R
+Rscript -e 'devtools::document();pkgdown::build_site()'
+
 for d in pQTLdata
 do
     if [ -d vignettes/${d} ]; then
