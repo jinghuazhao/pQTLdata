@@ -42,7 +42,7 @@
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><a class="external-link nav-link" href="https://github.com/jinghuazhao/pQTLdata" aria-label="GitHub"><span class="fa fab fa-github"></span></a></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://jinghuazhao.github.io/R/" aria-label="R packages"><span class="fa fab fa-r-project"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://cran.r-project.org/package=pQTLdata" aria-label="R packages"><span class="fa fab fa-r-project"></span></a></li>
 <li class="nav-item"><a class="external-link nav-link" href="https://cellcarta.com/" aria-label="CellCarta"><span class="fa fas fa-fast-backward"></span></a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-urls" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">URLs</button>
@@ -1826,16 +1826,21 @@ Figure 2.2: Overlap of Olink Explore HT, SomaScan 11K and Caprion
 <span><span class="co">#&gt; 11       genome_build                              GRCh37</span></span>
 <span><span class="co">#&gt; 12    DBSCHEMAVERSION                                 2.0</span></span>
 <span><span class="fu">ensembldb</span><span class="fu">::</span><span class="fu">keytypes</span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v75</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "ENTREZID"            "EXONID"              "GENEBIOTYPE"         "GENEID"              "GENENAME"            "PROTDOMID"          </span></span>
-<span><span class="co">#&gt;  [7] "PROTEINDOMAINID"     "PROTEINDOMAINSOURCE" "PROTEINID"           "SEQNAME"             "SEQSTRAND"           "SYMBOL"             </span></span>
-<span><span class="co">#&gt; [13] "TXBIOTYPE"           "TXID"                "TXNAME"              "UNIPROTID"</span></span>
+<span><span class="co">#&gt;  [1] "ENTREZID"            "EXONID"              "GENEBIOTYPE"        </span></span>
+<span><span class="co">#&gt;  [4] "GENEID"              "GENENAME"            "PROTDOMID"          </span></span>
+<span><span class="co">#&gt;  [7] "PROTEINDOMAINID"     "PROTEINDOMAINSOURCE" "PROTEINID"          </span></span>
+<span><span class="co">#&gt; [10] "SEQNAME"             "SEQSTRAND"           "SYMBOL"             </span></span>
+<span><span class="co">#&gt; [13] "TXBIOTYPE"           "TXID"                "TXNAME"             </span></span>
+<span><span class="co">#&gt; [16] "UNIPROTID"</span></span>
 <span><span class="va">exon_info</span> <span class="op">&lt;-</span> <span class="fu">ensembldb</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/transcripts.html" class="external-link">exons</a></span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v75</span><span class="op">)</span></span>
 <span><span class="va">gene_info</span> <span class="op">&lt;-</span> <span class="fu">ensembldb</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/transcripts.html" class="external-link">genes</a></span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v75</span><span class="op">)</span></span>
 <span><span class="va">transcript_info</span> <span class="op">&lt;-</span> <span class="fu">ensembldb</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/GenomicFeatures/man/transcripts.html" class="external-link">transcripts</a></span><span class="op">(</span><span class="va">EnsDb.Hsapiens.v75</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="fu">S4Vectors</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/S4Vectors/man/Vector-class.html" class="external-link">mcols</a></span><span class="op">(</span><span class="va">gene_info</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "gene_id"          "gene_name"        "gene_biotype"     "seq_coord_system" "symbol"           "entrezid"</span></span>
+<span><span class="co">#&gt; [1] "gene_id"          "gene_name"        "gene_biotype"     "seq_coord_system"</span></span>
+<span><span class="co">#&gt; [5] "symbol"           "entrezid"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="fu">S4Vectors</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/S4Vectors/man/Vector-class.html" class="external-link">mcols</a></span><span class="op">(</span><span class="va">transcript_info</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "tx_id"            "tx_biotype"       "tx_cds_seq_start" "tx_cds_seq_end"   "gene_id"          "tx_name"</span></span>
+<span><span class="co">#&gt; [1] "tx_id"            "tx_biotype"       "tx_cds_seq_start" "tx_cds_seq_end"  </span></span>
+<span><span class="co">#&gt; [5] "gene_id"          "tx_name"</span></span>
 <span><span class="va">overlaps</span> <span class="op">&lt;-</span> <span class="fu">IRanges</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/IRanges/man/findOverlaps-methods.html" class="external-link">findOverlaps</a></span><span class="op">(</span><span class="va">transcript_info</span>, <span class="va">gene_info</span><span class="op">)</span></span>
 <span><span class="va">overlapping_transcripts</span> <span class="op">&lt;-</span> <span class="va">transcript_info</span><span class="op">[</span><span class="fu">queryHits</span><span class="op">(</span><span class="va">overlaps</span><span class="op">)</span><span class="op">]</span></span>
 <span><span class="va">overlapping_genes</span> <span class="op">&lt;-</span> <span class="va">gene_info</span><span class="op">[</span><span class="fu">subjectHits</span><span class="op">(</span><span class="va">overlaps</span><span class="op">)</span><span class="op">]</span></span>
@@ -2066,9 +2071,12 @@ Figure 2.2: Overlap of Olink Explore HT, SomaScan 11K and Caprion
 </table>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">keytypes</span><span class="op">(</span><span class="va">org.Hs.eg.db</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "ACCNUM"       "ALIAS"        "ENSEMBL"      "ENSEMBLPROT"  "ENSEMBLTRANS" "ENTREZID"     "ENZYME"       "EVIDENCE"     "EVIDENCEALL" </span></span>
-<span><span class="co">#&gt; [10] "GENENAME"     "GENETYPE"     "GO"           "GOALL"        "IPI"          "MAP"          "OMIM"         "ONTOLOGY"     "ONTOLOGYALL" </span></span>
-<span><span class="co">#&gt; [19] "PATH"         "PFAM"         "PMID"         "PROSITE"      "REFSEQ"       "SYMBOL"       "UCSCKG"       "UNIPROT"</span></span>
+<span><span class="co">#&gt;  [1] "ACCNUM"       "ALIAS"        "ENSEMBL"      "ENSEMBLPROT"  "ENSEMBLTRANS"</span></span>
+<span><span class="co">#&gt;  [6] "ENTREZID"     "ENZYME"       "EVIDENCE"     "EVIDENCEALL"  "GENENAME"    </span></span>
+<span><span class="co">#&gt; [11] "GENETYPE"     "GO"           "GOALL"        "IPI"          "MAP"         </span></span>
+<span><span class="co">#&gt; [16] "OMIM"         "ONTOLOGY"     "ONTOLOGYALL"  "PATH"         "PFAM"        </span></span>
+<span><span class="co">#&gt; [21] "PMID"         "PROSITE"      "REFSEQ"       "SYMBOL"       "UCSCKG"      </span></span>
+<span><span class="co">#&gt; [26] "UNIPROT"</span></span>
 <span><span class="va">uniprot_ids</span> <span class="op">&lt;-</span> <span class="fu">ensembldb</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/AnnotationDbi/man/AnnotationDb-class.html" class="external-link">select</a></span><span class="op">(</span><span class="va">org.Hs.eg.db</span>, keys <span class="op">=</span> <span class="va">gene_symbols</span>, columns <span class="op">=</span> <span class="st">"UNIPROT"</span>, keytype <span class="op">=</span> <span class="st">"SYMBOL"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; 'select()' returned 1:many mapping between keys and columns</span></span></code></pre></div>
 <p>where <code>org.Hs.eg.db</code> is more focused on genes.</p>
