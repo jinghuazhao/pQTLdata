@@ -27,7 +27,6 @@ INF1_merge <- merge(inf1,
                     read.delim(file.path(INF,"work","INF1.merge-rsid"),as.is=TRUE),
                     by="prot")
 INF1_uniprot <- unique(with(INF1_merge,uniprot))
-options(width=250)
 st6_replicates <- subset(replicates,UniProt %in% INF1_uniprot)
 table(subset(st6_replicates,UniProt %in% INF1_uniprot)$Replicates)
 
