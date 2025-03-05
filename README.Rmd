@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+```{r logo, echo = FALSE, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/"
+)
+```
+
+## A Collection of Proteome Panels and Meta-Data
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+desc <- read.dcf("DESCRIPTION")
+description <- desc[, "Description"]
+lines <- unlist(lapply(strsplit(description, "\n"),paste,""))
+lines[[length(lines)]] <- gsub(" $","",lines[[length(lines)]])
+knitr::asis_output(lines)
+```
+
+### Installation
+
+1. Install from R
+
+```r
+if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
+remotes::install_github("jinghuazhao/pQTLdata")
+```
+
+2. Install from GitHub repository
+
+```bash
+git clone https://github.com/jinghuazhao/pQTLdata
+R CMD INSTALL pQTLdata
+```
+
+3. Install from zip file
+
+```bash
+wget https://github.com/jinghuazhao/pQTLdata/archive/refs/heads/main.zip
+unzip main
+```
+
+### A summary of datasets
+
+```r
+library(help=pQTLdata)
+help(pQTLdata)
+```
