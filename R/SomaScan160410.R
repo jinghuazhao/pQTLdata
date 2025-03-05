@@ -2,7 +2,7 @@
 #' @description This is based on panel used in \insertCite{sun18;textual}{pQTLdata}.
 #' @docType data
 #' @keywords datasets internal
-#' @format A data frame with 5178 rows and 10 variables:
+#' @format A data frame with 5,178 rows and 10 variables:
 #' \describe{
 #'   \item{\code{SOMAMER_ID}}{Somamer id}
 #'   \item{\code{UniProt}}{UniProt id}

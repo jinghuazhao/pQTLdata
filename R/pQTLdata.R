@@ -45,47 +45,25 @@
 #' @author Jing Hua Zhao in collaboration with other colleagues.
 #' @keywords internal
 #' @examples
-#' \dontrun{
-#' # See more on SCALLOP-INF at https://jinghuazhao.github.io/INF/
-#'
+#' \donttest{
 #' # Olink-SomaScan panel overlap
 #' p <- list(setdiff(inf1$uniprot,"P23560"),
 #'           setdiff(SomaScan160410$UniProt[!is.na(SomaScan160410$UniProt)],"P23560"))
 #' cnames <- c("INF1","SomaScan")
-#' VennDiagram::venn.diagram(x = p, category.names=cnames, filename=NULL,
-#'                           disable.logging = TRUE, imagetype="png", output=TRUE)
+#' os <- VennDiagram::venn.diagram(x = p, category.names=cnames, filename=NULL,
+#'                                 disable.logging = TRUE)
+#' grid.newpage()
+#' grid.draw(os)
 #' m <- merge(inf1,SomaScan160410,by.x="uniprot",by.y="UniProt")
 #' u <- setdiff(with(m,unique(uniprot)),"P23560")
-#' options(width=220)
 #' o <- subset(inf1,uniprot %in% u)
 #' dim(o)
-#' o
 #' vars <- c("UniProt","chr","start","end","extGene","Target","TargetFullName")
 #' s <- subset(SomaScan160410[vars], UniProt %in% u)
 #' dim(s)
 #' us <- s[!duplicated(s),]
 #' dim(us)
 #' us
-#'
-#' # SCALLOP/INF1
-#' INF <- Sys.getenv("INF")
-#' INF1_merge <- merge(inf1,
-#'                     read.delim(file.path(INF,"work","INF1.merge-rsid"),as.is=TRUE),
-#'                     by="prot")
-#' INF1_uniprot <- unique(with(INF1_merge,uniprot))
-#'
-#' # INTERVAL SomaScan data at box
-#' HOME <- Sys.getenv("HOME")
-#' box <- read.delim(file.path(HOME,"SomaLogic","doc","INTERVAL-box.tsv"),as.is=TRUE)
-#' box_INF1 <- subset(box,UniProt %in% INF1_uniprot)
-#' box_uniprot <- setdiff(unique(with(box_INF1,UniProt)),"P23560")
-#' setdiff(INF1_uniprot,box_uniprot)
-#'
-#' # Phenoscanner database
-#' ps <- merge(subset(read.delim(file.path(INF,"work","pQTL_2018.txt.gz"),as.is=TRUE),
-#'             pmid==29875488),
-#'             box,by.x="trait",by.y="TargetFullName")
-#' z <- subset(ps,UniProtgwas %in% INF1_uniprot & p<=1.5e-11)
 #' }
 
 "_PACKAGE"

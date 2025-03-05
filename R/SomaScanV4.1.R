@@ -2,7 +2,7 @@
 #' @description This is the 7k panel
 #' @docType data
 #' @keywords datasets internal
-#' @format A data frame with 7288 rows and 6 variables:
+#' @format A data frame with 7,288 rows and 6 variables:
 #' \describe{
 #'   \item{\code{#}}{A serial number}
 #'   \item{\code{SeqID}}{SeqID}

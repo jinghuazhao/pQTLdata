@@ -10,7 +10,7 @@
 #'   \item{\code{UniProt.ID}}{UniProt ID}
 #'   \item{\code{Entrez.Gene.Name}}{Entrez gene name}
 #' }
-#' @source https://somalogic.com/somascan-11k-assay/
+#' @source \url{https://somalogic.com/somascan-11k-assay/}
 #' @details curated from SomaLogic website.
 
 "SomaScan11k"

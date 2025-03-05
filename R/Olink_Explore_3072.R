@@ -2,7 +2,7 @@
 #' @description Information on all qPCR panels
 #' @docType data
 #' @keywords datasets internal
-#' @format A data frame with 2945 rows and 4 variables:
+#' @format A data frame with 2,945 rows and 4 variables:
 #' \describe{
 #'   \item{\code{UniProt.ID}}{UniProt id}
 #'   \item{\code{Protein.name}}{Protein name}

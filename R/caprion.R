@@ -20,6 +20,6 @@
 #'   \item{\code{start}}{minimum start}
 #'   \item{\code{end}}{maximum end}
 #' }
-#' @details See the Caprion repository involving its use. Efforts have been put to check against hg19Tables in this package though a modified version is not generated except the scripts (namely, scripts/caprion.R).
+#' @details See the Caprion repository involving its use.
 
 "caprion"
