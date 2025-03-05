@@ -2,9 +2,10 @@
 
 It aggregates protein panel data and metadata for protein quantitative
 trait locus (pQTL) tools, 'pQTLtools', <https://jinghuazhao.github.io/pQTLtools/>.
-The data encompass affinity-based panels such as Olink and Somascan, along with
-their mass spectrometry-based counterparts from CellCarta and Seer. The metadata
-include updated annotations and publication details.
+The data encompass affinity-based panels such as 'Olink', <https://olink.com/> and
+'Somascan', <https://somalogic.com/>, along with their mass spectrometry-based
+counterparts from 'CellCarta', <https://cellcarta.com/> and 'Seer', <https://seer.bio/>.
+The metadata include updated annotations and publication details.
 
 ### Installation
 
