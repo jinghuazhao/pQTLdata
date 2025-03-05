@@ -2,9 +2,10 @@
 
 (2025/3/5)
 
-* Automate devtools::document() and pkgdown::build_site()
-* Revise DESCRIPTION/pQTLdata.R(md)/inst/scripts (suggested by Beni Altmann)
-* Revise README.md/_pkgdown.yml
+* Add README.Rmd so as to extract DESCRIPTION/Description to README.md.
+* Automate devtools::document() and pkgdown::build_site().
+* Revise DESCRIPTION/pQTLdata.R(md)/inst/scripts (suggested by Beni Altmann).
+* Revise _pkgdown.yml.
 
 ## pQTLdata 0.4
 
