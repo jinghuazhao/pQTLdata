@@ -6,7 +6,7 @@
 \alias{pQTLdata-package}
 \title{A summary of datasets}
 \description{
-It aggregates protein panel data and metadata for protein quantitative trait locus (pQTL) analysis using 'pQTLtools' (\url{https://jinghuazhao.github.io/pQTLtools/}). The package includes data from affinity-based panels such as 'Olink' (\url{https://olink.com/}) and 'Somascan' (\url{https://somalogic.com/}), as well as mass spectrometry-based panels from 'CellCarta' (\url{https://cellcarta.com/}) and 'Seer' (\url{https://seer.bio/}). The metadata encompasses updated annotations and publication details.
+It aggregates protein panel data and metadata for protein quantitative trait locus (pQTL) analysis using 'pQTLtools' (\url{https://jinghuazhao.github.io/pQTLtools/}). The package includes data from affinity-based panels such as 'Olink' (\url{https://olink.com/}) and 'SomaScan' (\url{https://somalogic.com/}), as well as mass spectrometry-based panels from 'CellCarta' (\url{https://cellcarta.com/}) and 'Seer' (\url{https://seer.bio/}). The metadata encompasses updated annotations and publication details.
 }
 \details{
 Available data are listed in the following table.\tabular{ll}{
