@@ -20,5 +20,5 @@ GitHub/pkgdown files and build/install/check CRAN source package.
 The following websites are noted:
 
 * <https://blood-proteoform-atlas.org/>
-* <http://metabolomics.helmholtz-muenchen.de/pgwas/>
+* <http://metabolomics.helmholtz-muenchen.de/>
 * <https://dash.gallery/dash-drug-discovery/>
