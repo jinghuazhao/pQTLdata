@@ -1,4 +1,3 @@
-options(width=200)
 library(gap)
 load("biomaRt.rda")
 v <- c("ensembl_gene_id","chromosome_name","start_position","end_position","hgnc_symbol","uniprotswissprot")

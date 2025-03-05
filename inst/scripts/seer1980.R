@@ -1,4 +1,3 @@
-options(width=200)
 suppressMessages(library(dplyr))
 require(openxlsx)
 url <- "https://www.biorxiv.org/content/biorxiv/early/2024/06/01/2024.05.27.596028/DC4/embed/media-4.xlsx?download=true"

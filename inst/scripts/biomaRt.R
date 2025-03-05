@@ -1,4 +1,3 @@
-options(width=200)
 library(biomaRt)
 listEnsemblArchives()
 ensembl <- useMart("ensembl", dataset="hsapiens_gene_ensembl", host="grch37.ensembl.org", path="/biomart/martservice")
