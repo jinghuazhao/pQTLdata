@@ -289,5 +289,3 @@ caprion_legacy <- function()
                 bed_intersect(glist_hg19)
   }
 }
-
-
