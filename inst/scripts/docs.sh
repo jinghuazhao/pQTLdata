@@ -43,7 +43,7 @@ function create_github_repository()
 # 6. automate commitments
 
 module load ceuadmin/R
-Rscript -e 'devtools::document();pkgdown::build_site()'
+Rscript -e 'knitr::knit("README.Rmd");devtools::document();pkgdown::build_site()'
 
 for d in pQTLdata
 do
