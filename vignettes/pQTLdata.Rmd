@@ -115,7 +115,6 @@ This associates with several panels, including SomaScan (`SomaScan160410`)@sun18
 (`inf1`) @zhao23 and Seer (`seer1980`) @suhre24. In particular, `inf1` contains updates from the original release by Olink.
 
 ```{r inf1, echo=FALSE}
-options(width=150)
 knitr::kable(pQTLdata::inf1,caption="Olink/inflammation panel")
 ```
 
