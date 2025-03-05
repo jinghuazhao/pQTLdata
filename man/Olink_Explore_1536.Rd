@@ -5,7 +5,7 @@
 \alias{Olink_Explore_1536}
 \title{Olink/Explore 1536 panel}
 \format{
-A data frame with 1472 rows and 3 variables:
+A data frame with 1,472 rows and 3 variables:
 \describe{
 \item{\code{UniProt}}{UniProt id}
 \item{\code{Assay}}{Experimental assay}

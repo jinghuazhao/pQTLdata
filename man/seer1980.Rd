@@ -5,7 +5,7 @@
 \alias{seer1980}
 \title{Seer 1980 panel}
 \format{
-A data frame with 1980 rows:
+A data frame with 1,980 rows:
 \describe{
 \item{\code{PID.NP}}{PID.NP}
 \item{\code{protein_ids}}{protein_ids}

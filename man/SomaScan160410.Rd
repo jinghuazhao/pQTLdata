@@ -5,7 +5,7 @@
 \alias{SomaScan160410}
 \title{Somascan panel}
 \format{
-A data frame with 5178 rows and 10 variables:
+A data frame with 5,178 rows and 10 variables:
 \describe{
 \item{\code{SOMAMER_ID}}{Somamer id}
 \item{\code{UniProt}}{UniProt id}

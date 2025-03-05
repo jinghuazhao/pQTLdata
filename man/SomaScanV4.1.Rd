@@ -5,7 +5,7 @@
 \alias{SomaScanV4.1}
 \title{SomaScan v4.1}
 \format{
-A data frame with 7288 rows and 6 variables:
+A data frame with 7,288 rows and 6 variables:
 \describe{
 \item{\code{#}}{A serial number}
 \item{\code{SeqID}}{SeqID}

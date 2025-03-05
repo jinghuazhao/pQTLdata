@@ -15,7 +15,7 @@ A data frame with 10,776 rows and 5 variables:
 }
 }
 \source{
-https://somalogic.com/somascan-11k-assay/
+\url{https://somalogic.com/somascan-11k-assay/}
 }
 \usage{
 SomaScan11k
