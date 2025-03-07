@@ -10,10 +10,10 @@ knitr::opts_chunk$set(
 )
 ```
 
-## A Collection of Proteome Panels and Metadata
-
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 desc <- read.dcf("DESCRIPTION")
+title <- desc[, "Title"]
+knitr::asis_output(paste0("##"," ", title,"\n\n"))
 description <- desc[, "Description"]
 lines <- unlist(lapply(strsplit(description, "\n"),paste,""))
 lines[[length(lines)]] <- gsub(" $","",lines[[length(lines)]])
