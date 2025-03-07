@@ -2,9 +2,6 @@ home:
   title: Protein Quantitative Trait Locus meta-data
   description: A Collection of pQTL Panels and Meta-Data.
   links:
-  - text: GitHub
-    icon: fab fa-github
-    href: https://github.com/jinghuazhao/pQTLdata
   - text: pQTLtools
     href: https://jinghuazhao.github.io/pQTLtools/
   sidebar:
