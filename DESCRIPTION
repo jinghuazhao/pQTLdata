@@ -1,7 +1,7 @@
 Package: pQTLdata
 Title: A Collection of Proteome Panels and Meta-Data
-Version: 0.5
-Date: 2025-3-5
+Version: 0.6
+Date: 2025-3-7
 Authors@R: c(
     person("Jing Hua", "Zhao", , "jinghuazhao@hotmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582")),
@@ -15,7 +15,7 @@ Description: It aggregates protein panel data and metadata for protein quantitat
  'CellCarta' (<https://cellcarta.com/>) and 'Seer' (<https://seer.bio/>). The metadata
  encompasses updated annotations and publication details.
 License: MIT + file LICENSE
-URL: https://jinghuazhao.github.io/pQTLdata/, https://jinghuazhao.github.io/pQTLdata/
+URL: https://jinghuazhao.github.io/pQTLdata/, https://github.com/jinghuazhao/pQTLdata
 Depends:
     R (>= 3.5.0)
 Imports: knitr, Rdpack
