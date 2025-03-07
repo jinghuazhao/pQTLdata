@@ -74,7 +74,7 @@ us
 Useful links:
 \itemize{
   \item \url{https://jinghuazhao.github.io/pQTLdata/}
-  \item \url{https://jinghuazhao.github.io/pQTLdata/}
+  \item \url{https://github.com/jinghuazhao/pQTLdata}
 }
 
 }
