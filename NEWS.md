@@ -1,3 +1,9 @@
+## pQTLdata 0.6
+
+(2025/3/7)
+
+* Revise DESCRIPTION/URL after CRAN publication.
+
 ## pQTLdata 0.5
 
 (2025/3/5)
