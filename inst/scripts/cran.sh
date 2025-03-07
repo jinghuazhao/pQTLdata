@@ -3,7 +3,7 @@
 set -e
 src="$HOME/pQTLdata"
 dst="$HOME/R/pQTLdata"
-log_file="$HOME/pQTLdata_copy.log"
+log_file="$HOME/work/pQTLdata_copy.log"
 
 remove_destination() {
   if [ -d "$dst" ]; then
