@@ -1,6 +1,6 @@
 ## pQTLdata 0.6
 
-(2025/3/7)
+(2025/3/10)
 
 * Drop GitHub in _pkgdown.yml.
 * Revise DESCRIPTION/(Title, URL), README.Rmd after CRAN publication.
