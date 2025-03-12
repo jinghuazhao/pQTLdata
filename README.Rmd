@@ -25,6 +25,10 @@ knitr::asis_output(lines)
 1. Install from R
 
 ```r
+# CRAN
+install.packages("pQTLdata")
+
+# GitHub
 if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
 remotes::install_github("jinghuazhao/pQTLdata")
 ```
