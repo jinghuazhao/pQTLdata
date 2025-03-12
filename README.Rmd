@@ -13,14 +13,14 @@ knitr::opts_chunk$set(
 ```{r, echo = FALSE, message=FALSE, warning=FALSE}
 desc <- read.dcf("DESCRIPTION")
 title <- desc[, "Title"]
-knitr::asis_output(paste0("##"," ", title,"\n\n"))
+knitr::asis_output(paste0("#"," ", title,"\n\n"))
 description <- desc[, "Description"]
 lines <- unlist(lapply(strsplit(description, "\n"),paste,""))
 lines[[length(lines)]] <- gsub(" $","",lines[[length(lines)]])
 knitr::asis_output(lines)
 ```
 
-### Installation
+## Installation
 
 1. Install from R
 
@@ -47,7 +47,7 @@ wget https://github.com/jinghuazhao/pQTLdata/archive/refs/heads/main.zip
 unzip main
 ```
 
-### A summary of datasets
+## A summary of datasets
 
 ```r
 library(help=pQTLdata)
