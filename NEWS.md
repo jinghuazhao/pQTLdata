@@ -2,6 +2,7 @@
 
 (2025/3/13)
 
+* Add logo.png from Grok-3 (jpg), DjVuLibre/3.5.28, ImageMagick/7.1.1-31 (png).
 * Drop GitHub in _pkgdown.yml.
 * Revise pQTLdata.Rmd.
 * Revise DESCRIPTION/(Title, URL), README.Rmd after CRAN publication.
