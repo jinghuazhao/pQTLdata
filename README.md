@@ -10,7 +10,7 @@ It aggregates protein panel data and metadata for protein quantitative trait loc
 
 ## Installation
 
-1. Install from R
+### 1. Install from R
 
 ```r
 # CRAN
@@ -21,14 +21,14 @@ if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
 remotes::install_github("jinghuazhao/pQTLdata")
 ```
 
-2. Install from GitHub repository
+### 2. Install from GitHub repository
 
 ```bash
 git clone https://github.com/jinghuazhao/pQTLdata
 R CMD INSTALL pQTLdata
 ```
 
-3. Install from zip file
+### 3. Install from zip file
 
 ```bash
 wget https://github.com/jinghuazhao/pQTLdata/archive/refs/heads/main.zip
