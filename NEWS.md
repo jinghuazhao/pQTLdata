@@ -2,7 +2,7 @@
 
 (2025/3/13)
 
-* Add logo/favicons from Grok-3, huggingface.co/spaces/not-lain/background-removal (jpg), DjVuLibre/3.5.28, ImageMagick/7.1.1-31 (png) & pkgdown::build_favicons().
+* Add logo/favicons from Grok-3, huggingface.co/spaces/not-lain/background-removal, and usethis::use_logo() (jpg), DjVuLibre/3.5.28, ImageMagick/7.1.1-31 (png), and pkgdown::build_favicons().
 * Drop GitHub in _pkgdown.yml.
 * Revise pQTLdata.Rmd.
 * Revise DESCRIPTION/(Title, URL), README.Rmd after CRAN publication.
