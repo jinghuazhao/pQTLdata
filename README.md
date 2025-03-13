@@ -4,7 +4,7 @@ output: github_document
 
 
 
-<img src="man/figures/logo.png" align="right" height="110" alt="pQTLdata website" />
+<img src="man/figures/logo.png" align="right" height="110" alt="" />
 
 ## A Collection of Proteome Panels and Metadata
 
