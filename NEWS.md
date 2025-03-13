@@ -1,6 +1,6 @@
 ## pQTLdata 0.6
 
-(2025/3/12)
+(2025/3/13)
 
 * Drop GitHub in _pkgdown.yml.
 * Revise pQTLdata.Rmd.
