@@ -15,5 +15,7 @@
 #'   \item{\code{geneName}}{HGNC symbol}
 #' }
 #' @details As above.
+#' @references
+#' \insertAllCited{}
 
 "swath_ms"
