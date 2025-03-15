@@ -3,7 +3,7 @@ pkgdown: 2.1.1.9000
 pkgdown_sha: 18cca452d736fea33d47b19b4ef4973db9104a75
 articles:
   pQTLdata: pQTLdata.html
-last_built: 2025-03-15T17:19Z
+last_built: 2025-03-15T17:27Z
 urls:
   reference: https://jinghuazhao.github.io/pQTLdata/reference
   article: https://jinghuazhao.github.io/pQTLdata/articles
