@@ -21,8 +21,8 @@
 #' [`SomaScanV4.1`]          |   SomaScan v4.1 panel
 #' [`SomaScan11k`]           |   SomaScan 11k panel
 #' [`scallop_inf1`]          |   SCALLOP/INF meta-analysis results
-#' [`seer1980`]              |   ST1 from Suhre et al. (2024) bioRxiv
-#' [`swath_ms`]              |   SWATH-MS panel
+#' [`seer1980`]              |   ST1 from \insertCite{suhre24;textual}{pQTLdata}
+#' [`swath_ms`]              |   A curated SWATH-MS panel, see \insertCite{ludwig18;textual}{pQTLdata}
 #' **Installations**         |   &nbsp;
 #' EndNote/                  |   Proteogenomics references
 #' Olink/                    |   Olink-COVID analysis by MGH
@@ -65,5 +65,7 @@
 #' dim(us)
 #' us
 #' }
+#' @references
+#' \insertAllCited{}
 
 "_PACKAGE"
