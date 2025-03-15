@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-It aggregates protein panel data and metadata for protein quantitative trait locus (pQTL) analysis using 'pQTLtools' (\url{https://jinghuazhao.github.io/pQTLtools/}). The package includes data from affinity-based panels such as 'Olink' (\url{https://olink.com/}) and 'SomaScan' (\url{https://somalogic.com/}), as well as mass spectrometry-based panels from 'CellCarta' (\url{https://cellcarta.com/}) and 'Seer' (\url{https://seer.bio/}). The metadata encompasses updated annotations and publication details.
+It aggregates protein panel data and metadata for protein quantitative trait locus (pQTL) analysis using 'pQTLtools' (\url{https://jinghuazhao.github.io/pQTLtools/}). The package includes data from affinity-based panels such as 'Olink' (\url{https://olink.com/}) and 'SomaScan' (\url{https://somalogic.com/}), as well as mass spectrometry-based panels from 'CellCarta' (\url{https://cellcarta.com/}), 'Seer' (\url{https://seer.bio/}) and 'swath_ms' (https://doi.org/10.15252/msb.20178126). The metadata encompasses updated annotations and publication details.
 }
 \details{
 Available data are listed in the following table.\tabular{ll}{
@@ -25,8 +25,8 @@ Available data are listed in the following table.\tabular{ll}{
    \code{\link{SomaScanV4.1}} \tab SomaScan v4.1 panel \cr
    \code{\link{SomaScan11k}} \tab SomaScan 11k panel \cr
    \code{\link{scallop_inf1}} \tab SCALLOP/INF meta-analysis results \cr
-   \code{\link{seer1980}} \tab ST1 from Suhre et al. (2024) bioRxiv \cr
-   \code{\link{swath_ms}} \tab SWATH-MS panel \cr
+   \code{\link{seer1980}} \tab ST1 from \insertCite{suhre24;textual}{pQTLdata} \cr
+   \code{\link{swath_ms}} \tab A curated SWATH-MS panel, see \insertCite{ludwig18;textual}{pQTLdata} \cr
    \strong{Installations} \tab   \cr
    EndNote/ \tab Proteogenomics references \cr
    Olink/ \tab Olink-COVID analysis by MGH \cr
@@ -71,6 +71,9 @@ us <- s[!duplicated(s),]
 dim(us)
 us
 }
+}
+\references{
+\insertAllCited{}
 }
 \seealso{
 Useful links:

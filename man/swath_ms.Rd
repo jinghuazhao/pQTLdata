@@ -18,7 +18,10 @@ A data frame with 684 rows and 5 variables:
 swath_ms
 }
 \description{
-Curated during INTERVAL pilot study.
+As indicated by \insertCite{ludwig18;textual}{pQTLdata}, Sequential Windowed Acquisition
+of All Theoretical Fragment Ion Mass Spectra (SWATH-MS) represents a specific variant of
+Data-Independent Acquisition (DIA).
+The panel shown here is curated during INTERVAL pilot study.
 }
 \details{
 As above.
