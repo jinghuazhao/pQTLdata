@@ -13,7 +13,7 @@ Description: It aggregates protein panel data and metadata for protein quantitat
  The package includes data from affinity-based panels such as 'Olink' (<https://olink.com/>) 
  and 'SomaScan' (<https://somalogic.com/>), as well as mass spectrometry-based panels from
  'CellCarta' (<https://cellcarta.com/>), 'Seer' (<https://seer.bio/>) and 'SWATH-MS'
- (<https://doi.org/10.15252/msb.20178126>). The metadata encompasses updated annotations
+ (<doi:prefix/suffix>). The metadata encompasses updated annotations
  and publication details.
 License: MIT + file LICENSE
 URL: https://jinghuazhao.github.io/pQTLdata/, https://github.com/jinghuazhao/pQTLdata
