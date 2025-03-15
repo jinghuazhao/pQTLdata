@@ -1,7 +1,7 @@
 Package: pQTLdata
 Title: A Collection of Proteome Panels and Metadata
 Version: 0.6
-Date: 2025-3-13
+Date: 2025-3-15
 Authors@R: c(
     person("Jing Hua", "Zhao", , "jinghuazhao@hotmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1463-5870", "0000-0003-4930-3582")),
@@ -12,8 +12,9 @@ Description: It aggregates protein panel data and metadata for protein quantitat
  trait locus (pQTL) analysis using 'pQTLtools' (<https://jinghuazhao.github.io/pQTLtools/>).
  The package includes data from affinity-based panels such as 'Olink' (<https://olink.com/>) 
  and 'SomaScan' (<https://somalogic.com/>), as well as mass spectrometry-based panels from
- 'CellCarta' (<https://cellcarta.com/>) and 'Seer' (<https://seer.bio/>). The metadata
- encompasses updated annotations and publication details.
+ 'CellCarta' (<https://cellcarta.com/>), 'Seer' (<https://seer.bio/>) and 'swath_ms'
+ (https://doi.org/10.15252/msb.20178126). The metadata  encompasses updated annotations
+ and publication details.
 License: MIT + file LICENSE
 URL: https://jinghuazhao.github.io/pQTLdata/, https://github.com/jinghuazhao/pQTLdata
 BugReports: https://github.com/jinghuazhao/pQTLdata/issues
