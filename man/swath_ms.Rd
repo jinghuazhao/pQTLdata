@@ -26,5 +26,8 @@ The panel shown here is curated during INTERVAL pilot study.
 \details{
 As above.
 }
+\references{
+\insertAllCited{}
+}
 \keyword{datasets}
 \keyword{internal}
