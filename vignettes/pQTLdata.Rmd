@@ -25,7 +25,7 @@ knitr::opts_chunk$set(
   fig.path = "pQTLdata/",
   collapse = TRUE,
   comment = "#>",
-  dev = "png")
+  dev = "CairoPNG")
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
