@@ -34,6 +34,8 @@ for (p in pkgs) if (length(grep(paste("^package:", p, "$", sep=""), search())) =
     if (!requireNamespace(p)) warning(paste0("This vignette needs package `", p, "'; please install"))
 }
 invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
+sys_options <- options(knitr.kable.NA=NULL)
+new_options <- options(digits=2, knitr.kable.NA='')
 ```
 
 This package intends to gather information, metadata and relevant scripts in proteogenomic analysis.
@@ -54,6 +56,7 @@ While `library(help=pQTLdata)` displays the general information, `? pQTLdata` ca
 As has been the norm, no snapshot upon data release was provided which consequently requires substantial effort and the notable ones are highlighted here.
 
 ```{r caprion, echo=FALSE}
+options(new_options)
 accession_list <- c("P04745", "Q9GZN8", "P0C0L5", "Q96N11", "P48960",
                     "Q9NUQ9", "P04062", "P69905", "P62805", "O14745",
                     "P23381", "P54577")
@@ -150,6 +153,7 @@ info <- ensembldb::select(EnsDb.Hsapiens.v75, keys = gene_symbols,
 knitr::kable(head(info,15),caption="Annotation for BRCA1 and TP53")
 keytypes(org.Hs.eg.db)
 uniprot_ids <- ensembldb::select(org.Hs.eg.db, keys = gene_symbols, columns = "UNIPROT", keytype = "SYMBOL")
+options(sys_options)
 ```
 
 where `org.Hs.eg.db` is more focused on genes.
