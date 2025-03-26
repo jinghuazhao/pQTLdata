@@ -35,7 +35,7 @@ for (p in pkgs) if (length(grep(paste("^package:", p, "$", sep=""), search())) =
 }
 invisible(suppressMessages(lapply(pkgs, require, character.only = TRUE)))
 sys_options <- options(knitr.kable.NA=NULL)
-new_options <- options(digits=2, knitr.kable.NA='')
+new_options <- options(knitr.kable.NA='')
 ```
 
 This package intends to gather information, metadata and relevant scripts in proteogenomic analysis.
@@ -63,7 +63,7 @@ accession_list <- c("P04745", "Q9GZN8", "P0C0L5", "Q96N11", "P48960",
 updated_list <- dplyr::filter(pQTLdata::caprion,Accession %in% accession_list) |>
                 dplyr::ungroup() |>
                 dplyr::select(Gene,Gene.orig,Protein,Accession,ensGenes,chr,start,end)
-knitr::kable(updated_list,caption="Updated information on Caprion")
+knitr::kable(updated_list,digits=2,caption="Updated information on Caprion")
 options(sys_options)
 ```
 
@@ -120,7 +120,7 @@ This associates with several panels, including SomaScan (`SomaScan160410`)@sun18
 
 ```{r inf1, echo=FALSE}
 options(new_options)
-knitr::kable(pQTLdata::inf1,caption="Olink/inflammation panel")
+knitr::kable(pQTLdata::inf1,digits=2,caption="Olink/inflammation panel")
 options(sys_options)
 ```
 
