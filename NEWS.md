@@ -1,9 +1,10 @@
 ## pQTLdata 0.6
 
-(2025/3/26)
+(2026/3/9)
 
 * Add logo/favicons from Grok-3, huggingface.co/spaces/not-lain/background-removal, and usethis::use_logo() (jpg), DjVuLibre/3.5.28, ImageMagick/7.1.1-31 (png), and pkgdown::build_favicons().
 * Add reference to swath_ms.
+* Amend {r refdata} with eval=requireNamespace("EnsDb.Hsapiens.v75", quietly=TRUE)
 * Drop GitHub in _pkgdown.yml.
 * Revise pQTLdata.Rmd using 'CairoPNG' and options().
 * Revise DESCRIPTION/(Title, URL), README.Rmd after CRAN publication.
