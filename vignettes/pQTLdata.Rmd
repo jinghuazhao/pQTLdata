@@ -128,7 +128,7 @@ options(sys_options)
 
 We showcase `EnsDb.Hsapiens.v75` from Bioconductor.
 
-```{r refdata, warnings=FALSE}
+```{r refdata, eval=requireNamespace("EnsDb.Hsapiens.v75", quietly=TRUE), warnings=FALSE}
 options(new_options)
 ensembldb::metadata(EnsDb.Hsapiens.v75)
 ensembldb::keytypes(EnsDb.Hsapiens.v75)
