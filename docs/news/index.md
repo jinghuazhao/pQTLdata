@@ -12,6 +12,7 @@
 -   Amend {r refdata} with eval=requireNamespace(“EnsDb.Hsapiens.v75”,
     quietly=TRUE)
 -   Drop GitHub in \_pkgdown.yml.
+-   Revise URL in inst/README.md.
 -   Revise pQTLdata.Rmd using ‘CairoPNG’ and options().
 -   Revise DESCRIPTION/(Title, URL), README.Rmd after CRAN publication.
 
