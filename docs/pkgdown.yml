@@ -1,9 +1,9 @@
 pandoc: '2.18'
-pkgdown: 2.1.1.9000
-pkgdown_sha: 18cca452d736fea33d47b19b4ef4973db9104a75
+pkgdown: 2.2.0
+pkgdown_sha: ~
 articles:
   pQTLdata: pQTLdata.html
-last_built: 2025-03-26T17:44Z
+last_built: 2026-03-09T10:46Z
 urls:
   reference: https://jinghuazhao.github.io/pQTLdata/reference
   article: https://jinghuazhao.github.io/pQTLdata/articles
