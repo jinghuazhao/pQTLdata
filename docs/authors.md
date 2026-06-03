@@ -18,12 +18,12 @@ Source:
 [`DESCRIPTION`](https://github.com/jinghuazhao/pQTLdata/blob/HEAD/DESCRIPTION)
 
 Zhao J (2026). *pQTLdata: A Collection of Proteome Panels and Metadata*.
-R package version 0.6, <https://jinghuazhao.github.io/pQTLdata/>.
+R package version 0.7, <https://jinghuazhao.github.io/pQTLdata/>.
 
     @Manual{,
       title = {pQTLdata: A Collection of Proteome Panels and Metadata},
       author = {Jing Hua Zhao},
       year = {2026},
-      note = {R package version 0.6},
+      note = {R package version 0.7},
       url = {https://jinghuazhao.github.io/pQTLdata/},
     }
