@@ -24,7 +24,7 @@ A data frame with 92 rows and 9 variables:
 }
 }
 \usage{
-inf1
+data(inf1)
 }
 \description{
 The panel is based on SCALLOP-INF as in \insertCite{zhao23;textual}{pQTLdata}.

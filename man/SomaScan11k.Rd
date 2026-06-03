@@ -18,7 +18,7 @@ A data frame with 10,776 rows and 5 variables:
 \url{https://somalogic.com/somascan-11k-assay/}
 }
 \usage{
-SomaScan11k
+data(SomaScan11k)
 }
 \description{
 This is also the latest panel

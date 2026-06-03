@@ -16,7 +16,7 @@ A data frame with 7,288 rows and 6 variables:
 }
 }
 \usage{
-SomaScanV4.1
+data(SomaScanV4.1)
 }
 \description{
 This is the 7k panel

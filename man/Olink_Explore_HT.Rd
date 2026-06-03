@@ -14,7 +14,7 @@ A data frame with 5,416 rows and 4 variables:
 }
 }
 \usage{
-Olink_Explore_HT
+data(Olink_Explore_HT)
 }
 \description{
 Information on all qPCR panels

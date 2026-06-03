@@ -20,7 +20,7 @@ A data frame with 5,178 rows and 10 variables:
 }
 }
 \usage{
-SomaScan160410
+data(SomaScan160410)
 }
 \description{
 This is based on panel used in \insertCite{sun18;textual}{pQTLdata}.

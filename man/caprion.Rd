@@ -25,7 +25,7 @@ A data frame with 987 rows and 12 variables:
 }
 }
 \usage{
-caprion
+data(caprion)
 }
 \description{
 Information based on Caprion pilot studies

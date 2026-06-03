@@ -13,7 +13,7 @@ A data frame with 1,116 rows and 3 variables:
 }
 }
 \usage{
-Olink_Target_96
+data(Olink_Target_96)
 }
 \description{
 Information on all Target 96 panels. Individual panels are also available from the companion xlsx in the Olink/ directory.

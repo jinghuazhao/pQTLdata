@@ -13,7 +13,7 @@ A data frame with 1,472 rows and 3 variables:
 }
 }
 \usage{
-Olink_Explore_1536
+data(Olink_Explore_1536)
 }
 \description{
 Information based on pilot studies

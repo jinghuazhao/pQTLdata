@@ -29,7 +29,7 @@ A data frame with 180 rows and 19 variables:
 }
 }
 \usage{
-scallop_inf1
+data(scallop_inf1)
 }
 \description{
 Supplementary information for \insertCite{zhao23;textual}{pQTLdata}.

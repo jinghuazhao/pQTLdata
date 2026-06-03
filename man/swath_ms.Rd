@@ -15,7 +15,7 @@ A data frame with 684 rows and 5 variables:
 }
 }
 \usage{
-swath_ms
+data(swath_ms)
 }
 \description{
 As indicated by \insertCite{ludwig18;textual}{pQTLdata}, Sequential Windowed Acquisition

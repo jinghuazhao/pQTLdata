@@ -20,7 +20,7 @@ A data frame with 1,980 rows:
 }
 }
 \usage{
-seer1980
+data(seer1980)
 }
 \description{
 ST1 from \insertCite{suhre24;textual}{pQTLdata}.
