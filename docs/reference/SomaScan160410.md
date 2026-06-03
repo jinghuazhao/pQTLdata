@@ -5,7 +5,7 @@ This is based on panel used in Sun et al. (2018) .
 ## Usage
 
 ``` r
-SomaScan160410
+data(SomaScan160410)
 ```
 
 ## Format
@@ -65,6 +65,6 @@ Morrell NW, Bradley JR, Janjic N, Roberts DJ, Ouwehand WH, Todd JA,
 Soranzo N, Suhre K, Paul DS, Fox CS, Plenge RM, Danesh J, Runz H,
 Butterworth AS (2018). “Genomic atlas of the human plasma proteome.”
 *Nature*, **558**(7708), 73-79. ISSN 1476-4687 (Electronic) 0028-0836
-(Linking),
+(Linking).
 [doi:10.1038/s41586-018-0175-2](https://doi.org/10.1038/s41586-018-0175-2)
 .

@@ -5,7 +5,7 @@ Supplementary information for Zhao et al. (2023) .
 ## Usage
 
 ``` r
-scallop_inf1
+data(scallop_inf1)
 ```
 
 ## Format

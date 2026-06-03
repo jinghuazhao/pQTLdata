@@ -5,7 +5,7 @@ Information based on Caprion pilot studies
 ## Usage
 
 ``` r
-caprion
+data(caprion)
 ```
 
 ## Format

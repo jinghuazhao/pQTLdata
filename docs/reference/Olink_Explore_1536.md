@@ -5,7 +5,7 @@ Information based on pilot studies
 ## Usage
 
 ``` r
-Olink_Explore_1536
+data(Olink_Explore_1536)
 ```
 
 ## Format

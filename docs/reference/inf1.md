@@ -5,7 +5,7 @@ The panel is based on SCALLOP-INF as in Zhao et al. (2023) .
 ## Usage
 
 ``` r
-inf1
+data(inf1)
 ```
 
 ## Format

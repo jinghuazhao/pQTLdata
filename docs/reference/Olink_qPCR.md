@@ -5,7 +5,7 @@ Information on all qPCR panels
 ## Usage
 
 ``` r
-Olink_qPCR
+data(Olink_qPCR)
 ```
 
 ## Format

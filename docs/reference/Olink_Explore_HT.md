@@ -5,7 +5,7 @@ Information on all qPCR panels
 ## Usage
 
 ``` r
-Olink_Explore_HT
+data(Olink_Explore_HT)
 ```
 
 ## Format

@@ -1,6 +1,14 @@
 # Changelog
 
+## pQTLdata 0.7
+
+(2026//6/3)
+
+-   Revise inst/scripts/cran.sh
+
 ## pQTLdata 0.6
+
+CRAN release: 2026-03-09
 
 (2026/3/9)
 

@@ -6,7 +6,7 @@ available from the companion xlsx in the Olink/ directory.
 ## Usage
 
 ``` r
-Olink_Target_96
+data(Olink_Target_96)
 ```
 
 ## Format

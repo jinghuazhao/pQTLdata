@@ -8,7 +8,7 @@ here is curated during INTERVAL pilot study.
 ## Usage
 
 ``` r
-swath_ms
+data(swath_ms)
 ```
 
 ## Format

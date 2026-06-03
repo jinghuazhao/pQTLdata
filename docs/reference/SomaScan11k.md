@@ -5,7 +5,7 @@ This is also the latest panel
 ## Usage
 
 ``` r
-SomaScan11k
+data(SomaScan11k)
 ```
 
 ## Format

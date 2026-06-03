@@ -5,7 +5,7 @@ This is the 7k panel
 ## Usage
 
 ``` r
-SomaScanV4.1
+data(SomaScanV4.1)
 ```
 
 ## Format
