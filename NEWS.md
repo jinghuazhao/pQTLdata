@@ -1,6 +1,12 @@
-## pQTLdata 0.6
+## pQTLdata 0.7
 
 (2026//6/3)
+
+* Revise inst/scripts/cran.sh
+
+## pQTLdata 0.6
+
+(2026/3/9)
 
 * Add logo/favicons from Grok-3, huggingface.co/spaces/not-lain/background-removal, and usethis::use_logo() (jpg), DjVuLibre/3.5.28, ImageMagick/7.1.1-31 (png), and pkgdown::build_favicons().
 * Add reference to swath_ms.
