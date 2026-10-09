@@ -23,7 +23,7 @@ Depends:
     R (>= 3.5.0)
 Imports: knitr, Rdpack
 RdMacros: Rdpack
-Suggests: bookdown, dplyr, grid, EnsDb.Hsapiens.v75, ensembldb, IRanges, org.Hs.eg.db, S4Vectors, VennDiagram
+Suggests: bookdown, dplyr, grid, Cairo, EnsDb.Hsapiens.v75, ensembldb, IRanges, org.Hs.eg.db, S4Vectors, VennDiagram
 VignetteBuilder: knitr
 LazyData: Yes
 LazyLoad: Yes
