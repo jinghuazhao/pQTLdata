@@ -3,6 +3,7 @@
 (2026//10/9)
 
 * Revise inst/scripts/cran.sh.
+* Suggests bookdown.
 * Update caprion panel and add UniProt/caprion.fasta.
 
 ## pQTLdata 0.6
