@@ -2,24 +2,34 @@
 #' @description Information based on Caprion pilot studies
 #' @docType data
 #' @keywords datasets internal
-#' @format A data frame with 987 rows and 12 variables:
+#' @format A data frame with 987 rows and 19 variables:
 #' \describe{
-#'   \item{\code{Gene}}{HGNC symbols simplified in four instances}
-#'   \item{\code{Gene.orig}}{HGNC symbol}
-#'   \item{\code{Protein}}{Protein name as in UniProt}
-#'   \item{\code{Accession}}{UniProt id}
-#'   \item{\code{Protein.Description}}{Detailed information on protein}
-#'   \item{\code{GO.Cellular.Component}}{GO Ceullular component}
-#'   \item{\code{GO.Function}}{GO function}
-#'   \item{\code{GO.Process}}{GO process}
-#'   \item{\code{ensGenes}}{Ensembl genes}
-#'   \item{\code{chrom}}{chromosome}
-#'   \item{\code{chr}}{chromosome}
-#'   \item{\code{starts}}{start positions}
-#'   \item{\code{ends}}{end positions}
-#'   \item{\code{start}}{minimum start}
-#'   \item{\code{end}}{maximum end}
+#'   \item{\code{Gene}}{HGNC symbols, simplified in four instances}
+#'   \item{\code{Gene.orig}}{Original HGNC symbol}
+#'   \item{\code{Protein}}{Protein name as recorded in the original Caprion annotation}
+#'   \item{\code{Accession}}{Original UniProt accession, retained for compatibility}
+#'   \item{\code{Protein.Description}}{Detailed protein information}
+#'   \item{\code{GO.Cellular.Component}}{Gene Ontology cellular component annotation}
+#'   \item{\code{GO.Function}}{Gene Ontology molecular function annotation}
+#'   \item{\code{GO.Process}}{Gene Ontology biological process annotation}
+#'   \item{\code{ensGenes}}{Ensembl gene identifiers}
+#'   \item{\code{chrom}}{Chromosome annotation}
+#'   \item{\code{starts}}{Start positions}
+#'   \item{\code{ends}}{End positions}
+#'   \item{\code{chr}}{Chromosome annotation}
+#'   \item{\code{start}}{Minimum start position}
+#'   \item{\code{end}}{Maximum end position}
+#'   \item{\code{Accession.original}}{Original UniProt accession, explicitly preserved}
+#'   \item{\code{Accession.current}}{Current UniProt accession where resolved; \code{NA} for the demerged AMY1 entry}
+#'   \item{\code{Accession.status}}{Accession resolution status, including \code{unchanged} and \code{demerged}}
+#'   \item{\code{Accession.candidates}}{List-column of candidate current UniProt accessions for historical entries; AMY1 has P0DUB6, P0DTE7 and P0DTE8}
 #' }
-#' @details See the Caprion repository involving its use.
+#' @details The original Caprion annotations and accession identifiers are
+#'   preserved. UniProt marks the historical AMY1 accession P04745 as demerged.
+#'   The candidate current accessions P0DUB6, P0DTE7 and P0DTE8 are recorded
+#'   for subsequent peptide-level evaluation. These candidates do not establish
+#'   that all three sequences contributed to the original protein quantification.
+#'   See the Caprion repository for details of its use.
+#' @source Caprion pilot-study annotations and UniProt accession information.
 
 "caprion"
