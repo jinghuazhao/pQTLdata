@@ -10,68 +10,96 @@ data(caprion)
 
 ## Format
 
-A data frame with 987 rows and 12 variables:
+A data frame with 987 rows and 19 variables:
 
 -   `Gene`:
 
-    HGNC symbols simplified in four instances
+    HGNC symbols, simplified in four instances
 
 -   `Gene.orig`:
 
-    HGNC symbol
+    Original HGNC symbol
 
 -   `Protein`:
 
-    Protein name as in UniProt
+    Protein name as recorded in the original Caprion annotation
 
 -   `Accession`:
 
-    UniProt id
+    Original UniProt accession, retained for compatibility
 
 -   `Protein.Description`:
 
-    Detailed information on protein
+    Detailed protein information
 
 -   `GO.Cellular.Component`:
 
-    GO Ceullular component
+    Gene Ontology cellular component annotation
 
 -   `GO.Function`:
 
-    GO function
+    Gene Ontology molecular function annotation
 
 -   `GO.Process`:
 
-    GO process
+    Gene Ontology biological process annotation
 
 -   `ensGenes`:
 
-    Ensembl genes
+    Ensembl gene identifiers
 
 -   `chrom`:
 
-    chromosome
-
--   `chr`:
-
-    chromosome
+    Chromosome annotation
 
 -   `starts`:
 
-    start positions
+    Start positions
 
 -   `ends`:
 
-    end positions
+    End positions
+
+-   `chr`:
+
+    Chromosome annotation
 
 -   `start`:
 
-    minimum start
+    Minimum start position
 
 -   `end`:
 
-    maximum end
+    Maximum end position
+
+-   `Accession.original`:
+
+    Original UniProt accession, explicitly preserved
+
+-   `Accession.current`:
+
+    Current UniProt accession where resolved; `NA` for the demerged AMY1
+    entry
+
+-   `Accession.status`:
+
+    Accession resolution status, including `unchanged` and `demerged`
+
+-   `Accession.candidates`:
+
+    List-column of candidate current UniProt accessions for historical
+    entries; AMY1 has P0DUB6, P0DTE7 and P0DTE8
+
+## Source
+
+Caprion pilot-study annotations and UniProt accession information.
 
 ## Details
 
-See the Caprion repository involving its use.
+The original Caprion annotations and accession identifiers are
+preserved. UniProt marks the historical AMY1 accession P04745 as
+demerged. The candidate current accessions P0DUB6, P0DTE7 and P0DTE8 are
+recorded for subsequent peptide-level evaluation. These candidates do
+not establish that all three sequences contributed to the original
+protein quantification. See the Caprion repository for details of its
+use.

@@ -69,56 +69,77 @@
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A data frame with 987 rows and 12 variables:</p><dl><dt><code>Gene</code></dt>
-<dd><p>HGNC symbols simplified in four instances</p></dd>
+    <p>A data frame with 987 rows and 19 variables:</p><dl><dt><code>Gene</code></dt>
+<dd><p>HGNC symbols, simplified in four instances</p></dd>
 
 <dt><code>Gene.orig</code></dt>
-<dd><p>HGNC symbol</p></dd>
+<dd><p>Original HGNC symbol</p></dd>
 
 <dt><code>Protein</code></dt>
-<dd><p>Protein name as in UniProt</p></dd>
+<dd><p>Protein name as recorded in the original Caprion annotation</p></dd>
 
 <dt><code>Accession</code></dt>
-<dd><p>UniProt id</p></dd>
+<dd><p>Original UniProt accession, retained for compatibility</p></dd>
 
 <dt><code>Protein.Description</code></dt>
-<dd><p>Detailed information on protein</p></dd>
+<dd><p>Detailed protein information</p></dd>
 
 <dt><code>GO.Cellular.Component</code></dt>
-<dd><p>GO Ceullular component</p></dd>
+<dd><p>Gene Ontology cellular component annotation</p></dd>
 
 <dt><code>GO.Function</code></dt>
-<dd><p>GO function</p></dd>
+<dd><p>Gene Ontology molecular function annotation</p></dd>
 
 <dt><code>GO.Process</code></dt>
-<dd><p>GO process</p></dd>
+<dd><p>Gene Ontology biological process annotation</p></dd>
 
 <dt><code>ensGenes</code></dt>
-<dd><p>Ensembl genes</p></dd>
+<dd><p>Ensembl gene identifiers</p></dd>
 
 <dt><code>chrom</code></dt>
-<dd><p>chromosome</p></dd>
-
-<dt><code>chr</code></dt>
-<dd><p>chromosome</p></dd>
+<dd><p>Chromosome annotation</p></dd>
 
 <dt><code>starts</code></dt>
-<dd><p>start positions</p></dd>
+<dd><p>Start positions</p></dd>
 
 <dt><code>ends</code></dt>
-<dd><p>end positions</p></dd>
+<dd><p>End positions</p></dd>
+
+<dt><code>chr</code></dt>
+<dd><p>Chromosome annotation</p></dd>
 
 <dt><code>start</code></dt>
-<dd><p>minimum start</p></dd>
+<dd><p>Minimum start position</p></dd>
 
 <dt><code>end</code></dt>
-<dd><p>maximum end</p></dd>
+<dd><p>Maximum end position</p></dd>
+
+<dt><code>Accession.original</code></dt>
+<dd><p>Original UniProt accession, explicitly preserved</p></dd>
+
+<dt><code>Accession.current</code></dt>
+<dd><p>Current UniProt accession where resolved; <code>NA</code> for the demerged AMY1 entry</p></dd>
+
+<dt><code>Accession.status</code></dt>
+<dd><p>Accession resolution status, including <code>unchanged</code> and <code>demerged</code></p></dd>
+
+<dt><code>Accession.candidates</code></dt>
+<dd><p>List-column of candidate current UniProt accessions for historical entries; AMY1 has P0DUB6, P0DTE7 and P0DTE8</p></dd>
 
 
 </dl></div>
     <div class="section level2">
+    <h2 id="source">Source<a class="anchor" aria-label="anchor" href="#source"></a></h2>
+    <p>Caprion pilot-study annotations and UniProt accession information.</p>
+    </div>
+    <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>See the Caprion repository involving its use.</p>
+    <p>The original Caprion annotations and accession identifiers are
+preserved. UniProt marks the historical AMY1 accession P04745 as demerged.
+The candidate current accessions P0DUB6, P0DTE7 and P0DTE8 are recorded
+for subsequent peptide-level evaluation. These candidates do not establish
+that all three sequences contributed to the original protein quantification.
+See the Caprion repository for details of its use.</p>
     </div>
 
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
