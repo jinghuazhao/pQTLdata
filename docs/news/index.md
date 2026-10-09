@@ -4,6 +4,7 @@
 
 (2026//10/9)
 
+-   refine \_pkgdown.yml
 -   Revise inst/scripts/cran.sh.
 -   Suggests bookdown, Cairo.
 -   Update caprion panel and add UniProt/caprion.fasta.
