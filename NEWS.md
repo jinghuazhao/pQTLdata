@@ -1,8 +1,9 @@
 ## pQTLdata 0.7
 
-(2026//6/3)
+(2026//10/9)
 
-* Revise inst/scripts/cran.sh
+* Revise inst/scripts/cran.sh.
+* Update caprion panel and add UniProt/caprion.fasta.
 
 ## pQTLdata 0.6
 
